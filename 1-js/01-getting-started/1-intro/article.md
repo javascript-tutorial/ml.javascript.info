@@ -1,14 +1,13 @@
-# An Introduction to JavaScript
+# ജവസ്ക്രിപ്റ്റിന്റെ ഒരു ഇൻട്രൊഡകഷൻ, 
+നമുക്ക് നോക്കാം ജവസ്ക്രിപ്റ്റന് എന്താണ് വലിയ പ്രെത്യേകതയെന്നു,നമുക്ക് അതുബ്കൊണ്ടു എന്തൊക്കെ നേടാം, പിന്നെ ഏതൊക്കെ മറ്റു ടെക്നോളജിസ് അതിന്റെ കൂടെ വർക് ചെയ്യുമെന്ന്.
 
-Let's see what's so special about JavaScript, what we can achieve with it, and which other technologies play well with it.
+## എന്താണ് ജാവാസ്ക്രിപ്റ്റ്
 
-## What is JavaScript?
+*ജാവാസ്ക്രിപ്റ്റ്* ആദ്യമായി ഉപയോഗിച്ചു തുടങ്ങിയത് വെബ്‌പേജുകൾക്ക് ജീവൻ കൊടുക്കാനാണ്.
 
-*JavaScript* was initially created to "make web pages alive".
+ഇതിലുള്ള പ്രോഗ്രാമുകളെ *script*എന്നാണ് വിളിച്ചിരുന്നത്. അവ HTML പേജിന്റെ കൂടെ തന്നെ എഴുതി പേജ് ലോഡ് ആകുമ്പോൾ തനിയെ വർക് ആകുമായിരുന്നു.
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
-
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+Script കൽ എഴുതുന്നതും എക്സിക്യൂട്ട ആകുന്നതും സദാ അക്ഷരങ്ങളിലൂടെയാണ്. They don't need special preparation or compilation to run.
 
 In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
