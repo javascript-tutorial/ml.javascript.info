@@ -7,31 +7,31 @@
 
 ഇതിലുള്ള പ്രോഗ്രാമുകളെ *script*എന്നാണ് വിളിച്ചിരുന്നത്. അവ HTML പേജിന്റെ കൂടെ തന്നെ എഴുതി പേജ് ലോഡ് ആകുമ്പോൾ തനിയെ വർക് ആകുമായിരുന്നു.
 
-Script കൽ എഴുതുന്നതും എക്സിക്യൂട്ട ആകുന്നതും സദാ അക്ഷരങ്ങളിലൂടെയാണ്. They don't need special preparation or compilation to run.
+Script കൽ എഴുതുന്നതും എക്സിക്യൂട്ട ആകുന്നതും സദാ അക്ഷരങ്ങളിലൂടെയാണ്. അതിനു വേറെ കംപൈലിംഗും മറ്റുമൊന്നും വേണ്ട.
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
+ഇതിൽ javascript, java എന്നു പറയുന്ന പ്രോഗ്രാമിങ് ലാംഗ്വേജിനെക്കാൾ വ്യത്യസ്തമാണ്[Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
-```smart header="Why is it called <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+```smart header="എന്തു കൊണ്ടാണിത് <u>Java</u>Script എന്നറിയപ്പെടുന്നത്?"
+Javascript ആദ്യമായി പുറത്തിറക്കിയപ്പോൾ, അതിനു വേറൊരു പേരുണ്ടായിരുന്നു: "LiveScript". പക്ഷെ അപ്പോൾ java ആ സമായത്ത് പോപുലറായിരുന്നു, അതു കൊണ്ടു ഒരു പിന്ഗാമിയെപ്പോലെ കണ്ടു ആ പേര് കൊടുത്തു.
 
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+പക്ഷെ അത് ഒരുപാട് പുരോഗമിച്ചു,javascript ഒരു സ്വതന്ത്രമായ ലാംഗ്വേജ് ആയി മാറി അതു സ്വന്തമായി ഒരു സ്ക്രിപ്റ്റ് ഉണ്ടാക്കി അതാണ്,[ECMAScript](http://en.wikipedia.org/wiki/ECMAScript),ഇപ്പോൾ അതിനു javaയുമായിട്ടു യാതൊരു ബന്ധവും ഇല്ല.
 ```
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+ഇന്ന്, javascript ന് ബ്രൗസർകളിൽ മാത്രമല്ല സെർവർകളിൽ വരെ ഉപയോഗിക്കാൻ പറ്റും, ചുരുക്കിപ്പറഞ്ഞാൽ[the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine) ഉള്ള ഏതൊരു ഡിവൈസിലും അതു ഉപയോഗിക്കാൻ പറ്റും.
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+ബ്രൗസറുകൾക് സ്വന്തമായി ഒരു ജാവസ്ക്രിപ്റ് എൻജിൻ ഉണ്ടായിരിക്കും "JavaScript virtual machine".
 
-Different engines have different "codenames". For example:
+പല എങ്ങിനുകൾക്കും പല "കോഡുനെയിം" ആയിരിക്കും. ഉദാഹരണത്തിന്:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Trident" and "Chakra" for different versions of IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- chrome ലും opera യിലും.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- Firefox ൽ.
+- ...അതു പോലെ"Trident" ,"Chakra" എന്നീ കോഡ് നയിമുകളും IE യുടെ വേർഷനിൽ ഉണ്ട്, "ChakraCore"  Microsoft Edge വേണ്ടിയും, "Nitro" യും "SquirrelFish" ഉം Safari ക്കും,...
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+മുകളിൽ പറഞ്ഞിരിക്കുന്ന ടെമുകളെല്ലാം ഓർത്തു വെക്കുന്നത് ഇന്റർനെറ്റ് ഫോറങ്ങളിൽ ഉപയോഗിക്കാൻ സഹായിക്കും. ഞങ്ങളും അവ ഉപയോഗിക്കും. ഉദാഹരണത്തിന്, ഇപ്പോൾ "X എന്നു പറയുന്ന ഫീച്ചർ V8 ഇൽ സപ്പോർട് ആകുമെങ്കിൽ", പിന്നെ അത് എന്തായാലും Chrome ലും Opera യിലും എടുക്കും.
 
-```smart header="How do engines work?"
+```smart header=" engine കൾ എങ്ങനെ പ്രവർത്തിക്കും ?"
 
-Engines are complicated. But the basics are easy.
+Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വിഷയമാണ്. എന്നാലും അതിന്റെ അടിസ്ഥാനങ്ങൾ എളുപ്പമുള്ളതാണ്.
 
 1. The engine (embedded if it's a browser) reads ("parses") the script.
 2. Then it converts ("compiles") the script to the machine language.
