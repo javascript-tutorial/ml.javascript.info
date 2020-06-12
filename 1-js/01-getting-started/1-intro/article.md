@@ -46,13 +46,12 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 ബ്രൗസറിൽ വെബ്‌പേജ് മാനേജ് ചെയ്യാനും യൂസർമായി ഇടപഴക്കാനും സെർവേറിലോട്ടു കണക്ട് ചെയ്യാനുമെല്ലാം ഉപയോഗിക്കാം.  
 അതായത് ബ്രൗസറിൽ ജവസ്ക്രിപ്റ്റന് താഴെ പറയുന്ന കാര്യങ്ങളെല്ലാം ചെയ്യാൻ കഴിയും:
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
-
-## What CAN'T in-browser JavaScript do?
+-പേജിലേക്ക് പുതിയ HTML ചേർക്കുക, നിലവിലുള്ള ഉള്ളടക്കം മാറ്റുക,സ്റ്റൈൽ മാറ്റുക.
+- ഉപയോക്താക്കളുടെ പ്രവർത്തനങ്ങളോട് പ്രതികരിക്കുക, മൗസ് ക്ലിക്കുകൾ, പോയിന്റർ ചലനങ്ങൾ, കീ പ്രസ്സുകൾ എന്നിവ അറിയുക.
+- ദൂരെയുള്ള സെർവറുകളിലേക്ക് നെറ്റ്വർക്കിലൂടെ അഭ്യർത്ഥനകൾ അയയ്ക്കുക, ഫയലുകൾ download ചെയ്ത് upload ചെയ്യുക ([AJAX] (https://en.wikipedia.org/wiki/Ajax_ (programming)), [COMET] (https: // en. wikipedia.org/wiki/Comet_(programming)) technologies).
+- കുക്കികൾ എടുക്കുകയും വെക്കുകയും ചെയ്യുക,യൂസേറിനോട് ചോദ്യങ്ങൾ ചോദിക്കുക, സന്ദേശങ്ങൾ കാണിക്കുക.
+- ക്ലയന്റ് ഭാഗത്തുള്ള ഡാറ്റ ഓർക്കുക ("ലോക്കൽ സ്റ്റോറേജ്").
+## ബ്രൗസറിൽ ജാവസ്ക്രിപ്റ്റന് എന്തു ചെയ്യാൻ കഴിയില്ല?
 
 JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
 
