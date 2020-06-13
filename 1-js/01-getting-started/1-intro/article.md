@@ -53,44 +53,27 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 - ക്ലയന്റ് ഭാഗത്തുള്ള ഡാറ്റ ഓർക്കുക ("ലോക്കൽ സ്റ്റോറേജ്").
 ## ബ്രൗസറിൽ ജാവസ്ക്രിപ്റ്റന് എന്തു ചെയ്യാൻ കഴിയില്ല?
 
-JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
-
-Examples of such restrictions include:
-
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
-
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
-
-    There are ways to interact with camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
-
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
-
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com` and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
-
 ![](limitations.svg)
 
-Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.
 ഉപയോക്താവിന്റെ സുരക്ഷയ്ക്കായി ബ്രൗസറിലെ ജാവാസ്ക്രിപ്റ്റിന്റെ കഴിവുകൾ പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. ഒരു ദുഷിച്ച വെബ്‌പേജ് സ്വകാര്യ വിവരങ്ങൾ‌ ആക്‌സസ് ചെയ്യുന്നതിൽ‌ നിന്നും അല്ലെങ്കിൽ‌ ഉപയോക്താവിൻറെ ഡാറ്റയെ ദോഷകരമായി ബാധിക്കുന്നതിൽ‌ നിന്നും തടയുക എന്നതാണ് ലക്ഷ്യം.
 
-അത്തരം നിയന്ത്രണങ്ങളുടെ ഉദാഹരണങ്ങളിൽ ഇവ ഉൾപ്പെടുന്നു:
+അത്തരം നിയന്ത്രണങ്ങളുടെ ഉദാഹരണങ്ങളിൽ പെട്ടതാണ്:
 
 - ഒരു വെബ്‌പേജിലെ ജാവസ്ക്രിപ്റ്റന് ഹാർഡ് ഡിസ്കിൽ നിയന്ത്രണമില്ലാത്ത ഫയലുകൾ വായിക്കാനോ എഴുതാനോ കഴിയില്ല, അവ പകർത്താനോ പ്രോഗ്രാമുകൾ പ്രവർത്തിപ്പിക്കാനോ പാടില്ല. ഇതിന് OS ഫംഗ്ഷനുകളിലേക്ക് നേരിട്ട് പ്രവേശനമില്ല.
 
     ആധുനിക ബ്രൌസർ‌ ഫയലുകളുമായി പ്രവർ‌ത്തിക്കാൻ‌ ഇത് അനുവദിക്കുന്നു, പക്ഷേ ആക്‌സസ് പരിമിതമാണ് ,കൂടാതെ ഉപയോക്താവ് ഒരു ബ്രൗസർ വിൻ‌ഡോയിലേക്ക് ഒരു ഫയൽ‌ ഡ്രോപ്പ് ചെയ്യുകയോ അല്ലെങ്കിൽ‌ `<input>` ടാഗ് വഴി തിരഞ്ഞെടുക്കുകയോ പോലുള്ള ചില പ്രവർ‌ത്തനങ്ങൾ‌ നടത്തുകയാണെങ്കിൽ‌ മാത്രം.
 
-    ക്യാമറ / മൈക്രോഫോൺ, മറ്റ് ഉപകരണങ്ങൾ എന്നിവയുമായി സംവദിക്കാനുള്ള മാർഗങ്ങളുണ്ട്, പക്ഷേ അവയ്‌ക്ക് ഉപയോക്താവിന്റെ വ്യക്തമായ അനുമതി ആവശ്യമാണ്. അതിനാൽ ഒരു ജാവാസ്ക്രിപ്റ്റ് പ്രാപ്തമാക്കിയ പേജ് ഒരു വെബ് ക്യാമറയെ തന്ത്രപൂർവ്വം പ്രാപ്തമാക്കുകയും ചുറ്റുപാടുകൾ നിരീക്ഷിക്കുകയും വിവരങ്ങൾ [NSA] (https://en.wikipedia.org/wiki/National_Security_Agency) ലേക്ക് അയയ്ക്കുകയും ചെയ്യരുത്.
-- വ്യത്യസ്ത ടാബുകൾ / വിൻഡോകൾ സാധാരണയായി പരസ്പരം അറിയില്ല. ചിലപ്പോൾ അവർ അങ്ങനെ ചെയ്യും, ഉദാഹരണത്തിന് ഒരു വിൻഡോ മറ്റൊന്ന് തുറക്കാൻ ജാവാസ്ക്രിപ്റ്റ് ഉപയോഗിക്കുമ്പോൾ. ഈ സാഹചര്യത്തിൽ പോലും, വ്യത്യസ്ത സൈറ്റുകളിൽ നിന്ന് (മറ്റൊരു ഡൊമെയ്ൻ, പ്രോട്ടോക്കോൾ അല്ലെങ്കിൽ പോർട്ടിൽ നിന്ന്) വന്നാൽ ഒരു പേജിൽ നിന്നുള്ള ജാവാസ്ക്രിപ്റ്റ് മറ്റൊന്നിലേക്ക് പ്രവേശിക്കാനിടയില്ല.
+    ക്യാമറ / മൈക്രോഫോൺ, മറ്റ് ഉപകരണങ്ങൾ എന്നിവയുമായി സംവദിക്കാനുള്ള മാർഗങ്ങളുണ്ട്, പക്ഷേ അവയ്‌ക്ക് ഉപയോക്താവിന്റെ വ്യക്തമായ അനുമതി ആവശ്യമാണ്. അതിനാൽ ഒരു ജാവാസ്ക്രിപ്റ്റ്  പേജ് ഒരു വെബ് ക്യാമറയെ തന്ത്രപൂർവ്വം ഓപ്പൺ ചെയ്യാൻ ചുറ്റുപാടുകൾ നിരീക്ഷിക്കുകയും വിവരങ്ങൾ [NSA] (https://en.wikipedia.org/wiki/National_Security_Agency) ലോട്ടു അയയ്ക്കുകയോ ചെയ്യരുത്.
+- വ്യത്യസ്ത ടാബുകൾ / വിൻഡോകൾ സാധാരണയായി പരസ്പരo ബന്ധം കാണില്ല. ചിലപ്പോൾ അവ അങ്ങനെ ചെയ്യാം, ഉദാഹരണത്തിന് ഒരു വിൻഡോ മറ്റൊരു വിൻഡോ തുറക്കാൻ ജാവാസ്ക്രിപ്റ്റ് ഉപയോഗിക്കുമ്പോൾ. ഈ സാഹചര്യത്തിൽ പോലും, വ്യത്യസ്ത സൈറ്റുകളിൽ നിന്ന് (മറ്റൊരു ഡൊമെയ്ൻ, പ്രോട്ടോക്കോൾ അല്ലെങ്കിൽ പോർട്ടിൽ നിന്ന്) വന്നാൽ ഒരു പേജിൽ നിന്നുള്ള ജാവാസ്ക്രിപ്റ്റ് മറ്റൊന്നിലേക്ക് പ്രവേശിക്കാനിടയില്ല.
 
-    ഇതിനെ "ഒരേ ഉറവിട നയം" എന്ന് വിളിക്കുന്നു. അത് പരിഹരിക്കുന്നതിന്, * രണ്ട് പേജുകളും * ഡാറ്റാ കൈമാറ്റത്തിന് സമ്മതിക്കുകയും അത് കൈകാര്യം ചെയ്യുന്ന ഒരു പ്രത്യേക ജാവാസ്ക്രിപ്റ്റ് കോഡ് അടങ്ങിയിരിക്കുകയും വേണം. ഞങ്ങൾ അത് ട്യൂട്ടോറിയലിൽ ഉൾപ്പെടുത്തും.
+    ഇതിനെ "same origin policy" എന്ന് വിളിക്കുന്നു. അത് പരിഹരിക്കുന്നതിന്, * രണ്ട് പേജുകളും * ഡാറ്റാ കൈമാറ്റത്തിന് സമ്മതിക്കുകയും അത് കൈകാര്യം ചെയ്യുന്ന ഒരു പ്രത്യേക ജാവാസ്ക്രിപ്റ്റ് കോഡ് അടങ്ങിയിരിക്കുകയും വേണം. ഞങ്ങൾ അത് ട്യൂട്ടോറിയലിൽ ഉൾപ്പെടുത്തും.
 
-    ഈ പരിധി വീണ്ടും ഉപയോക്താവിന്റെ സുരക്ഷയ്ക്കായിരിക്കും. ഒരു ഉപയോക്താവ് തുറന്ന `http: // anysite.com` ൽ നിന്നുള്ള ഒരു പേജിന്` http: // gmail.com` URL ഉള്ള മറ്റൊരു ബ്ര browser സർ ടാബ് ആക്സസ് ചെയ്യാനും അവിടെ നിന്ന് വിവരങ്ങൾ മോഷ്ടിക്കാനും കഴിയില്ല.
-- നിലവിലെ പേജ് വന്ന സെർവറിലേക്ക് ജാവാസ്ക്രിപ്റ്റിന് നെറ്റിലൂടെ എളുപ്പത്തിൽ ആശയവിനിമയം നടത്താൻ കഴിയും. എന്നാൽ മറ്റ് സൈറ്റുകളിൽ നിന്നും ഡൊമെയ്‌നുകളിൽ നിന്നും ഡാറ്റ സ്വീകരിക്കാനുള്ള അതിന്റെ കഴിവ് തകരാറിലാകുന്നു. സാധ്യമാണെങ്കിലും, വിദൂര ഭാഗത്ത് നിന്ന് വ്യക്തമായ കരാർ (എച്ച്ടിടിപി തലക്കെട്ടുകളിൽ പ്രകടിപ്പിച്ചിരിക്കുന്നു) ആവശ്യമാണ്. ഒരിക്കൽ കൂടി, അതൊരു സുരക്ഷാ പരിമിതിയാണ്.
+    ഈ പരിധി വീണ്ടും ഉപയോക്താവിന്റെ സുരക്ഷയ്ക്കായിരിക്കും. ഒരു ഉപയോക്താവ് തുറന്ന `http: // anysite.com` ൽ നിന്നുള്ള ഒരു പേജിന്` http: // gmail.com` URL ഉള്ള മറ്റൊരു ബ്രൗസർ ടാബ് ആക്സസ് ചെയ്യാനും അവിടെ നിന്ന് വിവരങ്ങൾ മോഷ്ടിക്കാനും കഴിയില്ല.
+- നിലവിലെ പേജ് വന്ന സെർവറിലേക്ക് ജാവാസ്ക്രിപ്റ്റിന് നെറ്റിലൂടെ എളുപ്പത്തിൽ ആശയവിനിമയം നടത്താൻ കഴിയും. എന്നാൽ മറ്റ് സൈറ്റുകളിൽ നിന്നും ഡൊമെയ്‌നുകളിൽ നിന്നും ഡാറ്റ സ്വീകരിക്കാനുള്ള അതിന്റെ കഴിവ് തകരാറിലാകുന്നു. സാധ്യമാണെങ്കിലും, വിദൂര ഭാഗത്ത് നിന്ന് വ്യക്തമായ കരാർ (http header) ആവശ്യമാണ്. ഒരിക്കൽ കൂടി, അതൊരു സുരക്ഷാ പരിമിതിയാണ്.
 
 ! [] (limit.svg)
 
-ജാവാസ്ക്രിപ്റ്റ് ബ്ര browser സറിന് പുറത്ത് ഉപയോഗിച്ചിട്ടുണ്ടെങ്കിൽ അത്തരം പരിധികൾ നിലവിലില്ല, ഉദാഹരണത്തിന് ഒരു സെർവറിൽ. വിപുലീകൃത അനുമതികൾ ആവശ്യപ്പെടുന്ന പ്ലഗിൻ / വിപുലീകരണങ്ങളും ആധുനിക ബ്ര rowsers സറുകൾ അനുവദിക്കുന്നു.
+ജാവാസ്ക്രിപ്റ്റ് ബ്രൗസർ ന് പുറത്ത് ഉപയോഗിച്ചിട്ടുണ്ടെങ്കിൽ അത്തരം പരിധികൾ നിലവിലില്ല, ഉദാഹരണത്തിന് ഒരു സെർവറിൽ. വിപുലീകൃത അനുമതികൾ ആവശ്യപ്പെടുന്ന പ്ലഗിൻ / വിപുലീകരണങ്ങളും ആധുനിക ബ്രൗസർ അനുവദിക്കുന്നു.
 ## What makes JavaScript unique?
 
 There are at least *three* great things about JavaScript:
