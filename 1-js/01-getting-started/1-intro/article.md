@@ -74,42 +74,44 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 ! [] (limit.svg)
 
 ജാവാസ്ക്രിപ്റ്റ് ബ്രൗസർ ന് പുറത്ത് ഉപയോഗിച്ചിട്ടുണ്ടെങ്കിൽ അത്തരം പരിധികൾ ഒരു പ്രശ്‌നമല്ല, ഉദാഹരണത്തിന് ഒരു സെർവറിൽ, വിപുലീകൃത അനുമതികൾ ആവശ്യപ്പെടുന്ന പ്ലഗിൻ / വിപുലീകരണങ്ങളും ആധുനിക ബ്രൗസർ അനുവദിക്കുന്നു.
-## What makes JavaScript unique?
+## എന്താണ് ജാവസ്ക്രിപ്റ്റിനെ വ്യത്യസ്തമാക്കുന്നത്?
 
-There are at least *three* great things about JavaScript:
+ജാവാസ്ക്രിപ്റ്റിനെക്കുറിച്ച് കുറഞ്ഞത് ഒരു* മൂന്ന് * കാര്യങ്ങളുണ്ട്:
 
-```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Support by all major browsers and enabled by default.
+`` `താരതമ്യം ചെയ്യുക
++ HTML / CSS യുമായുള്ള പൂർണ്ണ സംയോജനം.
++ ലളിതമായ കാര്യങ്ങൾ ലളിതമായി ചെയ്യുന്നു.
++ എല്ലാ പ്രധാന ബ്രൗസറുകളുടെയും പിന്തുണ തനിയെ ഉണ്ട്.
+
 ```
-JavaScript is the only browser technology that combines these three things.
+ഈ മൂന്ന് കാര്യങ്ങളും ഒരുമിച്ചു വരുന്ന ഏകബ്രൗസർ സാങ്കേതികവിദ്യയാണ് ജാവാസ്ക്രിപ്റ്റ്.
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+അതാണ് ജാവാസ്ക്രിപ്റ്റിനെ വ്യത്യസ്തമാക്കുന്നത്. അതുകൊണ്ടാണ് ബ്രൌസർ ഇന്റർഫേസുകൾ സൃഷ്ടിക്കുന്നതിനുള്ള ഏറ്റവും വ്യാപകമായി ഉപയോഗിക്കപ്പെടുന്നത്.
 
-That said, JavaScript also allows to create servers, mobile applications, etc.
+സെർവറുകൾ, മൊബൈൽ ആപ്ലിക്കേഷനുകൾ തുടങ്ങിയവ ഉണ്ടാക്കാനും ജാവാസ്ക്രിപ്റ്റ് അനുവദിക്കുന്നു.
 
-## Languages "over" JavaScript
+## ജാവാസ്ക്രിപ്റ്റിന് മുകളിലുള്ള ഭാഷകൾ
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
+ജാവാസ്ക്രിപ്റ്റിന്റെ syntax എല്ലാവരുടെയും ആവശ്യങ്ങൾക്ക് അനുയോജ്യമല്ല. വ്യത്യസ്ത ആളുകൾക്ക് വ്യത്യസ്ത സവിശേഷതകൾ വേണം.
 
-That's to be expected, because projects and requirements are different for everyone.
+അത് പ്രതീക്ഷിക്കേണ്ടതാണ്, കാരണം പ്രോജക്റ്റുകളും ആവശ്യകതകളും എല്ലാവർക്കും വ്യത്യസ്തമാണ്.
 
-So recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+ബ്രൗസറിൽ പ്രവർത്തിക്കുന്നതിനുമുമ്പ് ജാവാസ്ക്രിപ്റ്റിലേക്ക് * കൈമാറ്റം ചെയ്യപ്പെട്ട * (പരിവർത്തനം ചെയ്ത) പുതിയ ഭാഷകളുടെ എണ്ണം അടുത്തിടെ കൂടിയിട്ടുണ്ട്.
 
-Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
+ആധുനിക ഉപകരണങ്ങൾ ട്രാൻസ്പ്ലൈസേഷനെ വളരെ വേഗതയുള്ളതും സുതാര്യവുമാക്കുന്നു, ഇത് യഥാർത്ഥത്തിൽ ഡവലപ്പർമാരെ മറ്റൊരു ഭാഷയിൽ കോഡ് ചെയ്യാൻ അനുവദിക്കുകയും അത് "വികസിതമായി" സ്വയo പരിവർത്തനം ചെയ്യുകയും ചെയ്യുന്നു.
 
-Examples of such languages:
+അത്തരം ഭാഷകളുടെ ഉദാഹരണങ്ങൾ:
 
-- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [കോഫിസ്ക്രിപ്റ്റ്] (http://coffeescript.org/) ജാവാസ്ക്രിപ്റ്റിനായുള്ള ഒരു "സിന്റാക്‌സ്" ആണ്. ഇത് ഹ്രസ്വമായ സിന്റാക്‌സ് അവതരിപ്പിക്കുന്നു, വ്യക്തവും കൃത്യവുമായ കോഡ് എഴുതാൻ ഞങ്ങളെ അനുവദിക്കുന്നുo. സാധാരണയായി, റൂബി ഡെ ഡെവെലോപെർസ് ഇത് ഇഷ്ടപ്പെടുന്നു.
+- [ടൈപ്പ്സ്ക്രിപ്റ്റ്] (http://www.typescriptlang.org/) സങ്കീർണ്ണമായ സിസ്റ്റങ്ങളുടെ വികസനവും പിന്തുണയും ലളിതമാക്കുന്നതിന് "കർശനമായ ഡാറ്റ ടൈപ്പിംഗ്" ചേർക്കുന്നതിൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ചിരിക്കുന്നു. ഇത് വികസിപ്പിച്ചെടുത്തത് മൈക്രോസോഫ്റ്റ് ആണ്.
+- [ഫ്ലോ] (http://flow.org/) ഡാറ്റ ടൈപ്പിംഗും ചേർക്കുന്നു, പക്ഷേ മറ്റൊരു രീതിയിൽ. ഫേസ്ബുക്ക് വികസിപ്പിച്ചെടുത്തത്.
+- [ഡാർട്ട്] (https://www.dartlang.org/) ബ്രൗസർ ഇതര പരിതസ്ഥിതികളിൽ (മൊബൈൽ അപ്ലിക്കേഷനുകൾ പോലെ) പ്രവർത്തിക്കുന്ന സ്വന്തം എഞ്ചിൻ ഉള്ള ഒരു ഒറ്റപ്പെട്ട ഭാഷയാണ്, മാത്രമല്ല ഇത് ജാവാസ്ക്രിപ്റ്റിലേക്ക് കൈമാറാനും കഴിയും. Google വികസിപ്പിച്ചെടുത്തത്.
 
-There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
+കൂടുതൽ ഉണ്ട്. തീർച്ചയായും, ഞങ്ങൾ‌ ട്രാൻ‌സ്‌പൈൽ‌ ചെയ്‌ത ഭാഷകളിലൊന്ന്‌ ഉപയോഗിച്ചാലും, ഞങ്ങൾ‌ ചെയ്യുന്നതെന്താണെന്ന് ശരിക്കും മനസിലാക്കാൻ‌ ഞങ്ങൾ‌ JavaScript നെ അറിഞ്ഞിരിക്കണം.
 
-## Summary
+## സംഗ്രഹം
 
-- JavaScript was initially created as a browser-only language, but is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+- ജാവാസ്ക്രിപ്റ്റ് തുടക്കത്തിൽ ഒരു ബ്രൌസർ മാത്രമുള്ള ഭാഷയായി സൃഷ്ടിക്കപ്പെട്ടു, പക്ഷേ ഇപ്പോൾ മറ്റ് പല പരിതസ്ഥിതികളിലും ഇത് ഉപയോഗിക്കുന്നു.
+- ഇന്ന്, HTML / CSS മായി പൂർണ്ണമായി സംയോജിപ്പിച്ച് ഏറ്റവും വ്യാപകമായി സ്വീകരിച്ച ബ്രൌസർ ഭാഷയായി ജാവാസ്ക്രിപ്റ്റിന് സവിശേഷമായ ഒരു സ്ഥാനമുണ്ട്.
+- ജാവാസ്ക്രിപ്റ്റിലേക്ക് "കൈമാറ്റം ചെയ്യപ്പെടുകയും" ചില സവിശേഷതകൾ നൽകുകയും ചെയ്യുന്ന നിരവധി ഭാഷകളുണ്ട്. ജാവാസ്ക്രിപ്റ്റ് മാസ്റ്റേഴ്സ് ചെയ്തതിനുശേഷം, ചുരുക്കത്തിൽ, അവ പരിശോധിക്കുന്നത് നല്ലതായിരിക്കും.
+
