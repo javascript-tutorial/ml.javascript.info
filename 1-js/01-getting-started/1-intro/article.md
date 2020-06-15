@@ -1,120 +1,117 @@
-# An Introduction to JavaScript
+# ജവസ്ക്രിപ്റ്റിന്റെ ഒരു ഇൻട്രൊഡകഷൻ, 
+നമുക്ക് നോക്കാം ജവസ്ക്രിപ്റ്റന് എന്താണ് വലിയ പ്രെത്യേകതയെന്നു,നമുക്ക് അതുബ്കൊണ്ടു എന്തൊക്കെ നേടാം, പിന്നെ ഏതൊക്കെ മറ്റു ടെക്നോളജിസ് അതിന്റെ കൂടെ വർക് ചെയ്യുമെന്ന്.
 
-Let's see what's so special about JavaScript, what we can achieve with it, and which other technologies play well with it.
+## എന്താണ് ജാവാസ്ക്രിപ്റ്റ്
 
-## What is JavaScript?
+*ജാവാസ്ക്രിപ്റ്റ്* ആദ്യമായി ഉപയോഗിച്ചു തുടങ്ങിയത് വെബ്‌പേജുകൾക്ക് ജീവൻ കൊടുക്കാനാണ്.
 
-*JavaScript* was initially created to "make web pages alive".
+ഇതിലുള്ള പ്രോഗ്രാമുകളെ *script*എന്നാണ് വിളിച്ചിരുന്നത്. അവ HTML പേജിന്റെ കൂടെ തന്നെ എഴുതി പേജ് ലോഡ് ആകുമ്പോൾ തനിയെ വർക് ആകുമായിരുന്നു.
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+Script കൽ എഴുതുന്നതും എക്സിക്യൂട്ട ആകുന്നതും സദാ അക്ഷരങ്ങളിലൂടെയാണ്. അതിനു വേറെ കംപൈലിംഗും മറ്റുമൊന്നും വേണ്ട.
 
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+ഇതിൽ javascript, java എന്നു പറയുന്ന പ്രോഗ്രാമിങ് ലാംഗ്വേജിനെക്കാൾ വ്യത്യസ്തമാണ്[Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
+```smart header="എന്തു കൊണ്ടാണിത് <u>Java</u>Script എന്നറിയപ്പെടുന്നത്?"
+Javascript ആദ്യമായി പുറത്തിറക്കിയപ്പോൾ, അതിനു വേറൊരു പേരുണ്ടായിരുന്നു: "LiveScript". പക്ഷെ അപ്പോൾ java ആ സമായത്ത് പോപുലറായിരുന്നു, അതു കൊണ്ടു ഒരു പിന്ഗാമിയെപ്പോലെ കണ്ടു ആ പേര് കൊടുത്തു.
 
-```smart header="Why is it called <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
-
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+പക്ഷെ അത് ഒരുപാട് പുരോഗമിച്ചു,javascript ഒരു സ്വതന്ത്രമായ ലാംഗ്വേജ് ആയി മാറി അതു സ്വന്തമായി ഒരു സ്ക്രിപ്റ്റ് ഉണ്ടാക്കി അതാണ്,[ECMAScript](http://en.wikipedia.org/wiki/ECMAScript),ഇപ്പോൾ അതിനു javaയുമായിട്ടു യാതൊരു ബന്ധവും ഇല്ല.
 ```
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+ഇന്ന്, javascript ന് ബ്രൗസർകളിൽ മാത്രമല്ല സെർവർകളിൽ വരെ ഉപയോഗിക്കാൻ പറ്റും, ചുരുക്കിപ്പറഞ്ഞാൽ[the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine) ഉള്ള ഏതൊരു ഡിവൈസിലും അതു ഉപയോഗിക്കാൻ പറ്റും.
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+ബ്രൗസറുകൾക് സ്വന്തമായി ഒരു ജാവസ്ക്രിപ്റ് എൻജിൻ ഉണ്ടായിരിക്കും "JavaScript virtual machine".
 
-Different engines have different "codenames". For example:
+പല എങ്ങിനുകൾക്കും പല "കോഡുനെയിം" ആയിരിക്കും. ഉദാഹരണത്തിന്:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Trident" and "Chakra" for different versions of IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- chrome ലും opera യിലും.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- Firefox ൽ.
+- ...അതു പോലെ"Trident" ,"Chakra" എന്നീ കോഡ് നയിമുകളും IE യുടെ വേർഷനിൽ ഉണ്ട്, "ChakraCore"  Microsoft Edge വേണ്ടിയും, "Nitro" യും "SquirrelFish" ഉം Safari ക്കും,...
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+മുകളിൽ പറഞ്ഞിരിക്കുന്ന ടെമുകളെല്ലാം ഓർത്തു വെക്കുന്നത് ഇന്റർനെറ്റ് ഫോറങ്ങളിൽ ഉപയോഗിക്കാൻ സഹായിക്കും. ഞങ്ങളും അവ ഉപയോഗിക്കും. ഉദാഹരണത്തിന്, ഇപ്പോൾ "X എന്നു പറയുന്ന ഫീച്ചർ V8 ഇൽ സപ്പോർട് ആകുമെങ്കിൽ", പിന്നെ അത് എന്തായാലും Chrome ലും Opera യിലും എടുക്കും.
 
-```smart header="How do engines work?"
+```smart header=" engine കൾ എങ്ങനെ പ്രവർത്തിക്കും ?"
 
-Engines are complicated. But the basics are easy.
+Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വിഷയമാണ്. എന്നാലും അതിന്റെ അടിസ്ഥാനങ്ങൾ എളുപ്പമുള്ളതാണ്.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to the machine language.
-3. And then the machine code runs, pretty fast.
+1.engine(ബ്രൗസറിൽ ഉള്ള) കോഡ് വായിച്ചു ("parses") script പ്രോസസ് ചെയ്യും.
+2.പിന്നെ അത് ട്രാൻസ്ലേറ്റ ചെയ്തു മെഷീനിന്റെ ഭാഷയിലോട്ടാക്കും.
+3.അതിനു ശേഷം മെഷിൻ കോഡു വളരെ വേഗത്തിൽ റണ് ചെയ്യും.
+പ്രക്രിയയുടെ ഓരോ ഘട്ടത്തിലും എഞ്ചിൻ ഒപ്റ്റിമൈസേഷനുകൾ ചെയ്‌ത് വെക്കും. കംപൈൽ ചെയ്ത സ്ക്രിപ്റ്റ് പ്രവർത്തിക്കുമ്പോൾ പോലും അത് കാണുകയും അതിലൂടെ വരുന്ന ഡാറ്റ വിശകലനം ചെയ്ത് ആ അറിവിനെ അടിസ്ഥാനമാക്കി മെഷീൻ കോഡ് കൂടുതൽ ഒപ്റ്റിമൈസ് ചെയ്യും.
+`` ````
 
-The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
-```
+## ബ്രൗസറിൽ ജവസ്ക്രിപ്റ്റന് എന്തു ചെയ്യാൻ സാധിക്കും?
+ഇപ്പോഴത്തെ ജാവാസ്ക്രിപ്റ്റ് ഒരു "സുരക്ഷിത" പ്രോഗ്രാമിംഗ് ഭാഷയാണ്. ഇത് ഡിവൈസിന്റെ മെമ്മോറിയിലേക്കോ സിപിയുവിലേക്കോ ഒന്നും ആക്സസ് നൽകുന്നില്ല, കാരണം ഇത് ആദ്യകാലങ്ങളിൽ ഇതൊന്നും ഇല്ലാതിരുന്ന ബ്രൗസർകൾക്കായി ഉണ്ടാക്കിയതാണ്.
 
-## What can in-browser JavaScript do?
+ജാവാസ്ക്രിപ്റ്റിന്റെ കഴിവുകൾ അത് പ്രവർത്തിക്കുന്ന ഡിവൈസിനെ വളരെയധികം ആശ്രയിച്ചിരിക്കുന്നു. ഉദാഹരണത്തിന്, [Node.js] (https://wikipedia.org/wiki/Node.js) ജാവാസ്ക്രിപ്റ്റിന് നിയന്ത്രണമില്ലാത്ത ഫയലുകൾ വായിക്കാനും എഴുതാനും നെറ്റ്വർക്ക് അഭ്യർത്ഥനകൾ നടത്താനും അനുവദിക്കുന്ന പ്രവർത്തനങ്ങളെ പിന്തുണയ്ക്കുന്നു.
+ബ്രൗസറിൽ വെബ്‌പേജ് മാനേജ് ചെയ്യാനും യൂസർമായി ഇടപഴക്കാനും സെർവേറിലോട്ടു കണക്ട് ചെയ്യാനുമെല്ലാം ഉപയോഗിക്കാം.  
+അതായത് ബ്രൗസറിൽ ജവസ്ക്രിപ്റ്റന് താഴെ പറയുന്ന കാര്യങ്ങളെല്ലാം ചെയ്യാൻ കഴിയും:
 
-Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
-
-JavaScript's capabilities greatly depend on the environment it's running in. For instance, [Node.js](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
-
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
-
-For instance, in-browser JavaScript is able to:
-
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
-
-## What CAN'T in-browser JavaScript do?
-
-JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
-
-Examples of such restrictions include:
-
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
-
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
-
-    There are ways to interact with camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
-
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
-
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com` and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+-പേജിലേക്ക് പുതിയ HTML ചേർക്കുക, നിലവിലുള്ള ഉള്ളടക്കം മാറ്റുക,സ്റ്റൈൽ മാറ്റുക.
+- ഉപയോക്താക്കളുടെ പ്രവർത്തനങ്ങളോട് പ്രതികരിക്കുക, മൗസ് ക്ലിക്കുകൾ, പോയിന്റർ ചലനങ്ങൾ, കീ പ്രസ്സുകൾ എന്നിവ അറിയുക.
+- ദൂരെയുള്ള സെർവറുകളിലേക്ക് നെറ്റ്വർക്കിലൂടെ അഭ്യർത്ഥനകൾ അയയ്ക്കുക, ഫയലുകൾ download ചെയ്ത് upload ചെയ്യുക ([AJAX] (https://en.wikipedia.org/wiki/Ajax_ (programming)), [COMET] (https: // en. wikipedia.org/wiki/Comet_(programming)) technologies).
+- കുക്കികൾ എടുക്കുകയും വെക്കുകയും ചെയ്യുക,യൂസേറിനോട് ചോദ്യങ്ങൾ ചോദിക്കുക, സന്ദേശങ്ങൾ കാണിക്കുക.
+- ക്ലയന്റ് ഭാഗത്തുള്ള ഡാറ്റ ഓർക്കുക ("ലോക്കൽ സ്റ്റോറേജ്").
+## ബ്രൗസറിൽ ജാവസ്ക്രിപ്റ്റന് എന്തു ചെയ്യാൻ കഴിയില്ല?
 
 ![](limitations.svg)
 
-Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.
+ഉപയോക്താവിന്റെ സുരക്ഷയ്ക്കായി ബ്രൗസറിലെ ജാവാസ്ക്രിപ്റ്റിന്റെ കഴിവുകൾ പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. ഒരു ദുഷിച്ച വെബ്‌പേജ് സ്വകാര്യ വിവരങ്ങൾ‌ ആക്‌സസ് ചെയ്യുന്നതിൽ‌ നിന്നും അല്ലെങ്കിൽ‌ ഉപയോക്താവിൻറെ ഡാറ്റയെ ദോഷകരമായി ബാധിക്കുന്നതിൽ‌ നിന്നും തടയുക എന്നതാണ് ലക്ഷ്യം.
 
-## What makes JavaScript unique?
+അത്തരം നിയന്ത്രണങ്ങളുടെ ഉദാഹരണങ്ങളിൽ പെട്ടതാണ്:
 
-There are at least *three* great things about JavaScript:
+- ഒരു വെബ്‌പേജിലെ ജാവസ്ക്രിപ്റ്റന് ഹാർഡ് ഡിസ്കിൽ നിയന്ത്രണമില്ലാത്ത ഫയലുകൾ വായിക്കാനോ എഴുതാനോ കഴിയില്ല, അവ പകർത്താനോ പ്രോഗ്രാമുകൾ പ്രവർത്തിപ്പിക്കാനോ പാടില്ല. ഇതിന് OS ഫംഗ്ഷനുകളിലേക്ക് നേരിട്ട് പ്രവേശനമില്ല.
 
-```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Support by all major browsers and enabled by default.
+    ആധുനിക ബ്രൌസർ‌ ഫയലുകളുമായി പ്രവർ‌ത്തിക്കാൻ‌ ഇത് അനുവദിക്കുന്നു, പക്ഷേ ആക്‌സസ് പരിമിതമാണ് ,കൂടാതെ ഉപയോക്താവ് ഒരു ബ്രൗസർ വിൻ‌ഡോയിലേക്ക് ഒരു ഫയൽ‌ ഡ്രോപ്പ് ചെയ്യുകയോ അല്ലെങ്കിൽ‌ `<input>` ടാഗ് വഴി തിരഞ്ഞെടുക്കുകയോ പോലുള്ള ചില പ്രവർ‌ത്തനങ്ങൾ‌ നടത്തുകയാണെങ്കിൽ‌ മാത്രം.
+
+    ക്യാമറ / മൈക്രോഫോൺ, മറ്റ് ഉപകരണങ്ങൾ എന്നിവയുമായി സംവദിക്കാനുള്ള മാർഗങ്ങളുണ്ട്, പക്ഷേ അവയ്‌ക്ക് ഉപയോക്താവിന്റെ വ്യക്തമായ അനുമതി ആവശ്യമാണ്. അതിനാൽ ഒരു ജാവാസ്ക്രിപ്റ്റ്  പേജ് ഒരു വെബ് ക്യാമറയെ തന്ത്രപൂർവ്വം ഓപ്പൺ ചെയ്യാൻ ചുറ്റുപാടുകൾ നിരീക്ഷിക്കുകയും വിവരങ്ങൾ [NSA] (https://en.wikipedia.org/wiki/National_Security_Agency) ലോട്ടു അയയ്ക്കുകയോ ചെയ്യരുത്.
+- വ്യത്യസ്ത ടാബുകൾ / വിൻഡോകൾ സാധാരണയായി പരസ്പരo ബന്ധം കാണില്ല. ചിലപ്പോൾ അവ അങ്ങനെ ചെയ്യാം, ഉദാഹരണത്തിന് ഒരു വിൻഡോ മറ്റൊരു വിൻഡോ തുറക്കാൻ ജാവാസ്ക്രിപ്റ്റ് ഉപയോഗിക്കുമ്പോൾ. ഈ സാഹചര്യത്തിൽ പോലും, വ്യത്യസ്ത സൈറ്റുകളിൽ നിന്ന് (മറ്റൊരു ഡൊമെയ്ൻ, പ്രോട്ടോക്കോൾ അല്ലെങ്കിൽ പോർട്ടിൽ നിന്ന്) വന്നാൽ ഒരു പേജിൽ നിന്നുള്ള ജാവാസ്ക്രിപ്റ്റ് മറ്റൊന്നിലേക്ക് പ്രവേശിക്കാനിടയില്ല.
+
+    ഇതിനെ "same origin policy" എന്ന് വിളിക്കുന്നു. അത് പരിഹരിക്കുന്നതിന്, * രണ്ട് പേജുകളും * ഡാറ്റാ കൈമാറ്റത്തിന് സമ്മതിക്കുകയും അത് കൈകാര്യം ചെയ്യുന്ന ഒരു പ്രത്യേക ജാവാസ്ക്രിപ്റ്റ് കോഡ് അടങ്ങിയിരിക്കുകയും വേണം. ഞങ്ങൾ അത് ട്യൂട്ടോറിയലിൽ ഉൾപ്പെടുത്തും.
+
+    ഈ പരിധി വീണ്ടും ഉപയോക്താവിന്റെ സുരക്ഷയ്ക്കായിരിക്കും. ഒരു ഉപയോക്താവ് തുറന്ന `http: // anysite.com` ൽ നിന്നുള്ള ഒരു പേജിന്` http: // gmail.com` URL ഉള്ള മറ്റൊരു ബ്രൗസർ ടാബ് ആക്സസ് ചെയ്യാനും അവിടെ നിന്ന് വിവരങ്ങൾ മോഷ്ടിക്കാനും കഴിയില്ല.
+- നിലവിലെ പേജ് വന്ന സെർവറിലേക്ക് ജാവാസ്ക്രിപ്റ്റിന് നെറ്റിലൂടെ എളുപ്പത്തിൽ ആശയവിനിമയം നടത്താൻ കഴിയും. എന്നാൽ മറ്റ് സൈറ്റുകളിൽ നിന്നും ഡൊമെയ്‌നുകളിൽ നിന്നും ഡാറ്റ സ്വീകരിക്കാനുള്ള അതിന്റെ കഴിവ് തകരാറിലാകുന്നു. സാധ്യമാണെങ്കിലും, വിദൂര ഭാഗത്ത് നിന്ന് വ്യക്തമായ കരാർ (http header) ആവശ്യമാണ്. ഒരിക്കൽ കൂടി, അതൊരു സുരക്ഷാ പരിമിതിയാണ്.
+
+! [] (limit.svg)
+
+ജാവാസ്ക്രിപ്റ്റ് ബ്രൗസർ ന് പുറത്ത് ഉപയോഗിച്ചിട്ടുണ്ടെങ്കിൽ അത്തരം പരിധികൾ ഒരു പ്രശ്‌നമല്ല, ഉദാഹരണത്തിന് ഒരു സെർവറിൽ, വിപുലീകൃത അനുമതികൾ ആവശ്യപ്പെടുന്ന പ്ലഗിൻ / വിപുലീകരണങ്ങളും ആധുനിക ബ്രൗസർ അനുവദിക്കുന്നു.
+## എന്താണ് ജാവസ്ക്രിപ്റ്റിനെ വ്യത്യസ്തമാക്കുന്നത്?
+
+ജാവാസ്ക്രിപ്റ്റിനെക്കുറിച്ച് കുറഞ്ഞത് ഒരു* മൂന്ന് * കാര്യങ്ങളുണ്ട്:
+
+`` `താരതമ്യം ചെയ്യുക
++ HTML / CSS യുമായുള്ള പൂർണ്ണ സംയോജനം.
++ ലളിതമായ കാര്യങ്ങൾ ലളിതമായി ചെയ്യുന്നു.
++ എല്ലാ പ്രധാന ബ്രൗസറുകളുടെയും പിന്തുണ തനിയെ ഉണ്ട്.
+
 ```
-JavaScript is the only browser technology that combines these three things.
+ഈ മൂന്ന് കാര്യങ്ങളും ഒരുമിച്ചു വരുന്ന ഏകബ്രൗസർ സാങ്കേതികവിദ്യയാണ് ജാവാസ്ക്രിപ്റ്റ്.
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+അതാണ് ജാവാസ്ക്രിപ്റ്റിനെ വ്യത്യസ്തമാക്കുന്നത്. അതുകൊണ്ടാണ് ബ്രൌസർ ഇന്റർഫേസുകൾ സൃഷ്ടിക്കുന്നതിനുള്ള ഏറ്റവും വ്യാപകമായി ഉപയോഗിക്കപ്പെടുന്നത്.
 
-That said, JavaScript also allows to create servers, mobile applications, etc.
+സെർവറുകൾ, മൊബൈൽ ആപ്ലിക്കേഷനുകൾ തുടങ്ങിയവ ഉണ്ടാക്കാനും ജാവാസ്ക്രിപ്റ്റ് അനുവദിക്കുന്നു.
 
-## Languages "over" JavaScript
+## ജാവാസ്ക്രിപ്റ്റിന് മുകളിലുള്ള ഭാഷകൾ
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
+ജാവാസ്ക്രിപ്റ്റിന്റെ syntax എല്ലാവരുടെയും ആവശ്യങ്ങൾക്ക് അനുയോജ്യമല്ല. വ്യത്യസ്ത ആളുകൾക്ക് വ്യത്യസ്ത സവിശേഷതകൾ വേണം.
 
-That's to be expected, because projects and requirements are different for everyone.
+അത് പ്രതീക്ഷിക്കേണ്ടതാണ്, കാരണം പ്രോജക്റ്റുകളും ആവശ്യകതകളും എല്ലാവർക്കും വ്യത്യസ്തമാണ്.
 
-So recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+ബ്രൗസറിൽ പ്രവർത്തിക്കുന്നതിനുമുമ്പ് ജാവാസ്ക്രിപ്റ്റിലേക്ക് * കൈമാറ്റം ചെയ്യപ്പെട്ട * (പരിവർത്തനം ചെയ്ത) പുതിയ ഭാഷകളുടെ എണ്ണം അടുത്തിടെ കൂടിയിട്ടുണ്ട്.
 
-Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
+ആധുനിക ഉപകരണങ്ങൾ ട്രാൻസ്പ്ലൈസേഷനെ വളരെ വേഗതയുള്ളതും സുതാര്യവുമാക്കുന്നു, ഇത് യഥാർത്ഥത്തിൽ ഡവലപ്പർമാരെ മറ്റൊരു ഭാഷയിൽ കോഡ് ചെയ്യാൻ അനുവദിക്കുകയും അത് "വികസിതമായി" സ്വയo പരിവർത്തനം ചെയ്യുകയും ചെയ്യുന്നു.
 
-Examples of such languages:
+അത്തരം ഭാഷകളുടെ ഉദാഹരണങ്ങൾ:
 
-- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [കോഫിസ്ക്രിപ്റ്റ്] (http://coffeescript.org/) ജാവാസ്ക്രിപ്റ്റിനായുള്ള ഒരു "സിന്റാക്‌സ്" ആണ്. ഇത് ഹ്രസ്വമായ സിന്റാക്‌സ് അവതരിപ്പിക്കുന്നു, വ്യക്തവും കൃത്യവുമായ കോഡ് എഴുതാൻ ഞങ്ങളെ അനുവദിക്കുന്നുo. സാധാരണയായി, റൂബി ഡെ ഡെവെലോപെർസ് ഇത് ഇഷ്ടപ്പെടുന്നു.
+- [ടൈപ്പ്സ്ക്രിപ്റ്റ്] (http://www.typescriptlang.org/) സങ്കീർണ്ണമായ സിസ്റ്റങ്ങളുടെ വികസനവും പിന്തുണയും ലളിതമാക്കുന്നതിന് "കർശനമായ ഡാറ്റ ടൈപ്പിംഗ്" ചേർക്കുന്നതിൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ചിരിക്കുന്നു. ഇത് വികസിപ്പിച്ചെടുത്തത് മൈക്രോസോഫ്റ്റ് ആണ്.
+- [ഫ്ലോ] (http://flow.org/) ഡാറ്റ ടൈപ്പിംഗും ചേർക്കുന്നു, പക്ഷേ മറ്റൊരു രീതിയിൽ. ഫേസ്ബുക്ക് വികസിപ്പിച്ചെടുത്തത്.
+- [ഡാർട്ട്] (https://www.dartlang.org/) ബ്രൗസർ ഇതര പരിതസ്ഥിതികളിൽ (മൊബൈൽ അപ്ലിക്കേഷനുകൾ പോലെ) പ്രവർത്തിക്കുന്ന സ്വന്തം എഞ്ചിൻ ഉള്ള ഒരു ഒറ്റപ്പെട്ട ഭാഷയാണ്, മാത്രമല്ല ഇത് ജാവാസ്ക്രിപ്റ്റിലേക്ക് കൈമാറാനും കഴിയും. Google വികസിപ്പിച്ചെടുത്തത്.
 
-There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
+കൂടുതൽ ഉണ്ട്. തീർച്ചയായും, ഞങ്ങൾ‌ ട്രാൻ‌സ്‌പൈൽ‌ ചെയ്‌ത ഭാഷകളിലൊന്ന്‌ ഉപയോഗിച്ചാലും, ഞങ്ങൾ‌ ചെയ്യുന്നതെന്താണെന്ന് ശരിക്കും മനസിലാക്കാൻ‌ ഞങ്ങൾ‌ JavaScript നെ അറിഞ്ഞിരിക്കണം.
 
-## Summary
+## സംഗ്രഹം
 
-- JavaScript was initially created as a browser-only language, but is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+- ജാവാസ്ക്രിപ്റ്റ് തുടക്കത്തിൽ ഒരു ബ്രൌസർ മാത്രമുള്ള ഭാഷയായി സൃഷ്ടിക്കപ്പെട്ടു, പക്ഷേ ഇപ്പോൾ മറ്റ് പല പരിതസ്ഥിതികളിലും ഇത് ഉപയോഗിക്കുന്നു.
+- ഇന്ന്, HTML / CSS മായി പൂർണ്ണമായി സംയോജിപ്പിച്ച് ഏറ്റവും വ്യാപകമായി സ്വീകരിച്ച ബ്രൌസർ ഭാഷയായി ജാവാസ്ക്രിപ്റ്റിന് സവിശേഷമായ ഒരു സ്ഥാനമുണ്ട്.
+- ജാവാസ്ക്രിപ്റ്റിലേക്ക് "കൈമാറ്റം ചെയ്യപ്പെടുകയും" ചില സവിശേഷതകൾ നൽകുകയും ചെയ്യുന്ന നിരവധി ഭാഷകളുണ്ട്. ജാവാസ്ക്രിപ്റ്റ് മാസ്റ്റേഴ്സ് ചെയ്തതിനുശേഷം, ചുരുക്കത്തിൽ, അവ പരിശോധിക്കുന്നത് നല്ലതായിരിക്കും.
+
