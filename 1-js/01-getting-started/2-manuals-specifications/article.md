@@ -1,11 +1,11 @@
 
-# Manuals and specifications
+# ഈ ബുക്കും അതിന്റെ പ്രത്യേകതകളും
 
-This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other sources.
+ഈ ബുക് ഒരു *ടൂട്ടോറിയൽ* ആണ്. ഇതു നിങ്ങളെ പതിയെപ്പതിയെ ല്ഗ്വേജ് പഠിക്കാൻ സഹായിക്കും. ബേസിക് കാര്യങ്ങളൊക്കെ പഠിച്ചു കഴിഞ്ഞാൽ, പിന്നെ നിങ്ങൾക്ക് വേറൊരു സോഴ്സ് പിന്നെ വേണ്ടി വരും.
 
-## Specification
+## കുറച്ചു കാര്യങ്ങൾ
 
-[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
+[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) ജാവാസ്ക്രിപ്റ്റിനെ കുറിച്ചു ആഴത്തിലുള്ള വിശദമായ ഒരു വിശകലനം നമുക്ക് നേടിത്തരുo. അതാണ് പ്രോഗ്രാമിന് രൂപം കൊടുക്കുന്നത്.
 
 But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
 
@@ -16,7 +16,6 @@ To read about new bleeding-edge features, including those that are "almost stand
 Also, if you're in developing for the browser, then there are other specs covered in the [second part](info:browser-environment) of the tutorial.
 
 ## Manuals
-
 - **MDN (Mozilla) JavaScript Reference** is a manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
 
     One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
