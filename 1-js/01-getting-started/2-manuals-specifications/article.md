@@ -1,7 +1,7 @@
 
 # Manuals and specifications
 
-This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other sources.
+ഈ ബുക് ഒരു *ടൂട്ടോറിയൽ* ആണ്. ഇതു നിങ്ങളെ പതുക്കെ പഠിക്കാൻ സഹായിക്കും. But once you're familiar with the basics, you'll need other sources.
 
 ## Specification
 
