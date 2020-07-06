@@ -1,15 +1,15 @@
 
-# Manuals and specifications
+# മാനുവലും ഇതിന്റെ നിർദേശങ്ങളും
 
-ഈ ബുക് ഒരു *ടൂട്ടോറിയൽ* ആണ്. ഇതു നിങ്ങളെ പതുക്കെ പഠിക്കാൻ സഹായിക്കും. But once you're familiar with the basics, you'll need other sources.
+ഈ ബുക് ഒരു *ടൂട്ടോറിയൽ* ആണ്. ഇതു നിങ്ങളെ പതുക്കെ പഠിക്കാൻ സഹായിക്കും.പക്ഷെ ഒരിക്കൽ നിങ്ങൾ ഇത് പൂർത്തീകരിച്ചാൽ പിന്നെ നിങ്ങൾക്ക് മറ്റൊരു റിസോർസ് വേണ്ടി വരും.
 
-## Specification
+## നിർദേശങ്ങൾ
 
-[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
+[ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) ൽ ജാവസ്ക്രിപ്റ്റിനെ കുറിച്ചു വളരെ ആഴത്തിലും ഡീറ്റൈൽഡ് ആയും പറയുന്നുണ്ട്. ഇത് ലൻഗ്വേജിനെ തന്നെ വിവരിക്കുന്നു.
 
-But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
+പക്ഷെ വളരെ ഫോർമലായത് കൊണ്ടു, തുടക്കമിത് മനസ്സിലാക്കാൻ നല്ല ബുദ്ധിമുട്ടായിരിക്കും. അതിനാൽ, വിശദാംശങ്ങളെക്കുറിച്ചുള്ള ഏറ്റവും വിശ്വാസ്യതയുള്ള ഡാറ്റ സ്രോതസ്സ് നിങ്ങൾക്ക് ആവശ്യമുണ്ടെങ്കിൽ, അതൊരു ശരിയായ സ്ഥലമാണ്. എന്നാൽ ഇത് സാദാരണ ഉപയോഗത്തിന് വേണ്ടിയല്ല.
 
-A new specification version is released every year. In-between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+ഓരോ വർഷവും പുതിയൊരു വേർഷൻ അവർ പുറത്തിറക്കും. റീലീസിന്റെ കൂടെ, ഏറ്റവും പുതിയ വേർഷൻ<https://tc39.es/ecma262/> ൽ ലഭിക്കുന്നതാണ്.
 
 To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
 
