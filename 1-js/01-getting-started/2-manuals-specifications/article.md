@@ -11,17 +11,17 @@
 
 ഓരോ വർഷവും പുതിയൊരു വേർഷൻ അവർ പുറത്തിറക്കും. റീലീസിന്റെ കൂടെ, ഏറ്റവും പുതിയ വേർഷൻ<https://tc39.es/ecma262/> ൽ ലഭിക്കുന്നതാണ്.
 
-To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
+പുതിയ സ്റ്റാൻഡേർഡ് ആയിട്ടുള്ള ഫീച്ചേഴ്‌സ് വായിക്കാൻ("stage 3"), ഇവിടെ ഞെക്കിയാൽ മതിയാകും <https://github.com/tc39/proposals>.
 
-Also, if you're in developing for the browser, then there are other specs covered in the [second part](info:browser-environment) of the tutorial.
+കൂടാതെ,നിങ്ങളൊരു ബ്രൌസർ ഡെവലപ്‌ ചെയ്യുകയാണെങ്കിൽ, കെ7റച്ചു കൂടി ഡീറ്റൈലായിട്ടൊരു [രണ്ടാം ഭാഗം](info:browser-environment) കിട്ടുന്നതാണ്.
 
-## Manuals
+## മാന്വൽസ്
 
-- **MDN (Mozilla) JavaScript Reference** is a manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+- **MDN (Mozilla) JavaScript Reference** ഉദാഹരണങ്ങളും മറ്റു വിവരങ്ങളും അടങ്ങിയ ഒരു മാന്വൽ. Function കളെ കുറിച്ചും methods നെ കുറിച്ചുമെല്ലാം ആഴത്തിൽ അറിയാൻ ശ്രമിക്കുന്നത് നല്ലതാണ്.
 
-    One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+    ഒന്നു നോക്കുക <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
 
-    Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+    അല്ലങ്കിൽ ഇന്റർനെറ്റിൽ സെർച്ച് ചെയ്താലും മതി. സെർച്ച് ചെയ്യുമ്പോൾ "MDN [term]" അടിക്കാൻ മറക്കരുത്, e.g.`parseInt` സെർച്ച് ചെയ്യുന്നത് <https://google.com/search?q=MDN+parseInt>.
 
 
 - **MSDN** – Microsoft manual with a lot of information, including JavaScript (often referred to as JScript). If one needs something specific to Internet Explorer, better go there: <http://msdn.microsoft.com/>.
@@ -37,6 +37,6 @@ To see their support among browser-based and other engines, see:
 - <http://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <http://caniuse.com/#feat=cryptography>.
 - <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
 
-All these resources are useful in real-life development, as they contain valuable information about language details, their support etc.
+ദൈനം ദിന ഉപയോഗത്തിൽ ഈ മാന്വൽ ഉപയോഖ പ്രദമാണ്, കാരണാണ് ഇതിൽ വിലപ്പെട്ട ഒരുപാട് വിവരങ്ങളുo അതിന്റെ സപ്പോര്ട്ട് ഉം മറ്റും അടങ്ങിയിട്ടുണ്ട്.
 
-Please remember them (or this page) for the cases when you need in-depth information about a particular feature.
+നിങ്ങൾക്ക് ഡീറ്റൈൽഡ് ആയിട്ടുള്ള ഡീറ്റൈൽസ് വേണമെങ്കിൽ ദയവായി അവയൊക്കെ (അല്ലെങ്കിൽ ഈ പേജ്) ഉപയോഗിക്കുക.
