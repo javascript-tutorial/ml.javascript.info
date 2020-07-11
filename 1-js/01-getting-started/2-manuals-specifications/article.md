@@ -1,5 +1,6 @@
 
-# ഈ ബുക്കും അതിന്റെ പ്രത്യേകതകളും
+
+# ഈ മാനുവലും അതിന്റെ പ്രത്യേകതകളും
 
 ഈ ബുക് ഒരു *ടൂട്ടോറിയൽ* ആണ്. ഇതു നിങ്ങളെ പതിയെപ്പതിയെ ല്ഗ്വേജ് പഠിക്കാൻ സഹായിക്കും. ബേസിക് കാര്യങ്ങളൊക്കെ പഠിച്ചു കഴിഞ്ഞാൽ, പിന്നെ നിങ്ങൾക്ക് വേറൊരു സോഴ്സ് പിന്നെ വേണ്ടി വരും.
 
@@ -7,35 +8,36 @@
 
 [The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) ജാവാസ്ക്രിപ്റ്റിനെ കുറിച്ചു ആഴത്തിലുള്ള വിശദമായ ഒരു വിശകലനം നമുക്ക് നേടിത്തരുo. അതാണ് പ്രോഗ്രാമിന് രൂപം കൊടുക്കുന്നത്.
 
-But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
 
-A new specification version is released every year. In-between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+പക്ഷെ വളരെ ഫോർമലായത് കൊണ്ടു, തുടക്കമിത് മനസ്സിലാക്കാൻ നല്ല ബുദ്ധിമുട്ടായിരിക്കും. അതിനാൽ, വിശദാംശങ്ങളെക്കുറിച്ചുള്ള ഏറ്റവും വിശ്വാസ്യതയുള്ള ഡാറ്റ സ്രോതസ്സ് നിങ്ങൾക്ക് ആവശ്യമുണ്ടെങ്കിൽ, അതൊരു ശരിയായ സ്ഥലമാണ്. എന്നാൽ ഇത് സാദാരണ ഉപയോഗത്തിന് വേണ്ടിയല്ല.
 
-To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
+ഓരോ വർഷവും പുതിയൊരു വേർഷൻ അവർ പുറത്തിറക്കും. റീലീസിന്റെ കൂടെ, ഏറ്റവും പുതിയ വേർഷൻ<https://tc39.es/ecma262/> ൽ ലഭിക്കുന്നതാണ്.
 
-Also, if you're in developing for the browser, then there are other specs covered in the [second part](info:browser-environment) of the tutorial.
+പുതിയ സ്റ്റാൻഡേർഡ് ആയിട്ടുള്ള ഫീച്ചേഴ്‌സ് വായിക്കാൻ("stage 3"), ഇവിടെ ഞെക്കിയാൽ മതിയാകും <https://github.com/tc39/proposals>.
 
-## Manuals
+കൂടാതെ,നിങ്ങളൊരു ബ്രൌസർ ഡെവലപ്‌ ചെയ്യുകയാണെങ്കിൽ, കെ7റച്ചു കൂടി ഡീറ്റൈലായിട്ടൊരു [രണ്ടാം ഭാഗം](info:browser-environment) കിട്ടുന്നതാണ്.
+
+
 - **MDN (Mozilla) JavaScript Reference** is a manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
 
-    One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+    ഒന്നു നോക്കുക <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
 
-    Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+    അല്ലങ്കിൽ ഇന്റർനെറ്റിൽ സെർച്ച് ചെയ്താലും മതി. സെർച്ച് ചെയ്യുമ്പോൾ "MDN [term]" അടിക്കാൻ മറക്കരുത്, e.g.`parseInt` സെർച്ച് ചെയ്യുന്നത് <https://google.com/search?q=MDN+parseInt>.
 
 
-- **MSDN** – Microsoft manual with a lot of information, including JavaScript (often referred to as JScript). If one needs something specific to Internet Explorer, better go there: <http://msdn.microsoft.com/>.
+- **MSDN** – Microsoft ന്റെ മാന്വലിൽ ജാവസ്ക്രിപ്റ്(j script) ഉൾപ്പടെ ഒരുപാട് ഇൻഫോര്മാഷൻസ് ഉണ്ട്. ഒരാൾക്ക് Internet Explorer സ്പെസിഫിക് ആയിട്ടുള്ള എന്തെങ്കിലും വേണമെങ്കിൽ, അവിടെ പോകുന്നതാണ് ഉചിതം: <http://msdn.microsoft.com/>.
 
     Also, we can use an internet search with phrases such as "RegExp MSDN" or "RegExp MSDN jscript".
 
-## Compatibility tables
+## അനുയോജിത ടേബിൾ
 
-JavaScript is a developing language, new features get added regularly.
+ജാവസ്ക്രിപ്റ് ഡെവലപ്‌ ആയിക്കൊണ്ടിരിക്കുന്ന ഒരു ടെക്‌നോളജി ആണ്, പുതിയ പുതിയ ഫീറുകൾ അതിൽ റെഗുലർ ആയി കൂടിച്ചേർക്കപ്പെടുന്നതാണ്.
 
-To see their support among browser-based and other engines, see:
+അവയുടെ ബ്രൗസറിലും ഉള്ള സപ്പോര്ട്ടും മറ്റു കാര്യങ്ങളും അറിയുന്നതിനായി, നോക്കുക:
 
-- <http://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <http://caniuse.com/#feat=cryptography>.
-- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+- <http://caniuse.com> - ഓരോ-പ്രത്യേകതകളും സപ്പോർട്ട് ചെയ്യുന്ന പട്ടികയും, ഉ.ദ. cryptography ഫംഗ്ഷൻ സപ്പോർട്ട് ചെയ്യുന്ന എൻജിൻ തിരിച്ചറിയാൻ: <http://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - ലാംഗ്വേജ്കളും അവയുടെ പ്രത്യേകതകളും സപ്പോർട്ട് ചെയ്യുന്നതും ചെയ്യാത്തതുമായ വിവരങ്ങൾ അടങ്ങിയ ഒരു പട്ടിക.
 
-All these resources are useful in real-life development, as they contain valuable information about language details, their support etc.
+ദൈനം ദിന ഉപയോഗത്തിൽ ആ മാന്വൽ ഉപയോഗ പ്രദമാണ്, കാരണാണ് ഇതിൽ വിലപ്പെട്ട ഒരുപാട് വിവരങ്ങളുo അതിന്റെ സപ്പോര്ട്ട് ഉം മറ്റും അടങ്ങിയിട്ടുണ്ട്.
 
-Please remember them (or this page) for the cases when you need in-depth information about a particular feature.
+നിങ്ങൾക്ക് ഡീറ്റൈൽഡ് ആയിട്ടുള്ള ഡീറ്റൈൽസ് വേണമെങ്കിൽ ദയവായി അവയൊക്കെ (അല്ലെങ്കിൽ ഈ പേജ്) ഉപയോഗിക്കുക.
