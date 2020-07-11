@@ -24,19 +24,19 @@
     അല്ലങ്കിൽ ഇന്റർനെറ്റിൽ സെർച്ച് ചെയ്താലും മതി. സെർച്ച് ചെയ്യുമ്പോൾ "MDN [term]" അടിക്കാൻ മറക്കരുത്, e.g.`parseInt` സെർച്ച് ചെയ്യുന്നത് <https://google.com/search?q=MDN+parseInt>.
 
 
-- **MSDN** – Microsoft manual with a lot of information, including JavaScript (often referred to as JScript). If one needs something specific to Internet Explorer, better go there: <http://msdn.microsoft.com/>.
+- **MSDN** – Microsoft ന്റെ മാന്വലിൽ ജാവസ്ക്രിപ്റ്(j script) ഉൾപ്പടെ ഒരുപാട് ഇൻഫോര്മാഷൻസ് ഉണ്ട്. ഒരാൾക്ക് Internet Explorer സ്പെസിഫിക് ആയിട്ടുള്ള എന്തെങ്കിലും വേണമെങ്കിൽ, അവിടെ പോകുന്നതാണ് ഉചിതം: <http://msdn.microsoft.com/>.
 
     Also, we can use an internet search with phrases such as "RegExp MSDN" or "RegExp MSDN jscript".
 
-## Compatibility tables
+## അനുയോജിത ടേബിൾ
 
-JavaScript is a developing language, new features get added regularly.
+ജാവസ്ക്രിപ്റ് ഡെവലപ്‌ ആയിക്കൊണ്ടിരിക്കുന്ന ഒരു ടെക്‌നോളജി ആണ്, പുതിയ പുതിയ ഫീറുകൾ അതിൽ റെഗുലർ ആയി കൂടിച്ചേർക്കപ്പെടുന്നതാണ്.
 
-To see their support among browser-based and other engines, see:
+അവയുടെ ബ്രൗസറിലും ഉള്ള സപ്പോര്ട്ടും മറ്റു കാര്യങ്ങളും അറിയുന്നതിനായി, നോക്കുക:
 
-- <http://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <http://caniuse.com/#feat=cryptography>.
-- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+- <http://caniuse.com> - ഓരോ-പ്രത്യേകതകളും സപ്പോർട്ട് ചെയ്യുന്ന പട്ടികയും, ഉ.ദ. cryptography ഫംഗ്ഷൻ സപ്പോർട്ട് ചെയ്യുന്ന എൻജിൻ തിരിച്ചറിയാൻ: <http://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - ലാംഗ്വേജ്കളും അവയുടെ പ്രത്യേകതകളും സപ്പോർട്ട് ചെയ്യുന്നതും ചെയ്യാത്തതുമായ വിവരങ്ങൾ അടങ്ങിയ ഒരു പട്ടിക.
 
-ദൈനം ദിന ഉപയോഗത്തിൽ ഈ മാന്വൽ ഉപയോഖ പ്രദമാണ്, കാരണാണ് ഇതിൽ വിലപ്പെട്ട ഒരുപാട് വിവരങ്ങളുo അതിന്റെ സപ്പോര്ട്ട് ഉം മറ്റും അടങ്ങിയിട്ടുണ്ട്.
+ദൈനം ദിന ഉപയോഗത്തിൽ ആ മാന്വൽ ഉപയോഗ പ്രദമാണ്, കാരണാണ് ഇതിൽ വിലപ്പെട്ട ഒരുപാട് വിവരങ്ങളുo അതിന്റെ സപ്പോര്ട്ട് ഉം മറ്റും അടങ്ങിയിട്ടുണ്ട്.
 
 നിങ്ങൾക്ക് ഡീറ്റൈൽഡ് ആയിട്ടുള്ള ഡീറ്റൈൽസ് വേണമെങ്കിൽ ദയവായി അവയൊക്കെ (അല്ലെങ്കിൽ ഈ പേജ്) ഉപയോഗിക്കുക.
