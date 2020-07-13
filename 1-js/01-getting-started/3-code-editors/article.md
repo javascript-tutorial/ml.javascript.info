@@ -6,7 +6,7 @@
 
 ## IDE
 
-[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)എന്ന വാക്ക് (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
+[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)എന്ന വാക്ക് (Integrated Development Environment) ഒരു പാട് പ്രത്യേകതകൾ നിറഞ്ഞതും ഒരുപാട് ഫoഗ്ഷനാലിറ്റീസം ആയിട്ടുള്ള "മൊത്തത്തിൽ ഒരു പ്രോജക്ടിനെ" തന്നെ ഓപ്പറേറ്റ് ചെയ്യാൻ സഹായിക്കുന്ന ഒരു സോഫ്റ്റ് വെയർ ആണ്. പേരിൽ കാണപ്പെടുന്നത് പോലെ തന്നെ, അതു വെറുമൊരു എഡിറ്റർ അല്ല, മറിച്ച് പൂർണമായ ഒരു "ഡെവലപ്‌മെന്റ് എൻവിയോർണമെന്റ്" എന്നു തന്നെ നമുക്ക് പറയാം.
 
 An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
 
