@@ -44,3 +44,9 @@ The editors in the lists above are those that either I or my friends whom I cons
 There are other great editors in our big world. Please choose the one you like the most.
 
 The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+
+മുകളിലുള്ള ലിസ്റ്റുകളിലെ എഡിറ്റർമാർ നല്ല ഡെവലപ്പർമാരായി ഞാൻ കരുതുന്ന എന്റെ സുഹൃത്തുക്കളോ വളരെക്കാലമായി ഉപയോഗിക്കുന്നവരും സന്തുഷ്ടരുമാണ്.
+
+ഞങ്ങളുടെ വലിയ ലോകത്ത് മറ്റ് മികച്ച എഡിറ്റർമാരുണ്ട്. നിങ്ങൾ ഏറ്റവും ഇഷ്ടപ്പെടുന്ന ഒന്ന് തിരഞ്ഞെടുക്കുക.
+
+മറ്റേതൊരു ഉപകരണത്തെയും പോലെ ഒരു എഡിറ്ററുടെ തിരഞ്ഞെടുപ്പും വ്യക്തിഗതമാണ്, അത് നിങ്ങളുടെ പ്രോജക്റ്റുകൾ, ശീലങ്ങൾ, വ്യക്തിഗത മുൻഗണനകൾ എന്നിവയെ ആശ്രയിച്ചിരിക്കുന്നു.
