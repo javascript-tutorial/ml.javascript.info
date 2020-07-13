@@ -37,16 +37,10 @@ The following options deserve your attention:
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
 - [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
 
-## Let's not argue
+## നമുക്കൊരു തർക്കം വേണ്ട
 
-The editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with.
+മുകളിലുള്ള ലിസ്റ്റുകളിലെ എഡിറ്ററുകൾ ഞാനോ ഡെവലപ്പർമാരായി ഞാൻ കരുതുന്ന എന്റെ സുഹൃത്തുക്കളോ വളരെക്കാലമായി ഉപയോഗിച്ചു സന്തുഷ്ടരായിട്ടുള്ളതാണ്.
 
-There are other great editors in our big world. Please choose the one you like the most.
+നമ്മുടെ ഈ വലിയ ലോകത്ത് മറ്റ് മികച്ച എഡിറ്ററൂമുണ്ട്. അതിൽ നിങ്ങൾ ഏറ്റവും ഇഷ്ടപ്പെടുന്ന ഒന്ന് തിരഞ്ഞെടുത്തു ഉപയോഗിക്കുക.
 
-The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
-
-മുകളിലുള്ള ലിസ്റ്റുകളിലെ എഡിറ്റർമാർ നല്ല ഡെവലപ്പർമാരായി ഞാൻ കരുതുന്ന എന്റെ സുഹൃത്തുക്കളോ വളരെക്കാലമായി ഉപയോഗിക്കുന്നവരും സന്തുഷ്ടരുമാണ്.
-
-ഞങ്ങളുടെ വലിയ ലോകത്ത് മറ്റ് മികച്ച എഡിറ്റർമാരുണ്ട്. നിങ്ങൾ ഏറ്റവും ഇഷ്ടപ്പെടുന്ന ഒന്ന് തിരഞ്ഞെടുക്കുക.
-
-മറ്റേതൊരു ഉപകരണത്തെയും പോലെ ഒരു എഡിറ്ററുടെ തിരഞ്ഞെടുപ്പും വ്യക്തിഗതമാണ്, അത് നിങ്ങളുടെ പ്രോജക്റ്റുകൾ, ശീലങ്ങൾ, വ്യക്തിഗത മുൻഗണനകൾ എന്നിവയെ ആശ്രയിച്ചിരിക്കുന്നു.
+മറ്റേതൊരു ഉപകരണത്തെയും പോലെ ഒരു എഡിറ്റർ തിരഞ്ഞെടുക്കാൻ വ്യക്തിപരമായോ, ശീലങ്ങൾ, വ്യക്തിഗത മുൻഗണനകൾ എന്നിവയെ പോലെ തന്നെ , അത് നിങ്ങളുടെ പ്രോജക്റ്റുകളെ ആശ്രയിച്ചിരിക്കുന്നു.
