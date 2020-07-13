@@ -1,13 +1,12 @@
 # കോഡ് എഡിറ്റർ
 
-There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.
 പ്രോഗ്രാമർമാർ കൂടുതൽ സമയം ചെലവഴിക്കുന്ന ഒരു ഭാഗമാണ് കോഡ് എഡിറ്റർ.
 
 രണ്ട് പ്രധാന കോഡ് എഡിറ്റർമാരുണ്ട്: IDE- കളും സൈസ് കുറഞ്ഞ എഡിറ്റർമാർ. നിരവധി ആളുകൾ ഓരോ തരത്തിലുമുള്ള ഒരു ഉപകരണം ഉപയോഗിച്ചു വരുന്നുണ്ട്.
 
 ## IDE
 
-The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
+[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)എന്ന വാക്ക് (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
 
 An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
 
