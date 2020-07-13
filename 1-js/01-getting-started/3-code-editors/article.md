@@ -1,8 +1,9 @@
-# Code editors
-
-A code editor is the place where programmers spend most of their time.
+# കോഡ് എഡിറ്റർ
 
 There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.
+പ്രോഗ്രാമർമാർ കൂടുതൽ സമയം ചെലവഴിക്കുന്ന ഒരു ഭാഗമാണ് കോഡ് എഡിറ്റർ.
+
+രണ്ട് പ്രധാന കോഡ് എഡിറ്റർമാരുണ്ട്: IDE- കളും സൈസ് കുറഞ്ഞ എഡിറ്റർമാർ. നിരവധി ആളുകൾ ഓരോ തരത്തിലുമുള്ള ഒരു ഉപകരണം ഉപയോഗിച്ചു വരുന്നുണ്ട്.
 
 ## IDE
 
