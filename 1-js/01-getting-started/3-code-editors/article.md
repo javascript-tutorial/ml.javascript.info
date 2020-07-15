@@ -27,15 +27,15 @@ They are mainly used to open and edit a file instantly.
 
 The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
 
-In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there's no strict border between a lightweight editor and an IDE.
+സാധാരണയായി, lightweight എഡിറ്ററുകൾക്ക് directory-level syntax analyzers അതുപോലെ autocompleters തുടങ്ങി ഒരുപാട് plugins ഉണ്ട്, അതുകൊണ്ടു തന്നെ lightweight എഡിറ്റർ ഉം IDE യും തമ്മിൽ വലിയ വ്യത്യാസങ്ങൾ ഇല്ല.
 
-The following options deserve your attention:
+ഇനി പറയുന്നവയും കൂടെ ഒന്നു നോക്കാം:
 
-- [Atom](https://atom.io/) (cross-platform, free).
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
-- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+- [Atom](https://atom.io/) (എല്ലാ പ്ലാറ്ഫോമും എടുക്കും, ഫ്രീ).
+- [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ പ്ലാറ്ഫോമും എടുക്കും, ഫ്രീ).
+- [Sublime Text](http://www.sublimetext.com) (എല്ലാ പ്ലാറ്ഫോമും എടുക്കും, ഷെയർവെയർ).
+- [Notepad++](https://notepad-plus-plus.org/) (വിൻഡോസ്, ഫ്രീ).
+- [Vim](http://www.vim.org/) ഉം [Emacs](https://www.gnu.org/software/emacs/) വേറിട്ട ഒരു അനുഭവം തന്നെ ഉപയോക്താവിനു കൊടുക്കും.
 
 ## നമുക്കൊരു തർക്കം വേണ്ട
 
