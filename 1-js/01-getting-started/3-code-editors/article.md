@@ -15,17 +15,17 @@
 - [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ പ്ലാറ്ഫോമും, ഫ്രീ).
 - [WebStorm](http://www.jetbrains.com/webstorm/) (എല്ലാ പ്ലാറ്ഫോമും, പെയ്ഡ്).
 
-For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
+വിൻഡോസിൽ, "Visual Studio"യും കൂടെ നമുക്ക് ഉപയോഗിക്കാവുന്നതാണ്, ഇതിനു "Visual Studio Code" മായി ഒരു ബന്ധവുമില്ല. "Visual Studio" പെയ്ഡ് സോഫ്ട് വയറും വിന്ഡോഡിൽ മാത്രവുമുള്ള ഒരു എഡിറ്ററുമാണ്, മാത്രവുമല്ല ഇതു .NET പ്ലാറ്ഫോമിനു പറ്റിയ ഒരു എഡിറ്ററുമാണ്. ജാവസ്ക്രിപ്റ്റിനും ഇതു നല്ലൊരു എഡിറ്ററാണ്. ഇതിനു ഒരു ഫ്രീ വേർഷൻ കൂടെയുണ്ട് [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
-Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
+മിക്ക IDEs കളും paid ആണ്, പക്ഷെ അവക്ക് ഒരു ട്രയൽ പിരീഡ് കാണും. ഒരു ഡവലപ്പറുടെ സാലറി വെച്ചു നോക്കുമ്പോൾ അതിന്റെ വില നമുക്ക് താങ്ങാവുന്ന ഒന്നാണ്, അതുകൊണ്ടു നിങ്ങൾക്ക് പറ്റിയ ഒരെണ്ണം നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാം.
 
-## Lightweight editors
+## Lightweight എഡിറ്ററുകൾ
 
-"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant and simple.
+"Lightweight എഡിറ്ററുകൾ" IDE യുടെ അത്രയൊന്നും ഫീച്ചേഴ്‌സ് ഉള്ള ഒരു സോഫ്ട് വെയേഴ്‌സ് അല്ല, പക്ഷെ അത് ഫാസ്റ്റും, മറ്റുള്ളവയെക്കാൾ അടിപൊളിയും സിമ്പിളും ആണ്.
 
-They are mainly used to open and edit a file instantly.
+അതു സാധാരണ ഉപയോഗിക്കുന്നത് ഒരു ഫയൽ ഓപ്പൺ ചെയ്യാനും എഡിറ്റു ചെയ്യാനും മറ്റും ആയിരിക്കും.
 
-The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
+ "lightweight editor" ഉം "IDE" യും തമ്മിലുള്ള ഒരു പ്രധാനപ്പെട്ട വ്യത്യാസം IDE പ്രോജക്ട് ലെവെലിൽ ഉപയോഗിക്കപ്പെടുന്നു, അതുകൊണ്ടു തന്നെ അത് ഒരുപാട് ഡാറ്റ ഉപയോഗിക്കുന്നതിനോടൊപ്പം പ്രോജക്ടിന്റെ സ്ട്രക്ടചർ കൂടെ അതു പരിശോധിച്ചു കൊണ്ടിരിക്കും. നമുക്ക് ഏതെങ്കിലും ഒരു ഫയലിന്റെ ആവശ്യം മാത്രമേ ഉള്ളെങ്കിൽ ഒരു lightweight എഡിറ്റർ ആയിരിക്കുക നല്ലത്.
 
 സാധാരണയായി, lightweight എഡിറ്ററുകൾക്ക് directory-level syntax analyzers അതുപോലെ autocompleters തുടങ്ങി ഒരുപാട് plugins ഉണ്ട്, അതുകൊണ്ടു തന്നെ lightweight എഡിറ്റർ ഉം IDE യും തമ്മിൽ വലിയ വ്യത്യാസങ്ങൾ ഇല്ല.
 
