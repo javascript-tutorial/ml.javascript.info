@@ -8,12 +8,12 @@
 
 [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)എന്ന വാക്ക് (Integrated Development Environment) ഒരു പാട് പ്രത്യേകതകൾ നിറഞ്ഞതും ഒരുപാട് ഫoഗ്ഷനാലിറ്റീസം ആയിട്ടുള്ള "മൊത്തത്തിൽ ഒരു പ്രോജക്ടിനെ" തന്നെ ഓപ്പറേറ്റ് ചെയ്യാൻ സഹായിക്കുന്ന ഒരു സോഫ്റ്റ് വെയർ ആണ്. പേരിൽ കാണപ്പെടുന്നത് പോലെ തന്നെ, അതു വെറുമൊരു എഡിറ്റർ അല്ല, മറിച്ച് പൂർണമായ ഒരു "ഡെവലപ്‌മെന്റ് എൻവിയോർണമെന്റ്" എന്നു തന്നെ നമുക്ക് പറയാം.
 
-An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
+ഒരു IDE പ്രോജക്ട് ലോഡ് ചെയ്യുകയും (ഒന്നിൽ കൂടുതൽ ഫയലുകൾ), ഫയലുകൾ തമ്മിൽ ചെയ്ഞ്ച് ചെയ്യാനും,പ്രോജെക്ടിന് autocompletion നൽകാനും (ഫയലുകൾ തുറക്കുക മാത്രമല്ല), ഒരു version management system വുമായിട്ടു കണക്ട് ചെയ്യാനും([git](https://git-scm.com/)പോലെ), testing ചെയ്തു നോക്കാനും, പിന്നെ മറ്റുള്ള "project-level" കാര്യങ്ങളും ചെയ്യാൻ നമ്മളെ സഹായിക്കും.
 
-If you haven't selected an IDE yet, consider the following options:
+നിങ്ങൾ ഇത് വരെ ഒരു IDE സെലക്ട് ചെയ്തിട്ടില്ലെങ്കിൽ, താഴെ പറയുന്നവ ഒന്നു നോക്കുക:
 
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
+- [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ പ്ലാറ്ഫോമും, ഫ്രീ).
+- [WebStorm](http://www.jetbrains.com/webstorm/) (എല്ലാ പ്ലാറ്ഫോമും, പെയ്ഡ്).
 
 For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
