@@ -1,6 +1,6 @@
 # Developer console
 
-കോഡിൽ തെറ്റുകൾ വരാൻ സാധ്യതയുണ്ട്. നിങ്ങൾ മിക്കവാറും തെറ്റുകൾ  വരുത്തുകയും ചെയ്യും... ഓ, ഞാൻ എന്തിനെക്കുറിച്ചാണ് സംസാരിക്കുന്നത്? നിങ്ങളൊരു [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)) അല്ലാതെ കുറഞ്ഞത് ഒരു മനുഷ്യനാണെങ്കിൽ, നിങ്ങൾ എന്തായാലും തെറ്റുകൾ വരുത്തും .
+കോഡിൽ തെറ്റുകൾ വരാൻ സാധ്യതയുണ്ട്. നിങ്ങൾ മിക്കവാറും തെറ്റുകൾ  വരുത്തുകയും ചെയ്യും... ഓ, ഞാൻ എന്തിനെക്കുറിച്ചാണ് സംസാരിക്കുന്നത്? നിങ്ങളൊരു [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)) അല്ലാതെ കുറഞ്ഞത് ഒരു മനുഷ്യനാണെങ്കിൽ, നിങ്ങൾ എന്തായാലും തെറ്റുകൾ വരുത്തും.
 
 എന്നാൽ സാധാരണയായി ബ്രൗസർ‌, ഉപയോഗിക്കുന്നവർക്ക്‌ പിശകുകൾ‌ കാണാൻ കഴിയില്ല. അതിനാൽ, സ്ക്രിപ്റ്റിൽ എന്തെങ്കിലും തെറ്റ് സംഭവിക്കുകയാണെങ്കിൽ, എന്താണ് തെറ്റിയതെന്നു നമുക്ക് അറിയാൻ പറ്റില്ല, അത് പരിഹരിക്കാനും കഴിയില്ല.
 
@@ -12,23 +12,22 @@
 
 
 ## Google Chrome
+[bug.html](bug.html) എന്ന പേജ് ഓപ്പൺ ചെയ്യുക.
 
-Open the page [bug.html](bug.html).
+അതിലെ javascript കോഡിൽ ഒരു തെറ്റുണ്ട്. സാധാരണ ഒരാൾക്കു അതിലുള്ള തെറ്റ് അറിയാൻ കഴിയില്ല , അതു കൊണ്ടു നമുക്ക് ആദ്യം developer tools ഓപ്പൺ ചെയ്യാം.
 
-There's an error in the JavaScript code on it. It's hidden from a regular visitor's eyes, so let's open developer tools to see it.
+`key:F12` ഞെക്കുകയോ അല്ലെങ്കിൽ, നിങ്ങൾ Mac ആണ് ഉപയോഗിക്കുന്നതെങ്കിൽ,`key:Cmd+Opt+J` ഞെക്കുക.
 
-Press `key:F12` or, if you're on Mac, then `key:Cmd+Opt+J`.
+അപ്പോൾ developer tools തനിയെ  Console tab ഓപ്പൺ ചെയ്യും.
 
-The developer tools will open on the Console tab by default.
-
-It looks somewhat like this:
+അത് ഏകദേശം ഇതുപോലെ ഇരിക്കും:
 
 ![chrome](chrome.png)
 
-The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar.
+developer tools ന്റെ യാഥാർത്ഥ ലുക്ക് നിങ്ങളുടെ Chrome ന്റെ വേർഷൻ പോലെയായിരിക്കും. അതു പല സമയത്തുo മാറിക്കൊണ്ടിരിക്കുമെങ്കിലും ഏകദേശം ഒരുപോലെയിരിക്കും.
 
-- Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
-- On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
+- നമുക്കിവിടെ ഒരു ചുവന്ന നിറത്തിലുള്ള ഒരു error മെസ്സേജ് കാണാൻ സാധിക്കും. ഈ ഒരു അവസ്ഥയിൽ സ്ക്രിപ്റ്റിൽ "lalala" എന്നൊരു unknown വേർഡ് നമുക്ക് കാണാൻ സാധിക്കും.
+- വലതു ഭാഗത്തായി, നമുക്ക് ഞെക്കാൻ കഴിയുന്ന രീതിയിൽ, `bug.html:12` ൽ തെറ്റു വന്ന ഭാഗത്തിന്റ വരിയുടെ നമ്പർ ഉൾപ്പടെ നമുക്ക് കാണാൻ സാധിക്കും.
 
 Below the error message, there is a blue `>` symbol. It marks a "command line" where we can type JavaScript commands. Press `key:Enter` to run them.
 
@@ -56,9 +55,9 @@ Open Preferences and go to the "Advanced" pane. There's a checkbox at the bottom
 
 Now `key:Cmd+Opt+C` can toggle the console. Also, note that the new top menu item named "Develop" has appeared. It has many commands and options.
 
-## Summary
+## സംഗ്രഹം
 
-- Developer tools allow us to see errors, run commands, examine variables, and much more.
-- They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
+- Developer tools വഴി നമുക്ക് തെറ്റുകൾ കാണാനും, commands റണ് ചെയ്യാനും, variables പരിശോധിക്കാനും, തുടങ്ങി ഒരുപാട് കാര്യങ്ങൾ ചെയ്യാൻ പറ്റും.
+- windows ലെ മിക്ക browser കളിലും developer tools നമുക്ക് `key:F12` വഴി ഓപ്പൺ ചെയ്യാവുന്നതാണ്. Mac ന്റെ Chrome ൽ `key:Cmd+Opt+J` ഞെക്കിയും, Safariയിൽ: `key:Cmd+Opt+C` വഴിയും ഓപ്പൺ ചെയ്യാം (ആദ്യം enable ചെയ്യണം).
 
-Now we have the environment ready. In the next section, we'll get down to JavaScript.
+ഇപ്പോൾ നമ്മുടെ environment റെഡി ആയിട്ടുണ്ട്. അടുത്തതായി, നമുക്ക് JavaScript നെ കുറിച്ചു നോക്കാം.
