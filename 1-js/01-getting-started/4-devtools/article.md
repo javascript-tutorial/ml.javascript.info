@@ -1,63 +1,63 @@
 # Developer console
 
-Code is prone to errors. You will quite likely make errors... Oh, what am I talking about? You are *absolutely* going to make errors, at least if you're a human, not a [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)).
+കോഡിൽ ഒരുപാട് തെറ്റുകൾ വരാൻ സാധ്യതയുണ്ട്. നിങ്ങൾ മിക്കവാറും തെറ്റുകൾ  വരുത്തുകയും ചെയ്യും... ഓ, ഞാൻ എന്തിനെക്കുറിച്ചാണ് സംസാരിക്കുന്നത്? നിങ്ങളൊരു [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)) അല്ലാതെ കുറഞ്ഞത് ഒരു മനുഷ്യനാണെങ്കിൽ, നിങ്ങൾ എന്തായാലും തെറ്റുകൾ വരുത്തും.
 
-But in the browser, users don't see errors by default. So, if something goes wrong in the script, we won't see what's broken and can't fix it.
+എന്നാൽ സാധാരണയായി ബ്രൗസർ‌, ഉപയോഗിക്കുന്നവർക്ക്‌ പിശകുകൾ‌ കാണാൻ കഴിയില്ല. അതിനാൽ, സ്ക്രിപ്റ്റിൽ എന്തെങ്കിലും തെറ്റ് സംഭവിക്കുകയാണെങ്കിൽ, എന്താണ് തെറ്റിയതെന്നു നമുക്ക് അറിയാൻ പറ്റില്ല, അത് പരിഹരിക്കാനും കഴിയില്ല.
 
-To see errors and get a lot of other useful information about scripts, "developer tools" have been embedded in browsers.
+തെറ്റുകൾ കാണാനും സ്ക്രിപ്റ്റുകളെക്കുറിച്ചുള്ള മറ്റ് ഉപയോഗപ്രദമായ ധാരാളം വിവരങ്ങൾ നേടാനും "Developer console" ബ്രൗസറുകളിൽ ഉൾപ്പെടുത്തിയിട്ടുണ്ട്.
 
-Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing "catch-up" to Chrome or Firefox. So most developers have a "favorite" browser and switch to others if a problem is browser-specific.
+മിക്ക ഡവലപ്പർമാരും ഡെവലപ്‌മെന്റിനായി Chrome അല്ലെങ്കിൽ Firefox ആയിരിക്കുo ആശ്രയിക്കുന്നത്, കാരണം ആ ബ്രൗസറുകളിൽ മികച്ച ഡവലപ്പർ ടൂൾസ് ഉൾപ്പെടുത്തിയിട്ടുണ്ട്. മറ്റ് ബ്രവ്സറുകളും ഡെവലപ്പർ ടൂൾസ് നൽകുന്നു, ചിലപ്പോൾ ചില പ്രത്യേകതകളും അവ നൽകും, പക്ഷേ സാധാരണയായി Chrome അല്ലെങ്കിൽ Firefox ലോട്ടു അനുകരിക്കുകയാണ് അവ ചെയ്യുന്നത്. അതിനാൽ മിക്ക ഡവലപ്പർമാർക്കും അവർക്ക് "ഇഷ്ടപ്പെട്ട" ഒരു ബ്രൗസർ കാണും കൂടാതെ ഒരു ബ്രൗസറിൽ എന്തെങ്കിലും പ്രശ്നമുള്ളതായി തോന്നുകയാണെങ്കിൽ മറ്റുള്ളവയിലേക്കു മാറുകയോ ചെയ്യും.
 
-Developer tools are potent; they have many features. To start, we'll learn how to open them, look at errors, and run JavaScript commands.
+ഡവലപ്പർ ടൂൾസ് വളരെ ശക്തമാണ്; അവയ്‌ക്ക് നിരവധി സവിശേഷതകളുണ്ട്. നമുക്കിപ്പോൾ, അവ എങ്ങനെ ഓപ്പൺ ചെയ്യാമെന്നും തെറ്റുകൾ എങ്ങനെ നോക്കാമെന്നും javascript command കൾ എങ്ങനെ ടെസ്റ്റ്  ചെയ്തു നോക്കാമെന്നും പഠിക്കാം.
+
 
 ## Google Chrome
+[bug.html](bug.html) എന്ന പേജ് ഓപ്പൺ ചെയ്യുക.
 
-Open the page [bug.html](bug.html).
+അതിലെ javascript കോഡിൽ ഒരു തെറ്റുണ്ട്. സാധാരണ ഒരാൾക്കു അതിലുള്ള തെറ്റ് അറിയാൻ കഴിയില്ല , അതു കൊണ്ടു നമുക്ക് ആദ്യം developer tools ഓപ്പൺ ചെയ്യാം.
 
-There's an error in the JavaScript code on it. It's hidden from a regular visitor's eyes, so let's open developer tools to see it.
+`key:F12` ഞെക്കുകയോ അല്ലെങ്കിൽ, നിങ്ങൾ Mac ആണ് ഉപയോഗിക്കുന്നതെങ്കിൽ,`key:Cmd+Opt+J` ഞെക്കുക.
 
-Press `key:F12` or, if you're on Mac, then `key:Cmd+Opt+J`.
+അപ്പോൾ developer tools തനിയെ  Console tab ഓപ്പൺ ചെയ്യും.
 
-The developer tools will open on the Console tab by default.
-
-It looks somewhat like this:
+അത് ഏകദേശം ഇതുപോലെ ഇരിക്കും:
 
 ![chrome](chrome.png)
 
-The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar.
+developer tools ന്റെ യാഥാർത്ഥ ലുക്ക് നിങ്ങളുടെ Chrome ന്റെ വേർഷൻ പോലെയായിരിക്കും. അതു പല സമയത്തുo മാറിക്കൊണ്ടിരിക്കുമെങ്കിലും ഏകദേശം ഒരുപോലെയിരിക്കും.
 
-- Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
-- On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
+- നമുക്കിവിടെ ഒരു ചുവന്ന നിറത്തിലുള്ള ഒരു error മെസ്സേജ് കാണാൻ സാധിക്കും. ഈ ഒരു അവസ്ഥയിൽ സ്ക്രിപ്റ്റിൽ "lalala" എന്നൊരു unknown വേർഡ് നമുക്ക് കാണാൻ സാധിക്കും.
+- വലതു ഭാഗത്തായി, നമുക്ക് ഞെക്കാൻ കഴിയുന്ന രീതിയിൽ, `bug.html:12` ൽ തെറ്റു വന്ന ഭാഗത്തിന്റ വരിയുടെ നമ്പർ ഉൾപ്പടെ നമുക്ക് കാണാൻ സാധിക്കും.
 
-Below the error message, there is a blue `>` symbol. It marks a "command line" where we can type JavaScript commands. Press `key:Enter` to run them.
+Error മെസ്സേജിന്റെ അടിയിലായി, ഒരു `>` ചിഹ്നം കാണാം. നമുക്ക് javascript ന്റെ commands ടൈപ്പ് ചെയ്യാനുള്ള ഒരു "command line" നെയാണ് അത് സൂചിപ്പിക്കുന്നത്. അവ റണ് ചെയ്യാനായി `key:Enter` ഞെക്കിയാൽ മതി.
 
-Now we can see errors, and that's enough for a start. We'll come back to developer tools later and cover debugging more in-depth in the chapter <info:debugging-chrome>.
+ഇപ്പോൾ നമുക്കതിലുള്ള തെറ്റുകൾ കാണാൻ സാധിക്കും, ഇപ്പോൾ നമുക്കത്രയൊക്കെ അറിഞ്ഞാൽ മതി. developer tools ൽ നമുക്ക് <info:debugging-chrome> എന്ന ചാപ്റ്ററിൽ debugging നെ കുറിച്ചു നമ്മൾ കൂടുതൽ പഠിക്കും.
 
 ```smart header="Multi-line input"
-Usually, when we put a line of code into the console, and then press `key:Enter`, it executes.
+സത്യത്തിൽ , console ൽ നമ്മൾ ഒരു വരി ടൈപ്പ് ചെയ്തു, `key:Enter` അമർത്തുമ്പോൾ, അതു execute ആകുകയാണ് ചെയ്യുന്നത്.
 
-To insert multiple lines, press `key:Shift+Enter`. This way one can enter long fragments of JavaScript code.
+ഒന്നിൽ കൂടുതൽ വരികളിൽ ടൈപ്പ് ചെയ്യാനായി, `key:Shift+Enter` ഞെക്കിയാൽ മതിയാകും. ഇതു വഴി ഒരാൾക്ക് ഒരുപാട് JavaScript കോഡുകൾ ടൈപ്പ് ചെയ്യാൻ പറ്റുന്നതാണ്.
 ```
 
-## Firefox, Edge, and others
+## Firefox, Edge, ഉം പിന്നെ മറ്റുള്ളവയും
 
-Most other browsers use `key:F12` to open developer tools.
+മിക്ക മറ്റുള്ള browser കളും `key:F12` ആണ്  developer tools ഓപ്പൺ ചെയ്യാൻ ഉപയോഗിക്കുന്നത്.
 
-The look & feel of them is quite similar. Once you know how to use one of these tools (you can start with Chrome), you can easily switch to another.
+എന്നാൽ അവ എല്ലാം ഒരുപോലെയായിരിക്കും കാണപ്പെടുന്നത്. ഈ tools ക്കെ എങ്ങനെയാണ് ഉപയോഗിക്കുന്നതെന്ന് മനസ്സിലാക്കിയതിനു ശേഷം (Chrome ൽ നിന്നു തന്നെ നിങ്ങൾക്കു തുടങ്ങാം), നിങ്ങൾക്ക് മറ്റൊന്നിലൊട്ടു മാറാം.
 
 ## Safari
 
-Safari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the "Develop menu" first.
+Safari (Mac ന്റെ browser ആണ്, Windows/Linux ഉം അത് സപ്പോർട് ചെയ്യത്തില്ല) യുടെ കാര്യത്തിലാണെങ്കിൽ കുറച്ചു കൂടി വ്യത്യാസം ഉണ്ട്. ഇതിൽ നമുക്ക് ആദ്യം "Develop menu" enable ചെയ്യണം.
 
-Open Preferences and go to the "Advanced" pane. There's a checkbox at the bottom:
+Preferences ൽ കേറിയതിനു ശേഷo "Advanced" എന്ന ഭാഗത്തേക്ക് പോകുക. അവിടെ താഴെയായിട്ടു ഒരു ചെക്‌ബോകസ് കാണും:
 
 ![safari](safari.png)
 
-Now `key:Cmd+Opt+C` can toggle the console. Also, note that the new top menu item named "Develop" has appeared. It has many commands and options.
+ഇപ്പോൾ `key:Cmd+Opt+C` വഴി console ഓപ്പൺ ചെയ്യാം. മാത്രവുമല്ല, മുകളിലത്തെ മെനുവിൽ "Develop" എന്ന ഐറ്റം വന്നത് കൂടെ ശ്രദ്ദിക്കുക.ഇതിൽ ഒരുപാട് commands കളും ഓപ്ഷൻസും ഉണ്ട്.
 
-## Summary
+## സംഗ്രഹം
 
-- Developer tools allow us to see errors, run commands, examine variables, and much more.
-- They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
+- Developer tools വഴി നമുക്ക് തെറ്റുകൾ കാണാനും, commands റണ് ചെയ്യാനും, variables പരിശോധിക്കാനും, തുടങ്ങി ഒരുപാട് കാര്യങ്ങൾ ചെയ്യാൻ പറ്റും.
+- windows ലെ മിക്ക browser കളിലും developer tools നമുക്ക് `key:F12` വഴി ഓപ്പൺ ചെയ്യാവുന്നതാണ്. Mac ന്റെ Chrome ൽ `key:Cmd+Opt+J` ഞെക്കിയും, Safariയിൽ: `key:Cmd+Opt+C` വഴിയും ഓപ്പൺ ചെയ്യാം (ആദ്യം enable ചെയ്യണം).
 
-Now we have the environment ready. In the next section, we'll get down to JavaScript.
+ഇപ്പോൾ നമ്മുടെ environment റെഡി ആയിട്ടുണ്ട്. അടുത്തതായി, നമുക്ക് JavaScript നെ കുറിച്ചു നോക്കാം.
