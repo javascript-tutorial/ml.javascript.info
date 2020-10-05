@@ -19,7 +19,13 @@ Javascript ആദ്യമായി പുറത്തിറക്കിയപ�
 
 ഇന്ന്, javascript ന് ബ്രൗസർകളിൽ മാത്രമല്ല സെർവർകളിൽ വരെ ഉപയോഗിക്കാൻ പറ്റും, ചുരുക്കിപ്പറഞ്ഞാൽ[the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine) ഉള്ള ഏതൊരു ഡിവൈസിലും അതു ഉപയോഗിക്കാൻ പറ്റും.
 
+<<<<<<< HEAD
 ബ്രൗസറുകൾക് സ്വന്തമായി ഒരു ജാവസ്ക്രിപ്റ് എൻജിൻ ഉണ്ടായിരിക്കും "JavaScript virtual machine".
+=======
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
+- ...There are other codenames like "Chakra" for IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+>>>>>>> 181cc781ab6c55fe8c43887a0c060db7f93fb0ca
 
 പല എങ്ങിനുകൾക്കും പല "കോഡുനെയിം" ആയിരിക്കും. ഉദാഹരണത്തിന്:
 
@@ -107,7 +113,15 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 - [ഫ്ലോ] (http://flow.org/) ഡാറ്റ ടൈപ്പിംഗും ചേർക്കുന്നു, പക്ഷേ മറ്റൊരു രീതിയിൽ. ഫേസ്ബുക്ക് വികസിപ്പിച്ചെടുത്തത്.
 - [ഡാർട്ട്] (https://www.dartlang.org/) ബ്രൗസർ ഇതര പരിതസ്ഥിതികളിൽ (മൊബൈൽ അപ്ലിക്കേഷനുകൾ പോലെ) പ്രവർത്തിക്കുന്ന സ്വന്തം എഞ്ചിൻ ഉള്ള ഒരു ഒറ്റപ്പെട്ട ഭാഷയാണ്, മാത്രമല്ല ഇത് ജാവാസ്ക്രിപ്റ്റിലേക്ക് കൈമാറാനും കഴിയും. Google വികസിപ്പിച്ചെടുത്തത്.
 
+<<<<<<< HEAD
 കൂടുതൽ ഉണ്ട്. തീർച്ചയായും, ഞങ്ങൾ‌ ട്രാൻ‌സ്‌പൈൽ‌ ചെയ്‌ത ഭാഷകളിലൊന്ന്‌ ഉപയോഗിച്ചാലും, ഞങ്ങൾ‌ ചെയ്യുന്നതെന്താണെന്ന് ശരിക്കും മനസിലാക്കാൻ‌ ഞങ്ങൾ‌ JavaScript നെ അറിഞ്ഞിരിക്കണം.
+=======
+- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [Brython](https://brython.info/) is a Python transpiler to JavaScript that allow to write application in pure Python without JavaScript.
+>>>>>>> 181cc781ab6c55fe8c43887a0c060db7f93fb0ca
 
 ## സംഗ്രഹം
 
