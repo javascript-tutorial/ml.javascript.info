@@ -25,9 +25,9 @@
     അല്ലങ്കിൽ ഇന്റർനെറ്റിൽ സെർച്ച് ചെയ്താലും മതി. സെർച്ച് ചെയ്യുമ്പോൾ "MDN [term]" അടിക്കാൻ മറക്കരുത്, e.g.`parseInt` സെർച്ച് ചെയ്യുന്നത് <https://google.com/search?q=MDN+parseInt>.
 
 
-- **MSDN** – Microsoft ന്റെ മാന്വലിൽ ജാവസ്ക്രിപ്റ്(j script) ഉൾപ്പടെ ഒരുപാട് ഇൻഫോര്മാഷൻസ് ഉണ്ട്. ഒരാൾക്ക് Internet Explorer സ്പെസിഫിക് ആയിട്ടുള്ള എന്തെങ്കിലും വേണമെങ്കിൽ, അവിടെ പോകുന്നതാണ് ഉചിതം: <http://msdn.microsoft.com/>.
+- **MSDN** – Microsoft ന്റെ മാന്വലിൽ ജാവസ്ക്രിപ്റ്(j script) ഉൾപ്പടെ ഒരുപാട് ഇൻഫോര്മാഷൻസ് ഉണ്ട്. ഒരാൾക്ക് Internet Explorer സ്പെസിഫിക് ആയിട്ടുള്ള എന്തെങ്കിലും വേണമെങ്കിൽ, അവിടെ പോകുന്നതായിരിക്കും നല്ലത്: <http://msdn.microsoft.com/>.
 
-    Also, we can use an internet search with phrases such as "RegExp MSDN" or "RegExp MSDN jscript".
+    അതുപോലെ നമുക്ക് "RegExp MSDN" അല്ലെങ്കിൽ "RegExp MSDN jscript" പോലെയൊക്കെ phrase കൽ വെച്ചു internet ഇൽ സെർച്ച് ചെയ്യുകയോ ചെയ്യാം.
 
 ## അനുയോജിത ടേബിൾ
 
