@@ -11,19 +11,31 @@
 
 പക്ഷെ വളരെ ഫോർമലായത് കൊണ്ടു, തുടക്കമിത് മനസ്സിലാക്കാൻ നല്ല ബുദ്ധിമുട്ടായിരിക്കും. അതിനാൽ, വിശദാംശങ്ങളെക്കുറിച്ചുള്ള ഏറ്റവും വിശ്വാസ്യതയുള്ള ഡാറ്റ സ്രോതസ്സ് നിങ്ങൾക്ക് ആവശ്യമുണ്ടെങ്കിൽ, ഇതൊരു ശരിയായ സ്ഥലമാണ്. എന്നാൽ ഇത് സാധാരണ ഉപയോഗത്തിന് വേണ്ടിയല്ല.
 
+<<<<<<< HEAD
 ഓരോ വർഷവും പുതിയൊരു വേർഷൻ അവർ പുറത്തിറക്കും. ഏറ്റവും പുതിയ വേർഷൻ റിലീസിന്റെ കൂടെ <https://tc39.es/ecma262/> ൽ ലഭിക്കുന്നതാണ്.
+=======
+Also, if you're in developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
+>>>>>>> 3a0b3f4e31d4c4bbe90ed4c9c6e676a888ad8311
 
 പുതിയ സ്റ്റാൻഡേർഡ് ആയിട്ടുള്ള ഫീച്ചേഴ്‌സ് വായിക്കാൻ("stage 3"), ഇവിടെ ഞെക്കിയാൽ മതിയാകും <https://github.com/tc39/proposals>.
 
+<<<<<<< HEAD
 കൂടാതെ,നിങ്ങളൊരു ബ്രൌസർ ഡെവലപ്‌ ചെയ്യുകയാണെങ്കിൽ, കുറച്ചു കൂടി ഡീറ്റൈലായിട്ടൊരു [രണ്ടാം ഭാഗം](info:browser-environment) കിട്ടുന്നതാണ്.
+=======
+- **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+>>>>>>> 3a0b3f4e31d4c4bbe90ed4c9c6e676a888ad8311
 
 
+<<<<<<< HEAD
 - **MDN (Mozilla) JavaScript Reference** ഇതു ഒരുപാട് ഉദാഹരണങ്ങളും മറ്റു കാര്യങ്ങളും അടങ്ങിയ ഒരു മാനുവലാണ് . ഇത് language functions,methods ഉം അതുപോലെ മറ്റു കാര്യങ്ങളെ കുറിച്ചുo ആഴത്തിൽ മനസ്സിലാക്കാൻ നമ്മളെ സഹായിക്കും.
 
     ഒന്നു നോക്കുക <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
 
     അല്ലങ്കിൽ ഇന്റർനെറ്റിൽ സെർച്ച് ചെയ്താലും മതി. സെർച്ച് ചെയ്യുമ്പോൾ "MDN [term]" അടിക്കാൻ മറക്കരുത്, e.g.`parseInt` സെർച്ച് ചെയ്യുന്നത് <https://google.com/search?q=MDN+parseInt>.
 
+=======
+Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+>>>>>>> 3a0b3f4e31d4c4bbe90ed4c9c6e676a888ad8311
 
 - **MSDN** – Microsoft ന്റെ മാന്വലിൽ ജാവസ്ക്രിപ്റ്(j script) ഉൾപ്പടെ ഒരുപാട് ഇൻഫോര്മാഷൻസ് ഉണ്ട്. ഒരാൾക്ക് Internet Explorer സ്പെസിഫിക് ആയിട്ടുള്ള എന്തെങ്കിലും വേണമെങ്കിൽ, അവിടെ പോകുന്നതായിരിക്കും നല്ലത്: <http://msdn.microsoft.com/>.
 
