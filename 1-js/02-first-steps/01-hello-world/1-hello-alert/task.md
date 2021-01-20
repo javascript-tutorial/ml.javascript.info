@@ -4,9 +4,9 @@ importance: 5
 
 # Show an alert
 
-Create a page that shows a message "I'm JavaScript!".
+"ഞാൻ ജാവാസ്ക്രിപ്റ്റ്! എന്ന message കാണിക്കുന്ന ഒരു പേജ് ഉണ്ടാക്കുക.
 
-Do it in a sandbox, or on your hard drive, doesn't matter, just ensure that it works.
+ഇത് ഒരു sandbox ലൊ അല്ലെങ്കിൽ നിങ്ങളുടെ hard drive ലൊ ചെയ്യുക .എതായാലും പ്രശ്നമില്ല, അത് വർക് ആകുന്നൊ എന്നു ഉറപ്പാക്കുക.
 
 [demo src="solution"]
 
