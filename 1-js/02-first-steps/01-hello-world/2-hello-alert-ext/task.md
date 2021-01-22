@@ -2,8 +2,8 @@ importance: 5
 
 ---
 
-# Show an alert with an external script
+# external script ഉപയോഗിച്ചു alert കാണിക്കാം
 
-ഇപ്പോൾ കഴിഞ്ഞ task ൻറെ solution എടുക്കുക <info:task/hello-alert>. Modify it by extracting the script content into an external file `alert.js`, residing in the same folder.
+ഇപ്പോൾ കഴിഞ്ഞ task ൻറെ solution എടുക്കുക <info:task/hello-alert>. എന്നിട്ട് ആ script ൽ ഉള്ള content, extract ചെയ്തു  അതേ ഫോൾഡറിൽ ഉള്ള `alert.js` എന്ന വേറൊരു ഫയലിലോട്ടു ചെയ്യുക.
 
-Open the page, ensure that the alert works.
+പേജ് open ചെയ്ത് alert, work ആകുന്നുണ്ടെന്നു ഉറപ്പാക്കുക.
