@@ -12,10 +12,14 @@
 പക്ഷെ വളരെ ഫോർമലായത് കൊണ്ടു, തുടക്കമിത് മനസ്സിലാക്കാൻ നല്ല ബുദ്ധിമുട്ടായിരിക്കും. അതിനാൽ, വിശദാംശങ്ങളെക്കുറിച്ചുള്ള ഏറ്റവും വിശ്വാസ്യതയുള്ള ഡാറ്റ സ്രോതസ്സ് നിങ്ങൾക്ക് ആവശ്യമുണ്ടെങ്കിൽ, ഇതൊരു ശരിയായ സ്ഥലമാണ്. എന്നാൽ ഇത് സാധാരണ ഉപയോഗത്തിന് വേണ്ടിയല്ല.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ഓരോ വർഷവും പുതിയൊരു വേർഷൻ അവർ പുറത്തിറക്കും. ഏറ്റവും പുതിയ വേർഷൻ റിലീസിന്റെ കൂടെ <https://tc39.es/ecma262/> ൽ ലഭിക്കുന്നതാണ്.
 =======
 Also, if you're in developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
 >>>>>>> 97ef86242f9f236b13152e1baf52a55c4db8728a
+=======
+Also, if you're developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
+>>>>>>> 7b76185892aa9798c3f058256aed44a9fb413cc3
 
 പുതിയ സ്റ്റാൻഡേർഡ് ആയിട്ടുള്ള ഫീച്ചേഴ്‌സ് വായിക്കാൻ("stage 3"), ഇവിടെ ഞെക്കിയാൽ മതിയാകും <https://github.com/tc39/proposals>.
 
