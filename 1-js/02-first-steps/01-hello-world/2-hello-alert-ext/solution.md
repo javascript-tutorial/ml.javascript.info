@@ -1,8 +1,8 @@
-The HTML code:
+HTML കോഡ്:
 
 [html src="index.html"]
 
-For the file `alert.js` in the same folder:
+അതേ ഫോൾഡറിൽ ഉള്ള `alert.js` എന്ന ഫയലിന് വേണ്ടി:
 
 [js src="alert.js"]
 
