@@ -12,8 +12,8 @@
 
 നിങ്ങൾ ഇത് വരെ ഒരു IDE സെലക്ട് ചെയ്തിട്ടില്ലെങ്കിൽ, താഴെ പറയുന്നവ ഒന്നു നോക്കുക:
 
-- [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ പ്ലാറ്ഫോമും, ഫ്രീ).
-- [WebStorm](http://www.jetbrains.com/webstorm/) (എല്ലാ പ്ലാറ്ഫോമും, പെയ്ഡ്).
+- [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ പ്ലാറ്ഫോമിലും, ഫ്രീ).
+- [WebStorm](http://www.jetbrains.com/webstorm/) (എല്ലാ പ്ലാറ്ഫോമിലും, പെയ്ഡ്).
 
 വിൻഡോസിൽ, "Visual Studio"യും നമുക്ക് ഉപയോഗിക്കാവുന്നതാണ്, ഇതിനു "Visual Studio Code" മായി ഒരു ബന്ധവുമില്ല. "Visual Studio" പെയ്ഡ് സോഫ്ട് വയറും വിന്ഡോഡിൽ മാത്രവുമുള്ള ഒരു എഡിറ്ററുമാണ്, മാത്രവുമല്ല ഇതു .NET പ്ലാറ്ഫോമിനു പറ്റിയ ഒരു എഡിറ്ററുമാണ്. ജാവസ്ക്രിപ്റ്റിനും ഇതു നല്ലൊരു എഡിറ്ററാണ്. ഇതിനു ഒരു ഫ്രീ വേർഷൻ കൂടെയുണ്ട് [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
