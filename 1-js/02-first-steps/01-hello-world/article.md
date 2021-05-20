@@ -1,10 +1,10 @@
 # Hello, world!
+ 
+ട്യൂട്ടോറിയലിന്റെ ഈ ഭാഗം തന്നെ core javascript നെ കുറിച്ചാണ്.
 
-This part of the tutorial is about core JavaScript, the language itself.
+ഞങ്ങളുടെ സ്ക്രിപ്റ്റുകൾ വർക് ആകണമെങ്കിൽ ഞങ്ങൾക്ക് ഒരു enviornment ആവശ്യമാണ്, കൂടാതെ ഈ പുസ്തകം ഓൺ‌ലൈനിലായതിനാൽ ബ്രൗസർ ഒരു നല്ല ചോയിസാണ്. മറ്റുള്ള (Node.js പോലുള്ളവയിൽ) ശ്രദ്ധ കേന്ദ്രീകരിക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെങ്കിൽ അതിലൊക്കെ നിങ്ങൾ കഷ്ടപ്പെടാതിരിക്കാൻ ഞങ്ങൾ ബ്രൗസർ കമാൻഡുകൾ (അലേർട്ട് പോലുള്ളവ) ഉപയോഗിക്കുന്നുണ്ട്. ട്യൂട്ടോറിയലിന്റെ അടുത്ത ഭാഗത്ത് ബ്രൗസറിലെ ജാവാസ്ക്രിപ്റ്റിൽ ആയിരിക്കും നമ്മൾ ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്നത്.
 
-But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We'll keep the amount of browser-specific commands (like `alert`) to a minimum so that you don't spend time on them if you plan to concentrate on another environment (like Node.js). We'll focus on JavaScript in the browser in the [next part](/ui) of the tutorial.
-
-So first, let's see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like `"node my.js"`.
+അതിനാൽ ആദ്യം, ഒരു വെബ്‌പേജിലേക്ക് നമ്മൾ എങ്ങനെ ഒരു സ്‌ക്രിപ്റ്റ് അറ്റാച്ചു ചെയ്യുന്നുവെന്ന് നോക്കാം. സെർവർ-സൈഡ് ആയിട്ടുള്ളവയ്ക്ക് (Node.js പോലെ),  "node my.js" പോലുള്ള ഒരു കമാൻഡ് ഉപയോഗിച്ച് നിങ്ങൾക്ക് എക്സിക്യൂട്ട് ചെയ്യാൻ കഴിയുന്നതാണ്.
 
 
 ## The "script" tag
