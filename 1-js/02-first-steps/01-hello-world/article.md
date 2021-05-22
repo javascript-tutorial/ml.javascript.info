@@ -7,11 +7,11 @@
 അതിനാൽ ആദ്യം, ഒരു വെബ്‌പേജിലേക്ക് നമ്മൾ എങ്ങനെ ഒരു സ്‌ക്രിപ്റ്റ് അറ്റാച്ചു ചെയ്യുന്നുവെന്ന് നോക്കാം. സെർവർ-സൈഡ് ആയിട്ടുള്ളവയ്ക്ക് (Node.js പോലെ),  "node my.js" പോലുള്ള ഒരു കമാൻഡ് ഉപയോഗിച്ച് നിങ്ങൾക്ക് എക്സിക്യൂട്ട് ചെയ്യാൻ കഴിയുന്നതാണ്.
 
 
-## The "script" tag
+## "script" ടാഗ്
 
-JavaScript programs can be inserted almost anywhere into an HTML document using the `<script>` tag.
+HTML document ൽ  `<script>` ടാഗ് ഉപയോഗിച്ച് എവിടെ വേണമെങ്കിലും നമുക്ക് javascript പ്രോഗ്രാം ചെയ്യാവുന്നതാണ്.
 
-For instance:
+ഉദാഹരണത്തിന്:
 
 ```html run height=100
 <!DOCTYPE HTML>
@@ -35,7 +35,7 @@ For instance:
 ```
 
 ```online
-You can run the example by clicking the "Play" button in the right-top corner of the box above.
+ഈ തന്നിരിക്കുന്ന ഉദാഹരണങ്ങൾ എല്ലാം run ചെയ്തു നോക്കുവാനായി ആ ബോക്സിന്റെ മുകൾ ഭാഗത്ത് വലത് വശത്തുള്ള  "Play" ബട്ടണിൽ ഞെക്കിയാൽ മതിയാകും.
 ```
 
 The `<script>` tag contains JavaScript code which is automatically executed when the browser processes the tag.
