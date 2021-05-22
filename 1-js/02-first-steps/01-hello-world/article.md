@@ -38,10 +38,10 @@ HTML document ൽ  `<script>` ടാഗ് ഉപയോഗിച്ച് എവ
 ഈ തന്നിരിക്കുന്ന ഉദാഹരണങ്ങൾ എല്ലാം run ചെയ്തു നോക്കുവാനായി ആ ബോക്സിന്റെ മുകൾ ഭാഗത്ത് വലത് വശത്തുള്ള  "Play" ബട്ടണിൽ ഞെക്കിയാൽ മതിയാകും.
 ```
 
-The `<script>` tag contains JavaScript code which is automatically executed when the browser processes the tag.
+`<script>` ടാഗിൽ ഉള്ള javascript കോഡുകളെല്ലാം ബ്രൗസർ <script> കാണുന്ന സമയത്തു തന്നെ execute ചെയ്യും.
 
 
-## Modern markup
+## പുതിയ markupകൾ
 
 The `<script>` tag has a few attributes that are rarely used nowadays but can still be found in old code:
 
