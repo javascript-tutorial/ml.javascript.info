@@ -4,7 +4,7 @@ importance: 5
 
 # Comparisons
 
-What will be the result for these expressions?
+ഇവയുടെ റിസൾട്ട് എന്തായിരിക്കും?
 
 ```js no-beautify
 5 > 4

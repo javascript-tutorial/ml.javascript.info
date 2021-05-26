@@ -10,12 +10,12 @@ null == "\n0\n" → false
 null === +"\n0\n" → false
 ```
 
-Some of the reasons:
+കാരണങ്ങൾ:
 
-1. Obviously, true.
-2. Dictionary comparison, hence false. `"a"` is smaller than `"p"`.
-3. Again, dictionary comparison, first char `"2"` is greater than the first char `"1"`.
-4. Values `null` and `undefined` equal each other only.
-5. Strict equality is strict. Different types from both sides lead to false.
-6. Similar to `(4)`, `null` only equals `undefined`.
-7. Strict equality of different types.
+1. സംശയമില്ല, true.
+2. ഡിക്ഷ്ണറി ഓർഡറിൽ താരതമ്യം ചെയ്യുന്നു, അതിനാൽ false. `"a"`, `"p"` യെക്കാൾ ചെറുതാണ്.
+3. ഇതും ഡിക്ഷ്ണറി ഓർഡറിൽ താരതമ്യം ചെയ്യുന്നു, ആദ്യ അക്ഷരം `"2"`, ആദ്യ അക്ഷരം `"1"`നെക്കാൾ വലുതാണ്.
+4. `null`,`undefined` വാല്യുകൾ അവയെ പരസ്പരം മാത്രം പൂർണമാക്കുന്നു(`==`).
+5. സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്റർ സ്ട്രിക്റ്റ് ആണ്. വ്യത്യസ്ത ഡാറ്റാടൈപ്പുകൾ false റിട്ടേൺ ചെയ്യുന്നു.
+6. `(4)`പോലെത്തന്നെ, `null`,`undefined` വാല്യുകൾ അവയെ പരസ്പരം മാത്രമേ പൂർണമാക്കുകയുളളൂ.
+7. സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി, വ്യത്യസ്ത ഡാറ്റാടൈപ്പുകൾ -> false
