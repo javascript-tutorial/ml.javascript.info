@@ -43,10 +43,10 @@ HTML document ൽ  `<script>` ടാഗ് ഉപയോഗിച്ച് എവ
 
 ## പുതിയ markupകൾ
 
-The `<script>` tag has a few attributes that are rarely used nowadays but can still be found in old code:
+`<script>` tag ന് പണ്ട് ധാരാളമായി ഉപയോഗിച്ചിരുന്നതും ഇപ്പോൾ ചുരുക്കമായി ഉപയോഗിക്കുന്നതുമായ കുറച്ചു attributes ഉണ്ട്:
 
-The `type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
-: The old HTML standard, HTML4, required a script to have a `type`. Usually it was `type="text/javascript"`. It's not required anymore. Also, the modern HTML standard totally changed the meaning of this attribute. Now, it can be used for JavaScript modules. But that's an advanced topic, we'll talk about modules in another part of the tutorial.
+`type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
+: പഴയ HTML standard ആയ, HTML4 ന്, `type` ൽ ഉപയോഗിക്കാനായി ഒരു script വേണമായിരുന്നു. സാധാരണ ഇത് `type="text/javascript"` ആയിരുന്നു. ഇപ്പോൾ അതിന്റെ ആവശ്യം ഇല്ല. മാത്രമല്ല ,പുതിയ HTML standard  ഈ attribute ന്റെ അർഥo തന്നെ മാറ്റി. ഇപ്പോൾ, അത് JavaScript modules ന് വേണ്ടിയും ഉപയോഗിക്കാം. പക്ഷെ അതൊരു advanced topic ആണ്, നമ്മൾ modules നെ കുറിച്ചു പിന്നീട് നോക്കുന്നതാണ് .
 
 The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
 : This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
