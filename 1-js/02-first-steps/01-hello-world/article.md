@@ -48,11 +48,11 @@ HTML document ൽ  `<script>` ടാഗ് ഉപയോഗിച്ച് എവ
 `type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
 : പഴയ HTML standard ആയ, HTML4 ന്, `type` ൽ ഉപയോഗിക്കാനായി ഒരു script വേണമായിരുന്നു. സാധാരണ ഇത് `type="text/javascript"` ആയിരുന്നു. ഇപ്പോൾ അതിന്റെ ആവശ്യം ഇല്ല. മാത്രമല്ല ,പുതിയ HTML standard  ഈ attribute ന്റെ അർഥo തന്നെ മാറ്റി. ഇപ്പോൾ, അത് JavaScript modules ന് വേണ്ടിയും ഉപയോഗിക്കാം. പക്ഷെ അതൊരു advanced topic ആണ്, നമ്മൾ modules നെ കുറിച്ചു പിന്നീട് നോക്കുന്നതാണ് .
 
-The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
-: This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
+`language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
+: script ന്റെ  language നെ കാണിക്കാനായിരുന്നു ഈ attribute ഉപയോഗിച്ചിരുന്നത്. JavaScript തന്നെ default language ആയതു കൊണ്ട് ഇപ്പോൾ ഈ attribute ഇട്ടിട്ടും വലിയ കാര്യമൊന്നും ഇല്ല. അത് ഉപയോഗിക്കേണ്ട ആവശ്യമേ നമുക്കില്ല.
 
-Comments before and after scripts.
-: In really ancient books and guides, you may find comments inside `<script>` tags, like this:
+scripts ന് മുൻപും ശേഷവുമുള്ള comment കൾ.
+: പണ്ടത്തെ ബുക്കുകളിലും ഗൈഡിലുമെല്ലാം, നമുക്ക് `<script>` ന്റെ അകത്തു ഇതുപോലെ comments കാണാൻ സാധിക്കും:
 
     ```html no-beautify
     <script type="text/javascript"><!--
@@ -60,7 +60,7 @@ Comments before and after scripts.
     //--></script>
     ```
 
-    This trick isn't used in modern JavaScript. These comments hide JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
+    ഈ ട്രിക്‌ ഇപ്പോഴത്തെ JavaScript ൽ ഇല്ല. These comments hide JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
 
 
 ## External scripts
