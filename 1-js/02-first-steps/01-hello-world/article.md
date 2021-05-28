@@ -60,7 +60,7 @@ scripts ന് മുൻപും ശേഷവുമുള്ള comment കൾ.
     //--></script>
     ```
 
-    ഈ ട്രിക്‌ ഇപ്പോഴത്തെ JavaScript ൽ ഇല്ല. These comments hide JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
+    ഈ ട്രിക്‌ ഇപ്പോഴത്തെ JavaScript ൽ ഇല്ല. ഈ commentsകൾ  '<script>' tag സപ്പോർട്ട് ആകാത്ത പഴയ ചില browser കളിൽ javascript നെ മറച്ചു വെക്കാനാണ് ഉപയോഗിച്ചിരുന്നത്. കഴിഞ്ഞ 15 വർഷമായ് റിലീസ് ആയ browsers ന് ഈ പ്രശ്നം ഇല്ലാത്തതു കൊണ്ടു തന്നെ, ഇത്തരം comment കൾ പഴയ code നെ തിരിച്ചറിയാൻ നമ്മളെ സഹായിക്കും.
 
 
 ## External scripts
