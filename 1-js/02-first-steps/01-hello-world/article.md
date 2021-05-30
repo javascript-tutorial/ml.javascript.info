@@ -90,7 +90,7 @@ HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന a
 ```
 
 ```smart
-As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+നിയമം അനുസരിച്ച്, ചെറിയ script കൽ മാത്രമേ HTML ഇൽ ഇടാറുള്ളൂ. ബുദ്ധിമുട്ടേറിയ script കൽ വേറെ ഫയലുകളിലായിട്ടാണ് സൂക്ഷിക്കുന്നത്.
 
 The benefit of a separate file is that the browser will download it and store it in its [cache](https://en.wikipedia.org/wiki/Web_cache).
 
