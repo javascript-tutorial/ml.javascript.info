@@ -63,25 +63,25 @@ scripts ന് മുൻപും ശേഷവുമുള്ള comment കൾ.
     ഈ ട്രിക്‌ ഇപ്പോഴത്തെ JavaScript ൽ ഇല്ല. ഈ commentsകൾ  '<script>' tag സപ്പോർട്ട് ആകാത്ത പഴയ ചില browser കളിൽ javascript നെ മറച്ചു വെക്കാനാണ് ഉപയോഗിച്ചിരുന്നത്. കഴിഞ്ഞ 15 വർഷമായ് റിലീസ് ആയ browsers ന് ഈ പ്രശ്നം ഇല്ലാത്തതു കൊണ്ടു തന്നെ, ഇത്തരം comment കൾ പഴയ code നെ തിരിച്ചറിയാൻ നമ്മളെ സഹായിക്കും.
 
 
-## External scripts
+## പുറത്തു നിന്നുള്ള script കൾ
 
-If we have a lot of JavaScript code, we can put it into a separate file.
+നമുക്ക് ഒരുപാട് JavaScript code ഉണ്ടെങ്കിൽ, നമുക്കത് വേറൊരു ഫയാളിലൊട്ടു ഇടാവുന്നതാണ്.
 
-Script files are attached to HTML with the `src` attribute:
+HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന attribute ഉപയോഗിച്ചാണ്:
 
 ```html
 <script src="/path/to/script.js"></script>
 ```
 
-Here, `/path/to/script.js` is an absolute path to the script from the site root. One can also provide a relative path from the current page. For instance, `src="script.js"` would mean a file `"script.js"` in the current folder.
+ഇവിടെ, `/path/to/script.js` root ൽ നിന്നും script ലേക്ക് നേരിട്ടുള്ള path ആണ്(absolute). വേണമെങ്കിൽ നമുക്ക് ഇപ്പോഴത്തെ പേജിൽ നിന്നും path(relative) കൊടുക്കാവുന്നതാണ്. ഉദാഹരണത്തിന്, `src="script.js"` അർത്ഥമാക്കുന്നത്‌ `"script.js"` ഇപ്പോഴുള്ള ഫോൾഡറിൽ തന്നെയാണെന്നാണ്.
 
-We can give a full URL as well. For instance:
+നമുക്ക് വേണമെങ്കിൽ പൂർണമായ URL ഉം കൊടുക്കാം. ഉദാഹരണത്തിന്:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
 ```
 
-To attach several scripts, use multiple tags:
+ഒന്നിൽ കൂടുതൽ script ഉപയോഗിക്കാൻ, വേറെ വേറെ tags ഉപയോഗിക്കുക:
 
 ```html
 <script src="/js/script1.js"></script>
