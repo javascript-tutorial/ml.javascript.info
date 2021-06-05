@@ -92,11 +92,11 @@ HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന a
 ```smart
 നിയമം അനുസരിച്ച്, ചെറിയ script കൽ മാത്രമേ HTML ഇൽ ഇടാറുള്ളൂ. ബുദ്ധിമുട്ടേറിയ script കൽ വേറെ ഫയലുകളിലായിട്ടാണ് സൂക്ഷിക്കുന്നത്.
 
-The benefit of a separate file is that the browser will download it and store it in its [cache](https://en.wikipedia.org/wiki/Web_cache).
+വേറെ വേറെ ഫയലുകൾ ഉപയോഗിക്കുകയാണെങ്കിൽ ബ്രൗസർ അത് ഡൌൺലോഡ് ചെയ്‌ത് അതിന്റെ [cache](https://en.wikipedia.org/wiki/Web_cache)ൽ സൂക്ഷിക്കും.
 
-Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+ഒരേ script ഉപയോഗിക്കുന്ന മറ്റു പേജുകൾ വീണ്ടും script ഡൌൺലോഡ് ചെയ്യാതെ cache ൽ നിന്നും എടുക്കും, അതായത് ഒരു ഫയൽ ഒരു തവണ മാത്രമേ download ആകുകയുള്ളൂ.
 
-That reduces traffic and makes pages faster.
+ഇത് traffic കുറക്കുകയും പേജ് പെട്ടെന്ന് ലോഡ് ആകാൻ സഹായിക്കുന്നു.
 ```
 
 ````warn header="If `src` is set, the script content is ignored."
