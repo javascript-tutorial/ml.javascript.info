@@ -96,24 +96,23 @@ HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന a
 
 ഒരേ script ഉപയോഗിക്കുന്ന മറ്റു പേജുകൾ വീണ്ടും script ഡൌൺലോഡ് ചെയ്യാതെ cache ൽ നിന്നും എടുക്കും, അതായത് ഒരു ഫയൽ ഒരു തവണ മാത്രമേ download ആകുകയുള്ളൂ.
 
-ഇത് traffic കുറക്കുകയും പേജ് പെട്ടെന്ന് ലോഡ് ആകാൻ സഹായിക്കുന്നു.
+ഇത് traffic കുറക്കുകയും പേജ് പെട്ടെന്ന് ലോഡ് ആകുവാനും സഹായിക്കുന്നു.
 ```
 
-````warn header="If `src` is set, the script content is ignored."
-A single `<script>` tag can't have both the `src` attribute and code inside.
+````warn header=" `src` ഉണ്ടെങ്കിൽ, script ലുള്ള കോഡുകൾ അവഗണിക്കപ്പെടുന്നതാണ്."
+ഒരു `<script>` tag ന് ഒരേ സമയം `src` attribute ഉം അതിന്റെ അകത്തു കോഡും വരാൻ പാടുള്ളതല്ല.
 
-This won't work:
+ഇതു വർക്ക് ആകില്ല:
 
 ```html
 <script *!*src*/!*="file.js">
-  alert(1); // the content is ignored, because src is set
+  alert(1); // , src ഉള്ളത് കൊണ്ട്, അകത്തുള്ള കോഡ് അവഗണിക്കപ്പെടുന്നതാണ്
 </script>
 ```
 
-We must choose either an external `<script src="…">` or a regular `<script>` with code.
+നമ്മൾ ഒരു external `<script src="…">` അല്ലെങ്കിൽ regular `<script>` മാത്രമേ code ന്റെ കൂടെ ഉപയോഗിക്കാൻ പാടുള്ളൂ.
 
-The example above can be split into two scripts to work:
-
+മുകളിലുള്ള ഉദാഹരണം വർക്ക് ആകാൻ വേണ്ടി നമുക്ക് അതിനെ രണ്ടു script ആയിട്ടു ഭാഗിക്കാം:
 ```html
 <script src="file.js"></script>
 <script>
@@ -122,11 +121,11 @@ The example above can be split into two scripts to work:
 ```
 ````
 
-## Summary
+## സംഗ്രഹം
 
-- We can use a `<script>` tag to add JavaScript code to a page.
-- The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+- JavaScript കോഡ് ഒരു പേജിൽ ചേർക്കാൻ നമുക്ക് `<script>` tag ഉപയോഗിക്കാം.
+- `type` ഉം `language` attribute കളും വേണമെന്നില്ല.
+- പുറത്തു നിന്നുള്ള ഒരു script ഫയൽ നമുക്ക് `<script src="path/to/script.js"></script>` ഉപയോഗിച്ച് ചേർക്കാൻ കഴിയുന്നതാണ്.
 
 
-There is much more to learn about browser scripts and their interaction with the webpage. But let's keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn't distract ourselves with browser-specific implementations of it. We'll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
+ബ്രൗസർ script കളെ കുറിച്ചും അത് വെബ്‌പ്പേജുകളുമായി ഇടപെടുന്നതിനെ കുറിച്ചും ഒരുപാട് അറിയാനുണ്ട്. ഈ ഭാഗം നമ്മൾ JavaScript ന് മാത്രമായി മാറ്റിവെച്ചിട്ടുള്ള കാര്യം ഓർക്കുക, അതുകൊണ്ട് നമ്മൾ ബ്രൌസർ ലോട്ട് ശ്രദ്ധ തിരിക്കേണ്ട ആവശ്യം ഇല്ല. JavaScript ഉപയോഗിക്കാൻ മാത്രമാണ് നമ്മൾ ബ്രൗസർ ഉപയോഗിക്കുന്നത്, മാത്രമല്ല നമുക്കതിൽ വായിക്കാൻ എളുപ്പവുമാണ്.
