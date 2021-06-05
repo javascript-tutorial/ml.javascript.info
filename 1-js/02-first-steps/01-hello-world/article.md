@@ -1,17 +1,17 @@
 # Hello, world!
+ 
+ട്യൂട്ടോറിയലിന്റെ ഈ ഭാഗം തന്നെ core javascript നെ കുറിച്ചാണ്.
 
-This part of the tutorial is about core JavaScript, the language itself.
+ഞങ്ങളുടെ സ്ക്രിപ്റ്റുകൾ വർക് ആകണമെങ്കിൽ ഞങ്ങൾക്ക് ഒരു enviornment ആവശ്യമാണ്, കൂടാതെ ഈ പുസ്തകം ഓൺ‌ലൈനിലായതിനാൽ ബ്രൗസർ ഒരു നല്ല ചോയിസാണ്. മറ്റുള്ള (Node.js പോലുള്ളവയിൽ) ശ്രദ്ധ കേന്ദ്രീകരിക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെങ്കിൽ അതിലൊക്കെ നിങ്ങൾ കഷ്ടപ്പെടാതിരിക്കാൻ ഞങ്ങൾ ബ്രൗസർ കമാൻഡുകൾ (അലേർട്ട് പോലുള്ളവ) ഉപയോഗിക്കുന്നുണ്ട്. ട്യൂട്ടോറിയലിന്റെ [അടുത്ത ഭാഗത്ത്](/ui) ബ്രൗസറിലെ ജാവാസ്ക്രിപ്റ്റിൽ ആയിരിക്കും നമ്മൾ ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്നത്.
 
-But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We'll keep the amount of browser-specific commands (like `alert`) to a minimum so that you don't spend time on them if you plan to concentrate on another environment (like Node.js). We'll focus on JavaScript in the browser in the [next part](/ui) of the tutorial.
-
-So first, let's see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like `"node my.js"`.
+അതിനാൽ ആദ്യം, ഒരു വെബ്‌പേജിലേക്ക് നമ്മൾ എങ്ങനെ ഒരു സ്‌ക്രിപ്റ്റ് അറ്റാച്ചു ചെയ്യുന്നുവെന്ന് നോക്കാം. സെർവർ-സൈഡ് ആയിട്ടുള്ളവയ്ക്ക് (Node.js പോലെ),  "node my.js" പോലുള്ള ഒരു കമാൻഡ് ഉപയോഗിച്ച് നിങ്ങൾക്ക് എക്സിക്യൂട്ട് ചെയ്യാൻ കഴിയുന്നതാണ്.
 
 
-## The "script" tag
+## "script" ടാഗ്
 
-JavaScript programs can be inserted almost anywhere into an HTML document using the `<script>` tag.
+HTML document ൽ  `<script>` ടാഗ് ഉപയോഗിച്ച് എവിടെ വേണമെങ്കിലും നമുക്ക് javascript പ്രോഗ്രാം ചെയ്യാവുന്നതാണ്.
 
-For instance:
+ഉദാഹരണത്തിന്:
 
 ```html run height=100
 <!DOCTYPE HTML>
@@ -35,24 +35,24 @@ For instance:
 ```
 
 ```online
-You can run the example by clicking the "Play" button in the right-top corner of the box above.
+ഈ തന്നിരിക്കുന്ന ഉദാഹരണങ്ങൾ എല്ലാം run ചെയ്തു നോക്കുവാനായി ആ ബോക്സിന്റെ മുകൾ ഭാഗത്ത് വലത് വശത്തുള്ള  "Play" ബട്ടണിൽ ഞെക്കിയാൽ മതിയാകും.
 ```
 
-The `<script>` tag contains JavaScript code which is automatically executed when the browser processes the tag.
+`<script>` ടാഗിൽ ഉള്ള javascript കോഡുകളെല്ലാം ബ്രൗസർ <script> കാണുന്ന സമയത്തു തന്നെ execute ചെയ്യും.
 
 
-## Modern markup
+## പുതിയ markupകൾ
 
-The `<script>` tag has a few attributes that are rarely used nowadays but can still be found in old code:
+`<script>` tag ന് പണ്ട് ധാരാളമായി ഉപയോഗിച്ചിരുന്നതും ഇപ്പോൾ ചുരുക്കമായി ഉപയോഗിക്കുന്നതുമായ കുറച്ചു attributes ഉണ്ട്:
 
-The `type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
-: The old HTML standard, HTML4, required a script to have a `type`. Usually it was `type="text/javascript"`. It's not required anymore. Also, the modern HTML standard totally changed the meaning of this attribute. Now, it can be used for JavaScript modules. But that's an advanced topic, we'll talk about modules in another part of the tutorial.
+`type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
+: പഴയ HTML standard ആയ, HTML4 ന്, `type` ൽ ഉപയോഗിക്കാനായി ഒരു script വേണമായിരുന്നു. സാധാരണ ഇത് `type="text/javascript"` ആയിരുന്നു. ഇപ്പോൾ അതിന്റെ ആവശ്യം ഇല്ല. മാത്രമല്ല ,പുതിയ HTML standard  ഈ attribute ന്റെ അർഥo തന്നെ മാറ്റി. ഇപ്പോൾ, അത് JavaScript modules ന് വേണ്ടിയും ഉപയോഗിക്കാം. പക്ഷെ അതൊരു advanced topic ആണ്, നമ്മൾ modules നെ കുറിച്ചു പിന്നീട് നോക്കുന്നതാണ് .
 
-The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
-: This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
+`language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
+: script ന്റെ  language നെ കാണിക്കാനായിരുന്നു ഈ attribute ഉപയോഗിച്ചിരുന്നത്. JavaScript തന്നെ default language ആയതു കൊണ്ട് ഇപ്പോൾ ഈ attribute ഇട്ടിട്ടും വലിയ കാര്യമൊന്നും ഇല്ല. അത് ഉപയോഗിക്കേണ്ട ആവശ്യമേ നമുക്കില്ല.
 
-Comments before and after scripts.
-: In really ancient books and guides, you may find comments inside `<script>` tags, like this:
+scripts ന് മുൻപും ശേഷവുമുള്ള comment കൾ.
+: പണ്ടത്തെ ബുക്കുകളിലും ഗൈഡിലുമെല്ലാം, നമുക്ക് `<script>` ന്റെ അകത്തു ഇതുപോലെ comments കാണാൻ സാധിക്കും:
 
     ```html no-beautify
     <script type="text/javascript"><!--
@@ -60,28 +60,28 @@ Comments before and after scripts.
     //--></script>
     ```
 
-    This trick isn't used in modern JavaScript. These comments hide JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
+    ഈ ട്രിക്‌ ഇപ്പോഴത്തെ JavaScript ൽ ഇല്ല. ഈ commentsകൾ  '<script>' tag സപ്പോർട്ട് ആകാത്ത പഴയ ചില browser കളിൽ javascript നെ മറച്ചു വെക്കാനാണ് ഉപയോഗിച്ചിരുന്നത്. കഴിഞ്ഞ 15 വർഷമായ് റിലീസ് ആയ browsers ന് ഈ പ്രശ്നം ഇല്ലാത്തതു കൊണ്ടു തന്നെ, ഇത്തരം comment കൾ പഴയ code നെ തിരിച്ചറിയാൻ നമ്മളെ സഹായിക്കും.
 
 
-## External scripts
+## പുറത്തു നിന്നുള്ള script കൾ
 
-If we have a lot of JavaScript code, we can put it into a separate file.
+നമുക്ക് ഒരുപാട് JavaScript code ഉണ്ടെങ്കിൽ, നമുക്കത് വേറൊരു ഫയലിലോട്ടു ഇടാവുന്നതാണ്.
 
-Script files are attached to HTML with the `src` attribute:
+HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന attribute ഉപയോഗിച്ചാണ്:
 
 ```html
 <script src="/path/to/script.js"></script>
 ```
 
-Here, `/path/to/script.js` is an absolute path to the script from the site root. One can also provide a relative path from the current page. For instance, `src="script.js"` would mean a file `"script.js"` in the current folder.
+ഇവിടെ, `/path/to/script.js` root ൽ നിന്നും script ലേക്ക് നേരിട്ടുള്ള path ആണ്(absolute). വേണമെങ്കിൽ നമുക്ക് ഇപ്പോഴത്തെ പേജിൽ നിന്നും path(relative) കൊടുക്കാവുന്നതാണ്. ഉദാഹരണത്തിന്, `src="script.js"` അർത്ഥമാക്കുന്നത്‌ `"script.js"` ഇപ്പോഴുള്ള ഫോൾഡറിൽ തന്നെയാണെന്നാണ്.
 
-We can give a full URL as well. For instance:
+നമുക്ക് വേണമെങ്കിൽ പൂർണമായ URL ഉം കൊടുക്കാം. ഉദാഹരണത്തിന്:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
 ```
 
-To attach several scripts, use multiple tags:
+ഒന്നിൽ കൂടുതൽ script ഉപയോഗിക്കാൻ, വേറെ വേറെ tags ഉപയോഗിക്കുക:
 
 ```html
 <script src="/js/script1.js"></script>
@@ -90,30 +90,29 @@ To attach several scripts, use multiple tags:
 ```
 
 ```smart
-As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+നിയമം അനുസരിച്ച്, ചെറിയ script കൽ മാത്രമേ HTML ഇൽ ഇടാറുള്ളൂ. ബുദ്ധിമുട്ടേറിയ script കൽ വേറെ ഫയലുകളിലായിട്ടാണ് സൂക്ഷിക്കുന്നത്.
 
-The benefit of a separate file is that the browser will download it and store it in its [cache](https://en.wikipedia.org/wiki/Web_cache).
+വേറെ വേറെ ഫയലുകൾ ഉപയോഗിക്കുകയാണെങ്കിൽ ബ്രൗസർ അത് ഡൌൺലോഡ് ചെയ്‌ത് അതിന്റെ [cache](https://en.wikipedia.org/wiki/Web_cache)ൽ സൂക്ഷിക്കും.
 
-Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+ഒരേ script ഉപയോഗിക്കുന്ന മറ്റു പേജുകൾ വീണ്ടും script ഡൌൺലോഡ് ചെയ്യാതെ cache ൽ നിന്നും എടുക്കും, അതായത് ഒരു ഫയൽ ഒരു തവണ മാത്രമേ download ആകുകയുള്ളൂ.
 
-That reduces traffic and makes pages faster.
+ഇത് traffic കുറക്കുകയും പേജ് പെട്ടെന്ന് ലോഡ് ആകുവാനും സഹായിക്കുന്നു.
 ```
 
-````warn header="If `src` is set, the script content is ignored."
-A single `<script>` tag can't have both the `src` attribute and code inside.
+````warn header=" `src` ഉണ്ടെങ്കിൽ, script ലുള്ള കോഡുകൾ അവഗണിക്കപ്പെടുന്നതാണ്."
+ഒരു `<script>` tag ന് ഒരേ സമയം `src` attribute ഉം അതിന്റെ അകത്തു കോഡും വരാൻ പാടുള്ളതല്ല.
 
-This won't work:
+ഇതു വർക്ക് ആകില്ല:
 
 ```html
 <script *!*src*/!*="file.js">
-  alert(1); // the content is ignored, because src is set
+  alert(1); // , src ഉള്ളത് കൊണ്ട്, അകത്തുള്ള കോഡ് അവഗണിക്കപ്പെടുന്നതാണ്
 </script>
 ```
 
-We must choose either an external `<script src="…">` or a regular `<script>` with code.
+നമ്മൾ ഒരു external `<script src="…">` അല്ലെങ്കിൽ regular `<script>` മാത്രമേ code ന്റെ കൂടെ ഉപയോഗിക്കാൻ പാടുള്ളൂ.
 
-The example above can be split into two scripts to work:
-
+മുകളിലുള്ള ഉദാഹരണം വർക്ക് ആകാൻ വേണ്ടി നമുക്ക് അതിനെ രണ്ടു script ആയിട്ടു ഭാഗിക്കാം:
 ```html
 <script src="file.js"></script>
 <script>
@@ -122,11 +121,11 @@ The example above can be split into two scripts to work:
 ```
 ````
 
-## Summary
+## സംഗ്രഹം
 
-- We can use a `<script>` tag to add JavaScript code to a page.
-- The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+- JavaScript കോഡ് ഒരു പേജിൽ ചേർക്കാൻ നമുക്ക് `<script>` tag ഉപയോഗിക്കാം.
+- `type` ഉം `language` attribute കളും വേണമെന്നില്ല.
+- പുറത്തു നിന്നുള്ള ഒരു script ഫയൽ നമുക്ക് `<script src="path/to/script.js"></script>` ഉപയോഗിച്ച് ചേർക്കാൻ കഴിയുന്നതാണ്.
 
 
-There is much more to learn about browser scripts and their interaction with the webpage. But let's keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn't distract ourselves with browser-specific implementations of it. We'll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
+ബ്രൗസർ script കളെ കുറിച്ചും അത് വെബ്‌പ്പേജുകളുമായി ഇടപെടുന്നതിനെ കുറിച്ചും ഒരുപാട് അറിയാനുണ്ട്. ഈ ഭാഗം നമ്മൾ JavaScript ന് മാത്രമായി മാറ്റിവെച്ചിട്ടുള്ള കാര്യം ഓർക്കുക, അതുകൊണ്ട് നമ്മൾ ബ്രൌസർ ലോട്ട് ശ്രദ്ധ തിരിക്കേണ്ട ആവശ്യം ഇല്ല. JavaScript ഉപയോഗിക്കാൻ മാത്രമാണ് നമ്മൾ ബ്രൗസർ ഉപയോഗിക്കുന്നത്, മാത്രമല്ല നമുക്കതിൽ വായിക്കാൻ എളുപ്പവുമാണ്.
