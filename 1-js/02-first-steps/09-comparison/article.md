@@ -1,103 +1,105 @@
-# Comparisons
+# താരതമ്യം ചെയ്യൽ
 
-We know many comparison operators from maths.
+ഗണിതത്തിൽ സംഖ്യകളെ പരസ്പരം താരതമ്യം ചെയ്യുന്നത് എങ്ങനെയെന്ന് നമുക്കറിയാം.
 
-In JavaScript they are written like this:
+ജാവാസ്ക്രിപ്റ്റിൽ അത് ഇങ്ങനെയാണ് : 
 
-- Greater/less than: <code>a &gt; b</code>, <code>a &lt; b</code>.
-- Greater/less than or equals: <code>a &gt;= b</code>, <code>a &lt;= b</code>.
-- Equals: `a == b`, please note the double equality sign `==` means the equality test, while a single one `a = b` means an assignment.
-- Not equals. In maths the notation is <code>&ne;</code>, but in JavaScript it's written as <code>a != b</code>.
+- ഒന്ന് മറ്റൊന്നിനെക്കാൾ വലുത്/ചെറുത് : <code>a &gt; b</code>, <code>a &lt; b</code>.
+- ഒന്ന് മറ്റൊന്നിനെക്കാൾ വലുത്/ചെറുത് അല്ലെങ്കിൽ തുല്ല്യം : <code>a &gt;= b</code>, <code>a &lt;= b</code>.
+- തുല്ല്യം/സമം : `a === b`. ശ്രദ്ധിക്കുക രണ്ട് സമചിഹ്നം (`a == b`) തുല്ല്യമാണോ എന്ന് പരിശോധിക്കാൻ ഉപയോഗിക്കുന്നു. എന്നാൽ ഒരു സമചിഹ്നം (`a = b`) കൊണ്ടുദ്ദേശിക്കുന്നത് 'വാല്ല്യു കൊടുക്കുക (assignment)' എന്നാണ്.
+- തുല്ല്യമല്ല : ഗണിതത്തിൽ ഇതിനുപയോഗിക്കുന്നത് <code>&ne;</code> ചിഹ്നമാണ്, എന്നാൽ ജാവാസ്ക്രിപ്റ്റിൽ അതിങ്ങനെയാണ് എഴുതുന്നത്: <code>a != b</code>.
+  
+ഈ ലേഖനത്തിൽ പലതരം താരതമ്യപ്പെടുത്തലുകളെക്കുറിച്ചും, ജാവാസ്ക്രിപ്റ്റ് അവയെ എങ്ങനെയാണ് നിർമിക്കുന്നതെന്നും, നമ്മൾ പഠിക്കും. ജാവാസ്ക്രിപ്റ്റിൻ്റെ ചില പ്രധാനപ്പെട്ട 'അസ്വാഭാവിക പെരുമാറ്റങ്ങൾ' ഉൾപ്പെടെ.
 
-In this article we'll learn more about different types of comparisons, how JavaScript makes them, including important peculiarities.
+ഇതിൻ്റെ അവസാനം ജാവാസ്ക്രിപ്റ്റിൻ്റെ ഇത്തരം അസ്വാഭാവിക പെരുമാറ്റങ്ങൾ കൊണ്ടുണ്ടാവുന്ന പ്രശ്നങ്ങളെ എങ്ങനെ ഒഴിവാക്കാം എന്നതിനെപ്പറ്റി നമുക്ക് നല്ല ധാരണ ലഭിക്കുന്നതാണ്.
 
-At the end you'll find a good recipe to avoid "JavaScript quirks"-related issues.
+## റിസൾട്ടായി ലഭിക്കുന്നത് ബൂലിയൻ ആയിരിക്കും
 
-## Boolean is the result
+എല്ലാ താരതമ്യ ഓപറേറ്ററുകളും ഒരു ബൂലിയൻ വാല്ല്യുവാണ് റിട്ടേൺ ചെയ്യുന്നത്: 
 
-All comparison operators return a boolean value:
+- `true` -- അർത്ഥം "അതെ", "ശരി" അല്ലെങ്കിൽ "സത്യം".
+- `false` -- അർത്ഥം "അല്ല", "തെറ്റ്", അല്ലെങ്കിൽ "സത്യമല്ല".
 
-- `true` -- means "yes", "correct" or "the truth".
-- `false` -- means "no", "wrong" or "not the truth".
-
-For example:
-
-```js run
-alert( 2 > 1 );  // true (correct)
-alert( 2 == 1 ); // false (wrong)
-alert( 2 != 1 ); // true (correct)
-```
-
-A comparison result can be assigned to a variable, just like any value:
+ഉദാഹരണത്തിന്:
 
 ```js run
-let result = 5 > 4; // assign the result of the comparison
-alert( result ); // true
+alert( 2 > 1 );  // true (ശരി)
+alert( 2 == 1 ); // false (തെറ്റ്)
+alert( 2 != 1 ); // true (ശരി)
 ```
 
-## String comparison
+മറ്റേതൊരു വാല്ല്യുവും പോലെ താരതമ്യം ചെയ്ത് കിട്ടുന്ന റിസൾട്ടിനെ ഒരു വേരിയബിളിൽ കൊടുക്കാൻ(assign ചെയ്യാൻ) സാധിക്കും.
 
-To see whether a string is greater than another, JavaScript uses the so-called "dictionary" or "lexicographical" order.
+```js run
+let result = 5 > 4; // റിസൾട്ടിനെ 'result' എന്ന വേരിയബിളിൽ സുക്ഷിക്കുന്നു (assign ചെയ്യുന്നു)
+alert(result); // true
+```
+## സ്ട്രിങ്ങുകളെ താരതമ്യം ചെയ്യുമ്പോൾ
 
-In other words, strings are compared letter-by-letter.
+ഒരു സ്ട്രിംഗ് മറ്റൊന്നിനെക്കാൾ വലുതാണോ എന്നറിയാൻ ജാവാസ്ക്രിപ്റ്റ് "ഡിക്ഷണറി ഓർഡർ" (lexicographical order) ആണ് ഉപയോഗിക്കുന്നത്.
 
-For example:
+മറ്റൊരു തരത്തിൽ പറയുകയാണെങ്കിൽ, സ്ട്രിങ്ങുകളെ ഓരോ അക്ഷരം വീതം താരതമ്യം ചെയ്യുന്നു.
+
+ഉദാഹരണത്തിന്:
 
 ```js run
 alert( 'Z' > 'A' ); // true
 alert( 'Glow' > 'Glee' ); // true
 alert( 'Bee' > 'Be' ); // true
+
+alert( 'ആ' > 'അ' ); // true
+alert( 'കാക്കപ്പെണ്ണ്' > 'കാക്ക' ); // true
 ```
 
-The algorithm to compare two strings is simple:
+രണ്ട് സ്ട്രിങ്ങുകൾ തമ്മിൽ താരതമ്യം ചെയ്യാൻ ഉപയോഗിക്കുന്ന അൽഗോരിതം വളരെ ലളിതമാണ്:
 
-1. Compare the first character of both strings.
-2. If the first character from the first string is greater (or less) than the other string's, then the first string is greater (or less) than the second. We're done.
-3. Otherwise, if both strings' first characters are the same, compare the second characters the same way.
-4. Repeat until the end of either string.
-5. If both strings end at the same length, then they are equal. Otherwise, the longer string is greater.
+1. രണ്ട് സ്ട്രിങ്ങിലെയും ആദ്യത്തെ അക്ഷരങ്ങൾ വീതം താരതമ്യം ചെയ്യുന്നു.
+2. ആദ്യത്തെ സ്ട്രിങ്ങിലെ ആദ്യ അക്ഷരം രണ്ടാമത്തെ സ്ട്രിങ്ങിലെ ആദ്യ അക്ഷരത്തെക്കാൾ വലുതാണെങ്കിൽ, ആദ്യത്തെ സ്ട്രിങ്ങാണ് വലുത്. ഇനി തിരിച്ചാണെങ്കിൽ രണ്ടാമത്തെ സ്ട്രിങ്ങാണ് വലുത്. അത്രേയുള്ളു, കഴിഞ്ഞു.
+3. ഇനി ആദ്യത്തെ രണ്ട് അക്ഷരങ്ങളും ഒന്നാണെങ്കിൽ, രണ്ട് സ്ട്രിങ്ങിലെയും രണ്ടാമത്തെ അക്ഷരമെടുത്ത് മുമ്പത്തെപ്പോലെ താരതമ്യം ചെയ്യും.
+4. സ്ട്രിംഗ് തീരുന്നത് ഇത് തുടരും.
+5. രണ്ട് സ്ട്രിങ്ങുകളും ഉൾക്കൊള്ളുന്നത് ഒരേ അക്ഷരങ്ങളാണെങ്കിൽ: സ്ട്രിങ്ങുകളുടെ നീളം തുല്ല്യമാണെങ്കിൽ അവ രണ്ടും തുല്ല്യമാണ്. അല്ലെങ്കിൽ നീളം കൂടിയ സ്ട്രിങ്ങാണ് വലുത്.
 
-In the first example above, the comparison `'Z' > 'A'` gets to a result at the first step.
+മുകളിലത്തെ ആദ്യത്തെ ഉദാഹരണത്തിൽ (`'Z' > 'A'`), താരതമ്യം ചെയ്യുമ്പോൾ ആദ്യത്തെ സ്റ്റെപ്പിൽ തന്നെ റിസൾട്ട് ലഭിക്കുന്നു.
 
-The second comparison `'Glow'` and `'Glee'` needs more steps as strings are compared character-by-character:
+എന്നാൽ രണ്ടാമത്തെ ഉദാഹരണത്തിൽ (`'Glow'` and `'Glee'`), റിസൾട്ട് ലഭിക്കാൻ കൂടുതൽ സ്റ്റെപ്പുകൾ ആവശ്യമായി വന്നു:
 
-1. `G` is the same as `G`.
-2. `l` is the same as `l`.
-3. `o` is greater than `e`. Stop here. The first string is greater.
+1. `G` യും `G` യും തുല്ല്യമാണ്.
+2. `l` യും `l` യും തുല്ല്യമാണ്.
+3. `o`, `e`യെക്കാൾ വലുതാണ്. താരതമ്യം ചെയ്യൽ ഇവിടെ നിർത്തുന്നു. ആദ്യത്തെ സ്ട്രിങ്ങാണ് വലുത്.
 
-```smart header="Not a real dictionary, but Unicode order"
-The comparison algorithm given above is roughly equivalent to the one used in dictionaries or phone books, but it's not exactly the same.
+```smart header="ഒരു യഥാർത്ഥ ഡിക്ഷ്ണറി അല്ല, പക്ഷെ യൂനികോഡ് ഓർഡർ"
+മുകളിലത്തെ താരതമ്യ അൽഗൊരിതം ഒരു ഡിക്ഷ്ണറിയിലോ ഫോൺ ബുക്കിലോ വാക്കുകൾ ക്രമീകരിക്കുന്നതിന് ഏകദേശം തുല്ല്യമാണ്. എങ്കിലും അത് അതുപോലെത്തന്നെയല്ല.
 
-For instance, case matters. A capital letter `"A"` is not equal to the lowercase `"a"`. Which one is greater? The lowercase `"a"`. Why? Because the lowercase character has a greater index in the internal encoding table JavaScript uses (Unicode). We'll get back to specific details and consequences of this in the chapter <info:string>.
+ഉദാഹരണത്തിന്, അക്ഷരം വലുതാണോ ചെറുതാണോ എന്നതിന് ഇതിൽ സ്വാധീനം ഉണ്ട്. അതായത് `"A"` യും `"a"` യും തുല്ല്യമല്ല. ഇതിൽ ഏതാണ് വലുത്? ചെറിയക്ഷരം `"a"`. അത് എന്തുകൊണ്ടോണെന്ന് വെച്ചാൽ ചെറിയക്ഷരങ്ങൾ ആണ് ജാവാസ്ക്രിപ്റ്റ് ഉപയോഗിക്കുന്ന ഇൻ്റേണൽ എൻകോഡിംഗ് ടേബിളിൽ(Unicode) മുകളിൽ വരുന്നത്. ഇതിനെക്കുറിച്ച് വിശദമായി നമ്മൾ <info:string> ചാപ്റ്ററിൽ പഠിക്കുന്നതാണ്.
 ```
+## വ്യത്യസ്ത ടൈപ്പുകളെ(Data types) തമ്മിൽ താരതമ്യം ചെയ്യുമ്പോൾ
 
-## Comparison of different types
+രണ്ട് വ്യത്യസ്ത വിഭാഗത്തിൽ പെട്ട വാല്യുകളെ തമ്മിൽ താരതമ്യം ചെയ്യുമ്പോൾ, ജാവാസ്ക്രിപ്റ്റ് അവയെ ആദ്യം ഒരു നമ്പറിലേക്ക് മാറ്റും.
 
-When comparing values of different types, JavaScript converts the values to numbers.
-
-For example:
+ഉദാഹരണത്തിന്:
 
 ```js run
-alert( '2' > 1 ); // true, string '2' becomes a number 2
-alert( '01' == 1 ); // true, string '01' becomes a number 1
+alert( '2' > 1 ); // true, സ്ട്രിംഗ് '2', നമ്പർ 2 ആയി മാറുന്നു.
+alert( '01' == 1 ); // true, സ്ട്രിംഗ് '01' നമ്പർ 1 ആയി മാറുന്നു.
 ```
+ബൂലിയൻ വാല്യുകളിൽ `true`, `1` ആയും `false`, `0` ആയും മാറുന്നു.
 
-For boolean values, `true` becomes `1` and `false` becomes `0`.
-
-For example:
+ഉദാഹരണത്തിന്:
 
 ```js run
 alert( true == 1 ); // true
 alert( false == 0 ); // true
 ```
+```
 
-````smart header="A funny consequence"
-It is possible that at the same time:
+````smart header="രസകരമായ അനന്തരഫലം"
+അതേ സമയം ഇതും സാധ്യമാണ്:
 
-- Two values are equal.
-- One of them is `true` as a boolean and the other one is `false` as a boolean.
+- രണ്ട് വാല്യുകളും തുല്യമാവാം.
+- അതിലൊന്ന് `true` ഒരു ബൂലിയനായും, മറ്റൊന്ന് `false` ഒരു ബൂലിയനായും.
 
-For example:
+
+ഉദാഹരണത്തിന്:
 
 ```js run
 let a = 0;
@@ -108,84 +110,78 @@ alert( Boolean(b) ); // true
 
 alert(a == b); // true!
 ```
-
-From JavaScript's standpoint, this result is quite normal. An equality check converts values using the numeric conversion (hence `"0"` becomes `0`), while the explicit `Boolean` conversion uses another set of rules.
 ````
 
-## Strict equality
+ജാവാസ്ക്രിപ്റ്റിൻ്റെ ഭാഗത്തു നിന്നു നോക്കുമ്പോൾ ഈ റിസൾട്ട് സാധാരണമാണ്. ഒരു ഇക്വാലിറ്റി ചെക്ക് വാല്യുകളെ നേരിട്ട് നമ്പറിലേക്ക് മാറ്റുമ്പോൾ (അതായത് `"0"`, `0` ആയി മാറുന്നു), `Boolean` മറ്റു പല നിയമങ്ങളും അനുസരിച്ചാണ് ഇതു ചെയ്യുന്നത്.
 
-A regular equality check `==` has a problem. It cannot differentiate `0` from `false`:
+## സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്റർ
+
+ഒരു സാധാരണ ഇക്വാലിറ്റി ചെക്കിന്(`==`) ഒരു പ്രശ്നം ഉണ്ട്. അതിന് `0` യെ `false`ൽ നിന്ന് വേർതിരിച്ചറിയാൻ സാധിക്കില്ല.
 
 ```js run
 alert( 0 == false ); // true
 ```
-
-The same thing happens with an empty string:
+ഇതേ പ്രശ്നം തന്നെ ഒരു ശൂന്യമായ സ്ട്രിങ്ങിൻ്റെ(empty string) കാര്യത്തിലും ഉണ്ട്.
 
 ```js run
 alert( '' == false ); // true
 ```
+ 
+ഇത് സംഭവിക്കാൻ കാരണം വ്യത്യസ്ത വിഭാഗങ്ങളിൽപ്പെട്ട വാല്യുകളെ ഇക്വാലിറ്റി ഓപറേറ്റർ `==` ഒരു നമ്പറിലേക്ക് മാറ്റുന്നത് കൊണ്ടാണ്.
+ഒന്നുമില്ലാത്ത ശൂന്യമായ ഒരു സ്ട്രിംഗ്, `false`നെപ്പോലെത്തന്നെ പൂജ്യമായി മാറുന്നു.
 
-This happens because operands of different types are converted to numbers by the equality operator `==`. An empty string, just like `false`, becomes a zero.
+അപ്പോൾ നമുക്ക് `0` യെ `false`ൽ നിന്നും വേർതിരിച്ചറിയേണ്ടി വന്നാൽ എന്തു ചെയ്യും?
 
-What to do if we'd like to differentiate `0` from `false`?
+**ഒരു സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്റർ `===` ടൈപ്പുകളെ മാറ്റാതെ താരതമ്യം ചെയ്യാൻ ഉപയോഗിക്കുന്നു.**
 
-**A strict equality operator `===` checks the equality without type conversion.**
-
-In other words, if `a` and `b` are of different types, then `a === b` immediately returns `false` without an attempt to convert them.
-
-Let's try it:
+മറ്റൊരു തരത്തിൽ പറയുകയാണെങ്കിൽ, `a`യും `b`യും വ്യത്യസ്ത വിഭാഗങ്ങളിൽപ്പെട്ട വാല്ല്യുകൾ ആണെങ്കിൽ, `a === b` ടൈപ്പുകളെ മാറ്റാതെ തന്നെ ഉടനടി `false` റിട്ടേൺ ചെയ്യുന്നു.
 
 ```js run
-alert( 0 === false ); // false, because the types are different
+alert( 0 === false ); // false, കാരണം വ്യത്യസ്ത ടൈപ്പുകൾ
 ```
+`==`ന് `!=` ഉള്ളതു പോലെത്തന്നെ `===`ന് ഒരു നോൺ സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്ററും `!==` ഉണ്ട്.
 
-There is also a "strict non-equality" operator `!==` analogous to `!=`.
+സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്റർ എഴുതാൻ കുറച്ചധികം ഉണ്ടെങ്കിലും അവ താരതമ്യങ്ങളെ കൂടുതൽ വ്യക്തമാക്കുകയും തെറ്റുകൾ സംഭവിക്കാനുളള സാധ്യത കുറയ്ക്കുകയും ചെയ്യുന്നു.
 
-The strict equality operator is a bit longer to write, but makes it obvious what's going on and leaves less room for errors.
+## null, undefined - താരതമ്യം ചെയ്യുമ്പോൾ
 
-## Comparison with null and undefined
+`null` ഉം `undefined` ഉം മറ്റു വാല്യുകളുമായി താരതമ്യം ചെയ്യുമ്പോൾ അപ്രതീക്ഷിതമായ പല സ്വഭാവങ്ങളും നമുക്ക് കാണാൻ സാധിക്കും.
 
-There's a non-intuitive behavior when `null` or `undefined` are compared to other values.
-
-For a strict equality check `===`
-: These values are different, because each of them is a different type.
+സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്റർ `===` ഉപയോഗിക്കുമ്പോൾ
+: വാല്യുകൾ വ്യത്യസ്തമാണ്, കാരണം ഇവ രണ്ടും വ്യത്യസ്ത വിഭാഗമാണ്(data type).
 
     ```js run
     alert( null === undefined ); // false
     ```
-
-For a non-strict check `==`
-: There's a special rule. These two are a "sweet couple": they equal each other (in the sense of `==`), but not any other value.
+നോൺ സ്ട്രിക്റ്റ് ഓപറേറ്റർ `==` ഉപയോഗിക്കുമ്പോൾ
+: ഇവിടെ ഒരു പ്രത്യേക നിയമമുണ്ട്: `null`,`undefined` വാല്യുകൾ അവയെ പരസ്പരം പൂർണമാക്കുന്നു. അവ മറ്റൊരു വാല്യുവുമായും തുല്ല്യമാകുന്നില്ല.
 
     ```js run
     alert( null == undefined ); // true
     ```
+മറ്റു ഓപറേറ്ററുകൾ ഉപയോഗിക്കുമ്പോൾ `< > <= >=`
+: `null` ഉം `undefined` ഉം നമ്പറിലേക്ക് മാറ്റപ്പെടുന്നു: `null` `0` ആയും, `undefined` `NaN` ആയും മാറുന്നു.
+ഇനി നമുക്ക് ഈ നിയമങ്ങൾ ഉപയോഗിച്ചാൽ സംഭവിക്കുന്ന ചില രസകരമായ കാര്യങ്ങൾ കാണാം. അതിലും പ്രധാനമായി എങ്ങനെ ഇത്തരം കെണികളിൽ വീഴാതെ നോക്കാം എന്നും.
 
-For maths and other comparisons `< > <= >=`
-: `null/undefined` are converted to numbers: `null` becomes `0`, while `undefined` becomes `NaN`.
+### അസാധാരണ റിസൾട്ടുകൾ: null vs 0
 
-Now let's see some funny things that happen when we apply these rules. And, what's more important, how to not fall into a trap with them.
-
-### Strange result: null vs 0
-
-Let's compare `null` with a zero:
+`null`നെ പൂജ്യവുമായി താരതമ്യം ചെയ്യാം
 
 ```js run
 alert( null > 0 );  // (1) false
 alert( null == 0 ); // (2) false
 alert( null >= 0 ); // (3) *!*true*/!*
 ```
+ഗണിതപരമായി നോക്കുമ്പോൾ ഇത് വിചിത്രമാണ്. കാരണം, അവസാന റിസൾട്ട് പറയുന്നത് "`null` പൂജ്യത്തിനെക്കാൾ വലുതോ തുല്ല്യമോ ആണ് എന്നാണ്",
+അപ്പോൾ മുകളിലുളളതിൽ ഏതെങ്കിലുമൊന്ന് `true` ആവേണ്ടതാണ്. പക്ഷെ അവ രണ്ടും `false` ആണ്.
 
-Mathematically, that's strange. The last result states that "`null` is greater than or equal to zero", so in one of the comparisons above it must be `true`, but they are both false.
+ഇതിനു കാരണം ഒരു ഇക്വാലിറ്റി ചെക്കും `==` മറ്റു താരതമ്യ ഓപറേറ്ററുകളും `> < >= <=` വ്യത്യസ്തമായാണ് പ്രവർത്തിക്കുന്നത്. `> < >= <=` `null`നെ ഒരു നമ്പറിലേക്ക് മാറ്റുന്നു, അതായത് പൂജ്യത്തിലേക്ക്. അതുകൊണ്ടാണ് (3) `null >= 0` trueയും (1) `null > 0` falseഉം റിട്ടേൺ ചെയ്യുന്നത്.
 
-The reason is that an equality check `==` and comparisons `> < >= <=` work differently. Comparisons convert `null` to a number, treating it as `0`. That's why (3) `null >= 0` is true and (1) `null > 0` is false.
+ഇക്വാലിറ്റി ചെക്ക് `==` ഉപയോഗിച്ച് `undefined`നെയും `null`നെയും താരതമ്യം ചെയ്യുമ്പോൾ, അവ പരസ്പരമല്ലാതെ മറ്റൊന്നുമായും തുല്ല്യമാവുകയോ മറ്റൊരു typeലേക്ക് മാറ്റപ്പെടുകയോ ഇല്ല. അത് കൊണ്ടാണ് (2) `null == 0` false റിട്ടേൺ ചെയ്യുന്നത്.
 
-On the other hand, the equality check `==` for `undefined` and `null` is defined such that, without any conversions, they equal each other and don't equal anything else. That's why (2) `null == 0` is false.
+### താരതമ്യം ചെയ്യാനാവാത്ത undefined
 
-### An incomparable undefined
-
-The value `undefined` shouldn't be compared to other values:
+`undefined`നെ ഒരിക്കലും മറ്റൊരു വാല്ല്യുവുമായും താരതമ്യം ചെയ്യരുത്:
 
 ```js run
 alert( undefined > 0 ); // false (1)
@@ -193,24 +189,22 @@ alert( undefined < 0 ); // false (2)
 alert( undefined == 0 ); // false (3)
 ```
 
-Why does it dislike zero so much? Always false!
+എന്തുകൊണ്ടാണ് undefinedന് പൂജ്യത്തിനോട് ഇത്രക്കും വിരോധം? എപ്പോഴും false.
 
-We get these results because:
+ഇതിന് കാരണം:
+- `(1)`ാമത്തെയും `(2)`ാമത്തെയും താരതമ്യങ്ങൾ `false` റിട്ടേൺ ചെയ്യുന്നത് `undefined`  `NaN`ലേക്ക് മാറ്റപ്പെടുന്നത് കൊണ്ടാണ്. `NaN`നെ ഏതൊരു വാല്യുവുമായും താരതമ്യം ചെയ്താലും `false` ആണ് ലഭിക്കുക.
+- `(3)`ാമത്തെത് `false` ആവാൻ കാരണം `undefined` `null` ഒഴികെ മറ്റൊരു വാല്യുവുമായും തുല്ല്യമാവാത്തത് കൊണ്ടാണ്.
 
-- Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
-- The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
+### തെറ്റുകൾ ഒഴിവാക്കാം
 
-### Avoid problems
+നമ്മളെന്തിനാണ് ഈ ഉദാഹരണങ്ങളിലൂടെ മുഴുവൻ കടന്നു പോയത്? ഇത്തരം എല്ലാ ചെറിയ 'അസ്വാഭാവിക' കാര്യങ്ങളും നമ്മൾ ഓർത്തു വെക്കേണ്ടതുണ്ടോ? ശരിക്കും പറഞ്ഞാൽ വേണ്ട. കാരണം ഇത്തരം tricky കാര്യങ്ങൾ പതിയെപ്പതിയെ നമുക്ക് പരിചിതമാവും. എങ്കിലും ഇത്തരം പ്രശ്നങ്ങൾ ഒഴിവാക്കാൻ ഒരു നല്ല മാർഗമുണ്ട്:
 
-Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there's a solid way to avoid problems with them:
+- `undefined/null` താരതമ്യം ചെയ്യാൻ സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്ററുകൾ `===` അല്ലാത്ത ഓപറേറ്ററുകൾ ഉപയോഗിക്കുമ്പോൾ വളരെയധികം ശ്രദ്ധിക്കുക.
+- `null/undefined` വാല്ല്യു ലഭിക്കാൻ സാധ്യതയുള്ള വേരിയബ്ൾസുമായി `>= > < <=` ഓപറേറ്ററുകൾ ഉപയോഗിച്ച് ഒരിക്കലും താരതമ്യം ചെയ്യരുത്, ചെയ്യുന്നതെന്താണെന്ന് അത്രയ്ക്കും ഉറപ്പുണ്ടെങ്കിലൊഴിച്ച്. വേരിയബ്ൾസിന് ഈ വാല്ല്യുകൾ ഉണ്ടാവാൻ സാധ്യതയുണ്ടെങ്കിൽ അത് ആദ്യം വെവ്വേറെയായി ചെക്ക് ചെയ്യുക. 
+## സംഗ്രഹം
 
-- Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
-- Don't use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you're really sure of what you're doing. If a variable can have these values, check for them separately.
-
-## Summary
-
-- Comparison operators return a boolean value.
-- Strings are compared letter-by-letter in the "dictionary" order.
-- When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
-- The values `null` and `undefined` equal `==` each other and do not equal any other value.
-- Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.
+- താരതമ്യ ഓപറേറ്ററുകൾ ഒരു ബൂലിയൻ വാല്യു (`true` or `false`) റിട്ടേൺ ചെയ്യുന്നു.
+- സ്ട്രിങ്ങുകൾ ഓരോ അക്ഷരം വീതമാണ് താരതമ്യം ചെയ്യപ്പെടുന്നത്. ഒരു ഡിക്ഷ്ണറിയിൽ വാക്കുകൾ ക്രമീകരിച്ചിരിക്കുന്നത് പോലെ.
+- വ്യത്യസ്ത വിഭാഗങ്ങളിൽപ്പെട്ട(different data types) വാല്യൂകൾ തമ്മിൽ താരതമ്യം ചെയ്യുമ്പോൾ, അവ ആദ്യം ഒരു നമ്പറിലേക്ക് മാറ്റപ്പെടുന്നു.( സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്ററുകൾ(`===` and `!==`) ഉപയോഗിക്കുമ്പേൾ ഇത് ബാധകമാവുന്നില്ല ).
+- `null`,`undefined` വാല്യുകൾ അവയെ പരസ്പരം പൂർണമാക്കുന്നു(`==`). അവ മറ്റൊരു വാല്യുവുമായും തുല്ല്യമാകുന്നില്ല.
+- `null/undefined` വാല്ല്യു ലഭിക്കാൻ സാധ്യതയുള്ള വേരിയബ്ൾസുമായി `>` അല്ലെങ്കിൽ `<` പോലെയുള്ള താരതമ്യ ഓപറേറ്ററുകൾ ഉപയോഗിച്ച് താരതമ്യം ചെയ്യുമ്പോൾ ശ്രദ്ധിക്കുക. `null/undefined` വാല്ല്യുകളെ വെവ്വേറെ താരതമ്യം ചെയ്യുന്നതാവും ഉത്തമം.
