@@ -1,6 +1,6 @@
-# Code structure
+# Code ന്റെ രൂപം
 
-The first thing we'll study is the building blocks of code.
+നമ്മൾ ആദ്യം പഠിക്കാൻ പോകുന്നത് കോഡിങിന്റെ അടിസ്ഥാനപരമായ ചില കാര്യങ്ങളാണ്.
 
 ## Statements
 
