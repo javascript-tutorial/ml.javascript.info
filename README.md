@@ -33,7 +33,8 @@ The type of the material is defined by the file inside the folder:
 Each of these files starts from the `# Main header`.
 
 It's very easy to add something new.
-@siddiqkaithodu
----  
+
+You can contact @siddiqkaithodu or raise a pull request if something wrong
+
 ♥  
 Ilya Kantor @iliakan
