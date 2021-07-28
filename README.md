@@ -49,7 +49,7 @@ Each of these files starts from the `# Main header`.
 
 It's very easy to add something new.
 
-You can contact @siddiqkaithodu or raise a pull request if something wrong
+You can contact @siddiqkaithodu or raise an issue if something wrong.
 
 ♥  
 Ilya Kantor @iliakan
