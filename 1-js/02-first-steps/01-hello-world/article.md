@@ -75,7 +75,7 @@ HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന a
 
 ഇവിടെ, `/path/to/script.js` root ൽ നിന്നും script ലേക്ക് നേരിട്ടുള്ള path ആണ്(absolute). വേണമെങ്കിൽ നമുക്ക് ഇപ്പോഴത്തെ പേജിൽ നിന്നും path കൊടുക്കാവുന്നതാണ് (relative). ഉദാഹരണത്തിന്, `src="script.js"` അർത്ഥമാക്കുന്നത്‌ `"script.js"` ഇപ്പോഴുള്ള ഫോൾഡറിൽ തന്നെയാണെന്നാണ്.
 
-നമുക്ക് വേണമെങ്കിൽ പൂർണമായ URL ഉം കൊടുക്കാം. ഉദാഹരണത്തിന്:
+നമുക്ക് വേണമെങ്കിൽ പൂർണമായ ഒരു URL ഉം കൊടുക്കാം. ഉദാഹരണത്തിന്:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
