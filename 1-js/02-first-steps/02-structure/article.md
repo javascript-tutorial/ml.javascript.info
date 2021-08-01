@@ -6,7 +6,7 @@
 
 Statements are syntax constructs and commands that perform actions.
 
-We've already seen a statement, `alert('Hello, world!')`, which shows the message "Hello, world!".
+ "Hello, world!" എന്ന message കാണിക്കുന്ന ഒരു statement നമ്മൾ ഇതിനു മുൻപ് തന്നെ ഒരു കണ്ടിട്ടുണ്ടായിരുന്നു,`alert('Hello, world!')`.
 
 We can have as many statements in our code as we want. Statements can be separated with a semicolon.
 
