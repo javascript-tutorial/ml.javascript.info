@@ -49,6 +49,14 @@ Each of these files starts from the `# Main header`.
 
 It's very easy to add something new.
 
+<hr>
+<B>For Translators</B>
+Comment here with the exact title of the article you want to contribute.Then the bot will automatically assign you to the article.
+
+After commiting the entire article you can submit a pull request with the title exactly as of article name.
+
+know more about the bot here https://javascript.info/translate/bot
+ 
 You can contact @siddiqkaithodu or raise an issue if something wrong.
 
 ♥  
