@@ -16,7 +16,7 @@ Statements are syntax constructs and commands that perform actions.
 alert('Hello'); alert('World');
 ```
 
-Usually, statements are written on separate lines to make the code more readable:
+സാധാരണയായി, statementകൾ വായിക്കാൻ എളുപ്പത്തിനായി പല പല വരികളിലായിട്ടാണ് എഴുതുന്നത്:
 
 ```js run no-beautify
 alert('Hello');
@@ -27,7 +27,7 @@ alert('World');
 
 A semicolon may be omitted in most cases when a line break exists.
 
-This would also work:
+ഇതും work ആകും:
 
 ```js run no-beautify
 alert('Hello')
