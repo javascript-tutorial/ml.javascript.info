@@ -14,8 +14,7 @@ So
 
 👉Get reviewed.
 
-See its easy.
-
+👉 Done!
 
 ## Translations
 
