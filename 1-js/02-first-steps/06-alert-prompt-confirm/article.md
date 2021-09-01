@@ -1,44 +1,42 @@
 # Interaction: alert, prompt, confirm
-
-As we'll be using the browser as our demo environment, let's see a couple of functions to interact with the user: `alert`, `prompt` and `confirm`.
+ബ്രൗസർ നമ്മൾ ഒരു Demo environment ആയി ഉപയോഗിക്കുന്നതിനാൽ,user-നോട് interact ചെയ്യാൻ കുറച്ച് functions നോക്കാം: `alert`, `prompt`, പിന്നെ `confirm`.
 
 ## alert
 
-This one we've seen already. It shows a message and waits for the user to press "OK".
+ഇത് നമ്മൾ ഇതിനകം തന്നെ കണ്ടിട്ടുണ്ട്. ഇത് ഒരു alert കാണിക്കുകയും user "OK" അമർത്തുന്നതിനായി കാത്തിരിക്കുകയും ചെയ്യുന്നു.
 
-For example:
+ഉദാഹരണത്തിന്:
 
 ```js run
 alert("Hello");
 ```
 
-The mini-window with the message is called a *modal window*. The word "modal" means that the visitor can't interact with the rest of the page, press other buttons, etc, until they have dealt with the window. In this case -- until they press "OK".
+alertനോട് കൂടെയുള്ള മിനി-വിൻഡോയെ *modal window* എന്ന് വിളിക്കുന്നു . "modal" എന്ന വാക്കിന്റെ അർത്ഥം, വിൻഡോ കൈകാര്യം ചെയ്യുന്നതുവരെ user ന് പേജിന്റെ ബാക്കി ഭാഗങ്ങളുമായി സംവദിക്കുക, മറ്റ് ബട്ടണുകൾ അമർത്തുക, മുതലായവ പറ്റില്ല. അതായത് 'OK' ഞെക്കുന്നത് വരെ.
 
 ## prompt
 
-The function `prompt` accepts two arguments:
+Function `prompt` രണ്ട് arguments സ്വീകരിക്കുന്നു:
 
 ```js no-beautify
 result = prompt(title, [default]);
 ```
 
-It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
+ഇത് ഒരു text message ഉം സന്ദർശകനുള്ള ഇൻപുട്ട് ഫീൽഡും OK/Cancel ബട്ടണുകളും ഉള്ള ഒരു modal window കാണിക്കുന്നു.
 
 `title`
-: The text to show the visitor.
+: സന്ദർശകനെ കാണിക്കാനുള്ള text.
 
 `default`
-: An optional second parameter, the initial value for the input field.
+: ഒരു optional second parameter, ഇൻപുട്ട് ഫീൽഡിന്റെ initial value.
 
-```smart header="The square brackets in syntax `[...]`"
-The square brackets around `default` in the syntax above denote that the parameter is optional, not required.
+```smart header="syntax ഇൽ ഉള്ള square bracket `[...]`"
+മുകളിലുള്ള syntax ന്റെ `default` ന് ചുറ്റുമുള്ള square ബ്രാക്കറ്റുകൾ, parameter ഓപ്ഷണൽ ആണെന്ന് സൂചിപ്പിക്കുന്നു,നമുക്ക് വേണമെങ്കിൽ മതി.ഇതിന്റെ ആവശ്യമില്ല.
 ```
 
-The visitor can type something in the prompt input field and press OK. Then we get that text in the `result`. Or they can cancel the input by pressing Cancel or hitting the `key:Esc` key, then we get `null` as the `result`.
+User ന് prompt ഇൻപുട്ട് ഫീൽഡിൽ എന്തെങ്കിലും ടൈപ്പ് ചെയ്ത് OK അമർത്താം. അപ്പോൾ ആ text നമുക്ക്  `result` ൽ ലഭിക്കും. Cancel അമർത്തുന്നതിലൂടെ അവർക്ക് ഇൻപുട്ട് cancel ചെയ്യാനും പറ്റും, `key:Esc` കീ അമർത്തുന്നതിലൂടെ, നമുക്ക് `result`ൽ `null` ലഭിക്കും.
 
-The call to `prompt` returns the text from the input field or `null` if the input was canceled.
-
-For instance:
+`prompt` ലേക്കുള്ള കോൾ, ഇൻപുട്ട് ഫീൽഡിൽ നിന്ന് text return ചെയ്യും. ഇൻപുട്ട് cancel ആക്കുകയാണെങ്കിൽ `null` return ചെയ്യും.
+ഉദാഹരണത്തിന്:
 
 ```js run
 let age = prompt('How old are you?', 100);
@@ -46,35 +44,31 @@ let age = prompt('How old are you?', 100);
 alert(`You are ${age} years old!`); // You are 100 years old!
 ```
 
-````warn header="In IE: always supply a `default`"
-The second parameter is optional, but if we don't supply it, Internet Explorer will insert the text `"undefined"` into the prompt.
+````warn header="IE ൽ: എപ്പോഴും `default` കൊടുക്കുക"
+രണ്ടാമത്തെ parameter ഓപ്ഷണൽ ആണ്, പക്ഷേ നമ്മൾ അത് നൽകുന്നില്ലെങ്കിൽ, Internet Explorer `"undefined"` എന്ന് text promptൽ ചേർക്കും.
 
-Run this code in Internet Explorer to see:
-
+ഇത് കാണാൻ Internet Explorer(IE)ൽ ഈ കോഡ് run ചെയ്യുക:
 ```js run
 let test = prompt("Test");
 ```
 
-So, for prompts to look good in IE, we recommend always providing the second argument:
-
+അതിനാൽ, IE- ൽ നന്നായി കാണുന്നതിന്, രണ്ടാമത്തെ argument എല്ലായ്പ്പോഴും നൽകുക:
 ```js run
-let test = prompt("Test", ''); // <-- for IE
+let test = prompt("Test", ''); // <--  IE ൽ
 ```
 ````
 
 ## confirm
 
-The syntax:
+syntax:
 
 ```js
 result = confirm(question);
 ```
 
-The function `confirm` shows a modal window with a `question` and two buttons: OK and Cancel.
-
-The result is `true` if OK is pressed and `false` otherwise.
-
-For example:
+`confirm` function ൽ, ഒരു ചോദ്യവും, OK and Cancel ഉള്ള രണ്ട് ബട്ടണുകളും ഒരു modal വിൻഡോയും ആണ് കാണുന്നത്.
+OK അമർത്തിയാൽ `true` കിട്ടും, അല്ലാത്തപക്ഷം`false`.
+ഉദാഹരണത്തിന്:
 
 ```js run
 let isBoss = confirm("Are you the boss?");
@@ -82,24 +76,23 @@ let isBoss = confirm("Are you the boss?");
 alert( isBoss ); // true if OK is pressed
 ```
 
-## Summary
+## സംഗ്രഹം
 
-We covered 3 browser-specific functions to interact with visitors:
+സന്ദർശകരുമായി സംവദിക്കാൻ ഞങ്ങൾ 3 browser-specific പ്രവർത്തനങ്ങൾ ഉൾപ്പെടുത്തി:
 
 `alert`
-: shows a message.
+: ഒരു സന്ദേശം കാണിക്കുന്നു.
 
 `prompt`
-: shows a message asking the user to input text. It returns the text or, if Cancel button or `key:Esc` is clicked, `null`.
+: ടെക്സ്റ്റ് ഇൻപുട്ട് ചെയ്യാൻ ഉപയോക്താവിനോട് ആവശ്യപ്പെടുന്ന ഒരു സന്ദേശം കാണിക്കുന്നു. ഇത് text return നൽകുന്നു അല്ലെങ്കിൽ, Cancel ബട്ടൺ, `key: Esc` ക്ലിക്ക് ചെയ്തിട്ടുണ്ടെങ്കിൽ,` null` return ചെയ്യും.
 
 `confirm`
-: shows a message and waits for the user to press "OK" or "Cancel". It returns `true` for OK and `false` for Cancel/`key:Esc`.
+: ഒരു സന്ദേശം കാണിക്കുകയും ഉപയോക്താവ് "OK" അല്ലെങ്കിൽ "Cancel" അമർത്തുന്നതിനായി കാത്തിരിക്കുകയും ചെയ്യുന്നു.ഇത് OK എന്നതിന് `true`, Cancel/`key:Esc` എന്നതിന് `false` എന്നിവ നൽകുന്നു.
 
-All these methods are modal: they pause script execution and don't allow the visitor to interact with the rest of the page until the window has been dismissed.
+ഈ രീതികളെല്ലാം modal ആണ്: അവർ സ്ക്രിപ്റ്റ് execution താൽക്കാലികമായി നിർത്തി, വിൻഡോ dismiss ചെയ്യുന്നതുവരെ സന്ദർശകനെ ബാക്കി പേജുമായി സംവദിക്കാൻ അനുവദിക്കുന്നില്ല.
 
-There are two limitations shared by all the methods above:
+മുകളിലുള്ള എല്ലാ രീതികളിലും common ആയി രണ്ട് പരിമിതികളുണ്ട്:
+1. modal വിൻഡോയുടെ കൃത്യമായ സ്ഥാനം ബ്രൗസർ നിർണ്ണയിക്കുന്നു. സാധാരണയായി, അത് നടുവിലായിട്ടാണ്.
+2. വിൻഡോയുടെ കൃത്യമായ രൂപവും ബ്രൗസറിനെ ആശ്രയിച്ചിരിക്കുന്നു. നമ്മൾക്ക് അത് modify ചെയ്യാൻ കഴിയില്ല.
 
-1. The exact location of the modal window is determined by the browser. Usually, it's in the center.
-2. The exact look of the window also depends on the browser. We can't modify it.
-
-That is the price for simplicity. There are other ways to show nicer windows and richer interaction with the visitor, but if "bells and whistles" do not matter much, these methods work just fine.
+User മായി ഇടപെടലുകൾ കാണിക്കാൻ ഇതിലും നല്ല മറ്റ് വഴികളുണ്ട്, പക്ഷേ നിസാരമായ ഈ പരിമിതികൾ നമ്മൾ കാര്യമാക്കുന്നില്ലെങ്കിൽ, ഈ 3 രീതികൾ തന്നെ നമുക്ക് ധാരാളം.
