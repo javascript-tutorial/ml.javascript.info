@@ -6,7 +6,7 @@
 
 Statements are syntax constructs and commands that perform actions.
 
- "Hello, world!" എന്ന message കാണിക്കുന്ന statement ആയ `alert('Hello, world!')` നമ്മൾ ഇതിനു മുൻപ് തന്നെ ഒരു കണ്ടിട്ടുണ്ടായിരുന്നു.
+ "Hello, world!" message കാണിക്കുന്ന statement ആയ `alert('Hello, world!')` നമ്മൾ ഇതിനു മുൻപ് തന്നെ ഒരു കണ്ടിട്ടുണ്ടായിരുന്നു.
 
 നമുക്ക് ആവശ്യമുള്ള എത്ര statements വേണമെങ്കിലും കോഡിൽ നമുക്ക് ചെയ്യാം. Semicolon ഉപയോഗിച്ചാണ് നമ്മൾ ഓരോ statement ഉം വേർതിരിക്കുന്നത്.
 
@@ -34,7 +34,7 @@ alert('Hello')
 alert('World')
 ```
 
-Here, JavaScript interprets the line break as an "implicit" semicolon. This is called an [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion).
+ഇവിടെ, ഒരു പുതിയ ലൈനിനെ JavaScript തനിയെ ഒരു സെമി കോളൻ ആയിട്ടു കണക്കാക്കും. ഇതിനെ [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion) എന്നു വിളിക്കുന്നു.
 
 **In most cases, a newline implies a semicolon. But "in most cases" does not mean "always"!**
 
