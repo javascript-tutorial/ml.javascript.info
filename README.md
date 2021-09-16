@@ -2,7 +2,7 @@
 
 This repository hosts the Malayalam content of the Modern JavaScript Tutorial, published in [https://javascript.info](https://javascript.info).
 This will be the first Malayalam JavaScript tutorial of all time.
-So if you like to contribute and have the mind to make it useful for someone,Its the right place.
+If you like to contribute and have the mind to make it useful for someone,Its the right place.
 
 So 
 
