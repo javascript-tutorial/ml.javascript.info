@@ -14,7 +14,7 @@ So
 
 👉Get reviewed.
 
-See its easy.
+Its EASY!.
 
 
 ## Translations
