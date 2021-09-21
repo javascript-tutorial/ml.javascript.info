@@ -25,8 +25,7 @@ alert('World');
 
 ## Semicolons [#semicolon]
 
-A semicolon may be omitted in most cases when a line break exists.
-
+ഒരു line break വന്നാൽ പിന്നെ അവിടെ നമുക്ക്‌ semicolon ഒഴിവാക്കാവുന്നതാണ്.
 ഇതും work ആകും:
 
 ```js run no-beautify
@@ -34,12 +33,10 @@ alert('Hello')
 alert('World')
 ```
 
-ഇവിടെ, ഒരു പുതിയ ലൈനിനെ JavaScript തനിയെ ഒരു സെമി കോളൻ ആയിട്ടു കണക്കാക്കും. ഇതിനെ [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion) എന്നു വിളിക്കുന്നു.
+ഇവിടെ, ഒരു പുതിയ ലൈനിനെ JavaScript തനിയെ ഒരു semicolon ആയിട്ടു കണക്കാക്കും. ഇതിനെ [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion) എന്നു വിളിക്കുന്നു.
 
-**In most cases, a newline implies a semicolon. But "in most cases" does not mean "always"!**
-
-There are cases when a newline does not mean a semicolon. For example:
-
+**മിക്കപ്പോഴും, ഒരു newline ,ഒരു semicolon നു തുല്യമായിരിക്കും. പക്ഷെ "മിക്കപ്പോഴും" എന്നു പറഞ്ഞാൽ "എപ്പോഴും" അല്ല!**
+ചില സന്ദർഭങ്ങളിൽ ഒരു newline, ഒരു semicolon നു പകരമാവില്ല.ഉദാഹരണത്തിന്:
 ```js run no-beautify
 alert(3 +
 1
