@@ -31,11 +31,18 @@
 
 ഇനി പറയുന്നവയും കൂടെ ഒന്നു നോക്കാം:
 
+<<<<<<< HEAD
 - [Atom](https://atom.io/) (എല്ലാ platform ലും ഉണ്ട്, ഫ്രീ).
 - [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ platform ലും ഉണ്ട്, ഫ്രീ).
 - [Sublime Text](http://www.sublimetext.com) (എല്ലാ platform ലും ഉണ്ട്, ഷെയർവെയർ).
 - [Notepad++](https://notepad-plus-plus.org/) (വിൻഡോസ്, ഫ്രീ).
 - [Vim](http://www.vim.org/) ഉം [Emacs](https://www.gnu.org/software/emacs/) ഉം വേറിട്ട ഒരു അനുഭവം തന്നെ ഉപയോക്താവിനു കൊടുക്കും.
+=======
+- [Atom](https://atom.io/) (cross-platform, free).
+- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
+- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
+- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+>>>>>>> 193319c963b9ba86ac7d9590f7261a36ecdcc4d2
 
 ## നമ്മുടെയിടയിൽ ഒരു തർക്കം വേണ്ട
 
