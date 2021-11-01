@@ -65,7 +65,11 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 
 - ഒരു വെബ്‌പേജിലെ ജാവസ്ക്രിപ്റ്റന് ഹാർഡ് ഡിസ്കിൽ നിയന്ത്രണമില്ലാത്ത ഫയലുകൾ വായിക്കാനോ എഴുതാനോ കഴിയില്ല, അവ പകർത്താനോ പ്രോഗ്രാമുകൾ പ്രവർത്തിപ്പിക്കാനോ പാടില്ല. ഇതിന് OS ഫംഗ്ഷനുകളിലേക്ക് നേരിട്ട് പ്രവേശനമില്ല.
 
+<<<<<<< HEAD
     ആധുനിക ബ്രൌസർ‌ ഫയലുകളുമായി പ്രവർ‌ത്തിക്കാൻ‌ ഇത് അനുവദിക്കുന്നു, പക്ഷേ ആക്‌സസ് പരിമിതമാണ് ,കൂടാതെ ഉപയോക്താവ് ഒരു ബ്രൗസർ വിൻ‌ഡോയിലേക്ക് ഒരു ഫയൽ‌ ഡ്രോപ്പ് ചെയ്യുകയോ അല്ലെങ്കിൽ‌ `<input>` ടാഗ് വഴി തിരഞ്ഞെടുക്കുകയോ പോലുള്ള ചില പ്രവർ‌ത്തനങ്ങൾ‌ നടത്തുകയാണെങ്കിൽ‌ മാത്രം.
+=======
+JavaScript's abilities in the browser are limited for the sake of a user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+>>>>>>> 6989312841d843f2350803ab552d9082437be569
 
     ക്യാമറ / മൈക്രോഫോൺ, മറ്റ് ഉപകരണങ്ങൾ എന്നിവയുമായി സംവദിക്കാനുള്ള മാർഗങ്ങളുണ്ട്, പക്ഷേ അവയ്‌ക്ക് ഉപയോക്താവിന്റെ വ്യക്തമായ അനുമതി ആവശ്യമാണ്. അതിനാൽ ഒരു ജാവാസ്ക്രിപ്റ്റ്  പേജ് ഒരു വെബ് ക്യാമറയെ തന്ത്രപൂർവ്വം ഓപ്പൺ ചെയ്യാൻ ചുറ്റുപാടുകൾ നിരീക്ഷിക്കുകയും വിവരങ്ങൾ [NSA](https://en.wikipedia.org/wiki/National_Security_Agency) ലോട്ടു അയയ്ക്കുകയോ ചെയ്യരുത്.
 - വ്യത്യസ്ത ടാബുകൾ / വിൻഡോകൾ സാധാരണയായി പരസ്പരo ബന്ധം കാണില്ല. ചിലപ്പോൾ അവ അങ്ങനെ ചെയ്യാം, ഉദാഹരണത്തിന് ഒരു വിൻഡോ മറ്റൊരു വിൻഡോ തുറക്കാൻ ജാവാസ്ക്രിപ്റ്റ് ഉപയോഗിക്കുമ്പോൾ. ഈ സാഹചര്യത്തിൽ പോലും, വ്യത്യസ്ത സൈറ്റുകളിൽ നിന്ന് (മറ്റൊരു ഡൊമെയ്ൻ, പ്രോട്ടോക്കോൾ അല്ലെങ്കിൽ പോർട്ടിൽ നിന്ന്) വന്നാൽ ഒരു പേജിൽ നിന്നുള്ള ജാവാസ്ക്രിപ്റ്റ് മറ്റൊന്നിലേക്ക് പ്രവേശിക്കാനിടയില്ല.
@@ -94,7 +98,16 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 
 സെർവറുകൾ, മൊബൈൽ ആപ്ലിക്കേഷനുകൾ തുടങ്ങിയവ ഉണ്ടാക്കാനും ജാവാസ്ക്രിപ്റ്റ് അനുവദിക്കുന്നു.
 
+<<<<<<< HEAD
 ## ജാവാസ്ക്രിപ്റ്റിന് മുകളിലുള്ള ഭാഷകൾ
+=======
+```compare
++ Full integration with HTML/CSS.
++ Simple things are done simply.
++ Supported by all major browsers and enabled by default.
+```
+JavaScript is the only browser technology that combines these three things.
+>>>>>>> 6989312841d843f2350803ab552d9082437be569
 
 ജാവാസ്ക്രിപ്റ്റിന്റെ syntax എല്ലാവരുടെയും ആവശ്യങ്ങൾക്ക് അനുയോജ്യമല്ല. വ്യത്യസ്ത ആളുകൾക്ക് വ്യത്യസ്ത സവിശേഷതകൾ വേണം.
 
@@ -121,3 +134,9 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 - ജാവാസ്ക്രിപ്റ്റിലേക്ക് "കൈമാറ്റം ചെയ്യപ്പെടുകയും" ചില സവിശേഷതകൾ നൽകുകയും ചെയ്യുന്ന നിരവധി ഭാഷകളുണ്ട്. ജാവാസ്ക്രിപ്റ്റ്നെ നന്നായി അറിഞ്ഞതിനു ശേഷം, അവ പരിശോധിക്കുന്നത് നല്ലതായിരിക്കും.
 
 
+<<<<<<< HEAD
+=======
+- JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.
+- Today, JavaScript has a unique position as the most widely-adopted browser language, fully integrated with HTML/CSS.
+- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+>>>>>>> 6989312841d843f2350803ab552d9082437be569
