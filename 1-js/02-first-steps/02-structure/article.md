@@ -6,17 +6,17 @@
 
 Statements are syntax constructs and commands that perform actions.
 
-We've already seen a statement, `alert('Hello, world!')`, which shows the message "Hello, world!".
+ "Hello, world!" message കാണിക്കുന്ന statement ആയ `alert('Hello, world!')` നമ്മൾ ഇതിനു മുൻപ് തന്നെ ഒരു കണ്ടിട്ടുണ്ടായിരുന്നു.
 
-We can have as many statements in our code as we want. Statements can be separated with a semicolon.
+നമുക്ക് ആവശ്യമുള്ള എത്ര statements വേണമെങ്കിലും കോഡിൽ നമുക്ക് ചെയ്യാം. Semicolon ഉപയോഗിച്ചാണ് നമ്മൾ ഓരോ statement ഉം വേർതിരിക്കുന്നത്.
 
-For example, here we split "Hello World" into two alerts:
+ഉദാഹരണത്തിന്, ഇവിടെ നമ്മൾ "Hello World" രണ്ട് alertകളായിട്ടു തിരിക്കുന്നു:
 
 ```js run no-beautify
 alert('Hello'); alert('World');
 ```
 
-Usually, statements are written on separate lines to make the code more readable:
+സാധാരണയായി, statementകൾ വായിക്കാൻ എളുപ്പത്തിനായി പല പല വരികളിലായിട്ടാണ് എഴുതുന്നത്:
 
 ```js run no-beautify
 alert('Hello');
@@ -25,21 +25,18 @@ alert('World');
 
 ## Semicolons [#semicolon]
 
-A semicolon may be omitted in most cases when a line break exists.
-
-This would also work:
+ഒരു line break വന്നാൽ പിന്നെ അവിടെ നമുക്ക്‌ semicolon ഒഴിവാക്കാവുന്നതാണ്.
+ഇതും work ആകും:
 
 ```js run no-beautify
 alert('Hello')
 alert('World')
 ```
 
-Here, JavaScript interprets the line break as an "implicit" semicolon. This is called an [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion).
+ഇവിടെ, ഒരു പുതിയ ലൈനിനെ JavaScript തനിയെ ഒരു semicolon ആയിട്ടു കണക്കാക്കും. ഇതിനെ [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion) എന്നു വിളിക്കുന്നു.
 
-**In most cases, a newline implies a semicolon. But "in most cases" does not mean "always"!**
-
-There are cases when a newline does not mean a semicolon. For example:
-
+**മിക്കപ്പോഴും, ഒരു newline ,ഒരു semicolon നു തുല്യമായിരിക്കും. പക്ഷെ "മിക്കപ്പോഴും" എന്നു പറഞ്ഞാൽ "എപ്പോഴും" അല്ല!**
+ചില സന്ദർഭങ്ങളിൽ ഒരു newline, ഒരു semicolon നു പകരമാവില്ല.ഉദാഹരണത്തിന്:
 ```js run no-beautify
 alert(3 +
 1

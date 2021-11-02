@@ -21,9 +21,12 @@ If maintainers DO NOT respond, or if you'd like to become a maintainer, write us
 
 🎉 Thank you!
 
+
 Your name and the contribution size will appear in the "About project" page when the translation gets published.
 
 P.S. The full list of languages can be found at <https://javascript.info/translate>.
+👉 Done!
+
 
 ## Structure
 
