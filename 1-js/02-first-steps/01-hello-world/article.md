@@ -73,11 +73,7 @@ HTML ൽ script ഫയലുകൾ ഇടുന്നത് `src` എന്ന a
 <script src="/path/to/script.js"></script>
 ```
 
-<<<<<<< HEAD
 ഇവിടെ, `/path/to/script.js` root ൽ നിന്നും script ലേക്ക് നേരിട്ടുള്ള path ആണ്(absolute). വേണമെങ്കിൽ നമുക്ക് ഇപ്പോഴത്തെ പേജിൽ നിന്നും path കൊടുക്കാവുന്നതാണ് (relative). ഉദാഹരണത്തിന്, `src="script.js"` അർത്ഥമാക്കുന്നത്‌ `"script.js"` ഇപ്പോഴുള്ള ഫോൾഡറിൽ തന്നെയാണെന്നാണ്.
-=======
-Here, `/path/to/script.js` is an absolute path to the script from the site root. One can also provide a relative path from the current page. For instance, `src="script.js"`, just like `src="./script.js"`, would mean a file `"script.js"` in the current folder.
->>>>>>> 4541b7af7584014a676da731f6e8774da5e059f6
 
 നമുക്ക് വേണമെങ്കിൽ പൂർണമായ ഒരു URL ഉം കൊടുക്കാം. ഉദാഹരണത്തിന്:
 
