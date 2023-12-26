@@ -1,76 +1,77 @@
-# Variables
+# വേരിയബിളുകൾ
 
-Most of the time, a JavaScript application needs to work with information. Here are two examples:
-1. An online shop -- the information might include goods being sold and a shopping cart.
-2. A chat application -- the information might include users, messages, and much more.
+മിക്കപ്പോഴും, ഒരു ജാവാസ്ക്രിപ്റ്റ് ആപ്ലിക്കേഷൻ വിവരങ്ങളുമായി പ്രവർത്തിക്കേണ്ടതുണ്ട്. രണ്ട് ഉദാഹരണങ്ങൾ ഇതാ:
+1.ഒരു ഓൺലൈൻ ഷോപ്പ് -- വിവരങ്ങളിൽ വിൽക്കുന്ന സാധനങ്ങളും ഒരു ഷോപ്പിംഗ് കാർട്ടും ഉൾപ്പെട്ടേക്കാം.
+2.ഒരു ചാറ്റ് ആപ്ലിക്കേഷൻ --വിവരങ്ങളിൽ ഉപയോക്താക്കളും സന്ദേശങ്ങളും മറ്റും ഉൾപ്പെട്ടേക്കാം.
 
-Variables are used to store this information.
+ഈ വിവരങ്ങൾ സൂക്ഷിക്കാൻ വേരിയബിളുകൾ ഉപയോഗിക്കുന്നു.
 
-## A variable
+## ഒരു വേരിയബിൾ
 
-A [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) is a "named storage" for data. We can use variables to store goodies, visitors, and other data.
+ഒരു [വേരിയബിൾ](https://en.wikipedia.org/wiki/Variable_(computer_science)) എന്നാൽ ഡാറ്റയ്ക്കുള്ള "പേരുള്ള സംഭരണം" ആണ്. പല തരത്തിലുള്ള ഡാറ്റ സംഭരിക്കാൻ നമുക്ക് വേരിയബിളുകൾ ഉപയോഗിക്കാം.
 
-To create a variable in JavaScript, use the `let` keyword.
+ജാവാസ്ക്രിപ്റ്റിൽ ഒരു വേരിയബിൾ ഉണ്ടാക്കാൻ, `let` കീവേഡ് ഉപയോഗിക്കുക.
 
-The statement below creates (in other words: *declares*) a variable with the name "message":
+താഴെയുള്ള വരികൾ "മെസേജ്" എന്ന പേരിൽ ഒരു വേരിയബിൾ സൃഷ്ടിക്കുന്നു.( മറ്റൊരു രീതിയിൽ പറഞ്ഞാൽ: *പ്രഖ്യാപിക്കുന്നു*)
 
 ```js
 let message;
 ```
 
-Now, we can put some data into it by using the assignment operator `=`:
+ഇനി, അസൈൻമെന്റ് ഓപ്പറേറ്റർ ഉപയോഗിച്ച് നമുക്ക് കുറച്ച് ഡാറ്റ അതിൽ ഉൾപ്പെടുത്താം `=`:
 
 ```js
 let message;
 
 *!*
-message = 'Hello'; // store the string 'Hello' in the variable named message
+message = 'Hello'; // "മെസേജ്" എന്ന വേരിയബിളിൽ 'ഹലോ' എന്ന സ്ട്രിംഗ് സംഭരിക്കുക
 */!*
 ```
 
-The string is now saved into the memory area associated with the variable. We can access it using the variable name:
+വേരിയബിളുമായി ബന്ധപ്പെട്ട മെമ്മറി ഏരിയയിലേക്ക് സ്ട്രിംഗ് ഇപ്പോൾ സൂക്ഷിക്കുന്നു. വേരിയബിളിന്റെ പേര്
+ഉപയോഗിച്ച് നമുക്ക് ഇത് ആക്സസ് ചെയ്യാൻ കഴിയും:
 
 ```js run
 let message;
 message = 'Hello!';
 
 *!*
-alert(message); // shows the variable content
+alert(message); // വേരിയബിൾ ഉള്ളടക്കം കാണിക്കുന്നു
 */!*
 ```
 
-To be concise, we can combine the variable declaration and assignment into a single line:
+ചുരുക്കത്തിൽ,നമുക്ക് വേരിയബിൾ ഡിക്ലറേഷനും അസൈൻമെന്റും ഒരു വരിയിൽ സംയോജിപ്പിക്കാം:
 
 ```js run
-let message = 'Hello!'; // define the variable and assign the value
+let message = 'Hello!'; //വേരിയബിൾ ടിഫൈൻ ചെയ്യുകയും വാല്യു നൽകുകയും ചെയ്യുക
+
 
 alert(message); // Hello!
 ```
 
-We can also declare multiple variables in one line:
+നമുക്ക് ഒരു വരിയിൽ ഒന്നിലധികം വേരിയബിളുകൾ പ്രഖ്യാപിക്കാനും കഴിയും:
 
 ```js no-beautify
 let user = 'John', age = 25, message = 'Hello';
 ```
 
-That might seem shorter, but we don't recommend it. For the sake of better readability, please use a single line per variable.
+ഇത് ചെറുതായി തോന്നിയേക്കാം, പക്ഷേ ഞങ്ങൾ ഇത് റെക്കമെന്റ് ചെയ്യുന്നില്ല. മികച്ച വായനാക്ഷമതയ്ക്കായി, ഓരോ വേരിയബിളിനും ഒരൊറ്റ വരി ഉപയോഗിക്കുക.
 
-The multiline variant is a bit longer, but easier to read:
-
+മൾട്ടിലൈൻ വേരിയന്റിന് അൽപ്പം നീളമുണ്ട്, പക്ഷേ വായിക്കാൻ എളുപ്പമാണ്:
 ```js
 let user = 'John';
 let age = 25;
 let message = 'Hello';
 ```
 
-Some people also define multiple variables in this multiline style:
+ചില ആളുകൾ ഈ മൾട്ടിലൈൻ ശൈലിയിൽ ഒന്നിലധികം വേരിയബിളുകൾ നിർവ്വചിക്കുന്നു:
 ```js no-beautify
 let user = 'John',
   age = 25,
   message = 'Hello';
 ```
 
-...Or even in the "comma-first" style:
+...അല്ലെങ്കിൽ "കോമ-ഫസ്റ്റ്" ശൈലിയിൽ പോലും:
 
 ```js no-beautify
 let user = 'John'
@@ -78,46 +79,47 @@ let user = 'John'
   , message = 'Hello';
 ```
 
-Technically, all these variants do the same thing. So, it's a matter of personal taste and aesthetics.
+സാങ്കേതികമായി, ഈ എല്ലാ വകഭേദങ്ങളും ഒരേ കാര്യം ആണ് ചെയ്യുന്നത്.
+അതിനാൽ, ഇത് വ്യക്തിപരമായ അഭിരുചിയുടെയും സൗന്ദര്യശാസ്ത്രത്തിന്റെയും കാര്യമാണ്.
 
 ````smart header="`var` instead of `let`"
-In older scripts, you may also find another keyword: `var` instead of `let`:
+പഴയ സ്ക്രിപ്റ്റുകളിൽ, നിങ്ങൾക്ക് മറ്റൊരു കീവേഡും കണ്ടെത്താം: `let` എന്നതിനുപകരം `var`:
 
 ```js
 *!*var*/!* message = 'Hello';
 ```
 
-The `var` keyword is *almost* the same as `let`. It also declares a variable, but in a slightly different, "old-school" way.
+`var` കീവേഡ് *ഏതാണ്ട്* `let` എന്നതിന് സമാനമാണ്. ഇതും ഒരു വേരിയബിളിനെയാണ് പ്രഖ്യാപിക്കുന്നു, എന്നാൽ അല്പം വ്യത്യസ്തമായ, "ഓൾഡ്-സ്കൂൾ" രീതിയിൽ.
 
-There are subtle differences between `let` and `var`, but they do not matter for us yet. We'll cover them in detail in the chapter <info:var>.
+`let` ഉം `var` ഉം തമ്മിൽ സൂക്ഷ്മമായ വ്യത്യാസങ്ങളുണ്ട്, പക്ഷേ അവ ഇതുവരെ നമ്മുക്ക് പ്രശ്നമല്ല. അവ നമ്മൾ ഈ അധ്യായത്തിൽ വിശദമായി പടിക്കും   <info:var>.
 ````
 
-## A real-life analogy
+## ഒരു യഥാർത്ഥ ജീവിത സാമ്യം
 
-We can easily grasp the concept of a "variable" if we imagine it as a "box" for data, with a uniquely-named sticker on it.
+ഡാറ്റയ്‌ക്കായ്, യുനീക്കായി പേരിട്ട സ്റ്റിക്കർ ഉളള ഒരു "ബോക്‌സ്" ആയി സങ്കൽപ്പിച്ചാൽ "വേരിയബിൾ" എന്ന ആശയം നമുക്ക് എളുപ്പത്തിൽ മനസ്സിലാക്കാൻ കഴിയും.
 
-For instance, the variable `message` can be imagined as a box labeled `"message"` with the value `"Hello!"` in it:
+ഉദാഹരണത്തിന്, `സന്ദേശം` എന്ന വേരിയബിളിനെ, "ഹലോ!" എന്ന വാല്യുള്ള, "സന്ദേശം" എന്ന് ലേബൽ ചെയ്തിരിക്കുന്ന ഒരു ബോക്സായി സങ്കൽപ്പിക്കാൻ കഴിയും:
 
 ![](variable.svg)
 
-We can put any value in the box.
+നമുക്ക് ഏത് വാല്യുവും ബോക്സിൽ ഇടാം.
 
-We can also change it as many times as we want:
+നമുക്കിത് എത്ര തവണ വേണമെങ്കിലും മാറ്റാം:
 ```js run
 let message;
 
 message = 'Hello!';
 
-message = 'World!'; // value changed
+message = 'World!'; // വാല്യു മാറി
 
 alert(message);
 ```
 
-When the value is changed, the old data is removed from the variable:
+വാല്യു മാറ്റുമ്പോൾ, വേരിയബിളിൽ നിന്ന് പഴയ ഡാറ്റ നീക്കംചെയ്യപ്പെടും:
 
 ![](variable-change.svg)
 
-We can also declare two variables and copy data from one into the other.
+നമുക്ക് രണ്ട് വേരിയബിളുകൾ പ്രഖ്യാപിക്കാനും ഒന്നിൽ നിന്ന് മറ്റൊന്നിലേക്ക് ഡാറ്റ പകർത്താനും കഴിയും.
 
 ```js run
 let hello = 'Hello world!';
@@ -125,45 +127,48 @@ let hello = 'Hello world!';
 let message;
 
 *!*
-// copy 'Hello world' from hello into message
+// copy 'Hello world' from hello into message hello യിൽ നിന്ന് 'hello world' message ിലേക്ക് പകർത്തുക
+
 message = hello;
 */!*
 
-// now two variables hold the same data
+// ഇപ്പോൾ രണ്ട് വേരിയബിളുകൾ ഒരേ ഡാറ്റ സൂക്ഷിക്കുന്നു
+
 alert(hello); // Hello world!
 alert(message); // Hello world!
 ```
 
 ````warn header="Declaring twice triggers an error"
-A variable should be declared only once.
+ഒരു വേരിയബിൾ ഒരിക്കൽ മാത്രം പ്രഖ്യാപിക്കാൻ പാടു.
 
-A repeated declaration of the same variable is an error:
-
+ഒരേ വേരിയബിളിന്റെ ആവർത്തിച്ചുള്ള പ്രഖ്യാപനം ഒരു ഇരർ ആണ്:
 ```js run
 let message = "This";
 
-// repeated 'let' leads to an error
-let message = "That"; // SyntaxError: 'message' has already been declared
+// ആവർത്തിച്ചുള്ള 'let' ഒരു ഇരർിലേക്ക് നയിക്കുന്നു
+let message = "That"; // SyntaxError: 'message' ഇതിനകം പ്രഖ്യാപിച്ചിട്ടുണ്ട്
 ```
-So, we should declare a variable once and then refer to it without `let`.
+അതിനാൽ, നമ്മൾ ഒരു വേരിയബിൾ ഒരിക്കൽ പ്രഖ്യാപിക്കണം, എന്നിട്ട് അത് `let` ഇല്ലാതെ റഫർ ചെയ്യണം
 ````
 
-```smart header="Functional languages"
-It's interesting to note that there exist [functional](https://en.wikipedia.org/wiki/Functional_programming) programming languages, like [Scala](http://www.scala-lang.org/) or [Erlang](http://www.erlang.org/) that forbid changing variable values.
+```smart header="പ്രവർത്തനപരമായ ഭാഷകൾ"
 
-In such languages, once the value is stored "in the box", it's there forever. If we need to store something else, the language forces us to create a new box (declare a new variable). We can't reuse the old one.
+വേരിയബിൾ മൂല്യങ്ങൾ മാറ്റുന്നത് വിലക്കുന്ന Scala [Scala](http://www.scala-lang.org/) അല്ലെങ്കിൽ Erlang(http://www.erlang.org/) പോലുള്ള പ്രോഗ്രാമിംഗ് ഭാഷകൾ നിലവിലുണ്ട് എന്നത് ശ്രദ്ധേയമാണ്.
 
-Though it may seem a little odd at first sight, these languages are quite capable of serious development. More than that, there are areas like parallel computations where this limitation confers certain benefits. Studying such a language (even if you're not planning to use it soon) is recommended to broaden the mind.
+അത്തരം ഭാഷകളിൽ, വാല്യു  "ബോക്സിൽ" സംഭരിച്ചുകഴിഞ്ഞാൽ, അത് എന്നെന്നേക്കുമായി നിലനിൽക്കും. നമുക്ക് മറ്റെന്തെങ്കിലും സംഭരിക്കണമെങ്കിൽ, ഒരു പുതിയ ബോക്സ് സൃഷ്ടിക്കാൻ ഭാഷ നമ്മെ പ്രേരിപ്പിക്കുന്നു (ഒരു പുതിയ വേരിയബിൾ പ്രഖ്യാപിക്കുക). നമുക്ക് പഴയത് വീണ്ടും ഉപയോഗിക്കാൻ കഴിയില്ല.
+
+
+റ്റനോട്ടത്തിൽ അൽപ്പം വിചിത്രമായി തോന്നാമെങ്കിലും, ഈ ഭാഷകൾക്ക് ഗുരുതരമായ വികാസത്തിന് കഴിവുണ്ട്. അതിലുപരിയായി, ഈ പരിമിതി ചില ആനുകൂല്യങ്ങൾ നൽകുന്ന സമാന്തര കണക്കുകൂട്ടലുകൾ( Parallel Computing) പോലെയുള്ള മേഖലകളുണ്ട്. അത്തരം ഒരു ഭാഷ പഠിക്കുന്നത് (നിങ്ങൾ അത് ഉടൻ ഉപയോഗിക്കാൻ ഉദ്ദേശിക്കുന്നില്ലെങ്കിലും) മനസ്സിനെ വിശാലമാക്കാൻ ശുപാർശ ചെയ്യുന്നു.
 ```
 
-## Variable naming [#variable-naming]
+##വേരിയബിൾ നാമകരണം [#variable-naming]
 
-There are two limitations on variable names in JavaScript:
+ജാവാസ്ക്രിപ്റ്റിലെ വേരിയബിൾ പേരുകൾക്ക് രണ്ട് പരിമിതികളുണ്ട്:
 
-1. The name must contain only letters, digits, or the symbols `$` and `_`.
-2. The first character must not be a digit.
+1. പേരിൽ അക്ഷരങ്ങൾ, അക്കങ്ങൾ അല്ലെങ്കിൽ `$`, `_` എന്നീ ചിഹ്നങ്ങൾ മാത്രമേ അടങ്ങിയിരിക്കാവൂ.
+2. ആദ്യത്തെ പ്രതീകം ഒരു അക്കമായിരിക്കരുത്.
 
-Examples of valid names:
+സാധുവായ പേരുകളുടെ ഉദാഹരണങ്ങൾ:
 
 ```js
 let userName;
@@ -171,103 +176,111 @@ let test123;
 ```
 
 When the name contains multiple words, [camelCase](https://en.wikipedia.org/wiki/CamelCase) is commonly used. That is: words go one after another, each word except first starting with a capital letter: `myVeryLongName`.
+പേരിൽ ഒന്നിലധികം വാക്കുകൾ അടങ്ങിയിരിക്കുമ്പോൾ, കാമൽക്കേസ്[camelCase](https://en.wikipedia.org/wiki/CamelCase) സാധാരണയായി ഉപയോഗിക്കാറുണ്ട്. അതായത്: വാക്കുകൾ ഒന്നിനുപുറകെ ഒന്നായി പോകുന്നു, ആദ്യം ഒരു വലിയ അക്ഷരത്തിൽ ആരംഭിക്കുന്നത് ഒഴികെ ഓരോ വാക്കും: `myVeryLongName`.
 
-What's interesting -- the dollar sign `'$'` and the underscore `'_'` can also be used in names. They are regular symbols, just like letters, without any special meaning.
 
-These names are valid:
+രസകരമായത് -- ഡോളർ ചിഹ്നം `'$'`, അടിവരയായ `'_'` എന്നിവയും പേരുകളിൽ ഉപയോഗിക്കാം. പ്രത്യേക അർത്ഥങ്ങളൊന്നുമില്ലാതെ, അക്ഷരങ്ങൾ പോലെ അവ സാധാരണ ചിഹ്നങ്ങളാണ്.
+
+
+ഈ പേരുകൾ സാധുവാണ്:
 
 ```js run untrusted
-let $ = 1; // declared a variable with the name "$"
-let _ = 2; // and now a variable with the name "_"
+let $ = 1; // "$" എന്ന പേരിൽ ഒരു വേരിയബിൾ പ്രഖ്യാപിച്ചു
+let _ = 2; // ഇപ്പോൾ "_" എന്ന പേരുള്ള ഒരു വേരിയബിൾ
 
 alert($ + _); // 3
 ```
 
-Examples of incorrect variable names:
+തെറ്റായ വേരിയബിൾ പേരുകളുടെ ഉദാഹരണങ്ങൾ:
 
 ```js no-beautify
-let 1a; // cannot start with a digit
+let 1a; // ഒരു അക്കത്തിൽ തുടങ്ങാൻ കഴിയില്ല
 
-let my-name; // hyphens '-' aren't allowed in the name
+
+let my-name; // ഹൈഫനുകൾ '-' പേരിൽ അനുവദനീയമല്ല
 ```
 
 ```smart header="Case matters"
-Variables named `apple` and `AppLE` are two different variables.
+
+`apple` `AppLE` എന്നിങ്ങനെ പേരുള്ള വേരിയബിളുകൾ രണ്ട് വ്യത്യസ്ത വേരിയബിളുകളാണ്.
 ```
 
-````smart header="Non-Latin letters are allowed, but not recommended"
-It is possible to use any language, including cyrillic letters or even hieroglyphs, like this:
-
+````smart header="നോൺ-ലാറ്റിൻ അക്ഷരങ്ങൾ അനുവദനീയമാണ്, എന്നാൽ ശുപാർശ ചെയ്തിട്ടില്ല"
+ഇതുപോലുള്ള സിറിലിക് അക്ഷരങ്ങളോ ഹൈറോഗ്ലിഫുകളോ ഉൾപ്പെടെ ഏത് ഭാഷയും ഉപയോഗിക്കാൻ കഴിയും:
 ```js
 let имя = '...';
 let 我 = '...';
 ```
 
-Technically, there is no error here. Such names are allowed, but there is an international convention to use English in variable names. Even if we're writing a small script, it may have a long life ahead. People from other countries may need to read it some time.
+സാങ്കേതികമായി, ഇവിടെ ഒരു പിശകും ഇല്ല. അത്തരം പേരുകൾ അനുവദനീയമാണ്, എന്നാൽ വേരിയബിൾ നാമങ്ങളിൽ ഇംഗ്ലീഷ് ഉപയോഗിക്കുന്നതിന് ഒരു അന്താരാഷ്ട്ര കൺവെൻഷൻ ഉണ്ട്. നമ്മൾ ഒരു ചെറിയ സ്ക്രിപ്റ്റ് എഴുതുകയാണെങ്കിൽപ്പോലും, അതിന് ദീർഘായുസ്സ് ഉണ്ടായിരിക്കാം. മറ്റ് രാജ്യങ്ങളിൽ നിന്നുള്ള ആളുകൾക്ക് ഇത് കുറച്ച് സമയം വായിക്കേണ്ടി വന്നേക്കാം.
 ````
 
-````warn header="Reserved names"
+````warn header="സംവരണം ചെയ്ത പേരുകൾ"
 There is a [list of reserved words](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords), which cannot be used as variable names because they are used by the language itself.
+സംവരണം ചെയ്ത വാക്കുകളുടെ ഒരു ലിസ്റ്റ് ഉണ്ട്, (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords), അവ ഭാഷയിൽ തന്നെ ഉപയോഗിക്കുന്നതിനാൽ വേരിയബിൾ നാമങ്ങളായി ഉപയോഗിക്കാൻ കഴിയില്ല.
 
-For example: `let`, `class`, `return`, and `function` are reserved.
+ദാഹരണത്തിന്: `let`, `class`, `return`, `function` എന്നിവ റിസർവ് ചെയ്തിട്ടുണ്ട്
 
 The code below gives a syntax error:
+ചുവടെയുള്ള കോഡ് ഒരു സിൻറ്റാക്സ് ഇരർ നൽകുന്നു:
+
 
 ```js run no-beautify
-let let = 5; // can't name a variable "let", error!
-let return = 5; // also can't name it "return", error!
+let let = 5; // ഒരു വേരിയബിളിന് "let" എന്ന് പേരിടാൻ കഴിയില്ല, error!
+let return = 5; // "return" എന്ന് പേരിടാനും കഴിയില്ല, error!
 ```
 ````
 
-````warn header="An assignment without `use strict`"
+````warn header="`use strict` "ഇല്ലാത്ത ഒരു അസൈൻമെന്റ്"
 
 Normally, we need to define a variable before using it. But in the old times, it was technically possible to create a variable by a mere assignment of the value without using `let`. This still works now if we don't put `use strict` in our scripts to maintain compatibility with old scripts.
+സാധാരണയായി, ഒരു വേരിയബിൾ ഉപയോഗിക്കുന്നതിന് മുമ്പ് അത് നിർവചിക്കേണ്ടതുണ്ട്. എന്നാൽ പഴയ കാലത്ത്, `let` ഉപയോഗിക്കാതെ വാല്യുവിന്റെ കേവലം അസൈൻമെന്റ് ഉപയോഗിച്ച് ഒരു വേരിയബിൾ സൃഷ്ടിക്കുന്നത് സാങ്കേതികമായി സാധ്യമായിരുന്നു. പഴയ സ്‌ക്രിപ്‌റ്റുകളുമായി അനുയോജ്യത നിലനിർത്താൻ ഞങ്ങളുടെ സ്‌ക്രിപ്‌റ്റുകളിൽ `use strict' ഇട്ടില്ലെങ്കിൽ ഇത് ഇപ്പോഴും പ്രവർത്തിക്കും.
 
 ```js run no-strict
-// note: no "use strict" in this example
+//ശ്രദ്ധിക്കുക: ഈ ഉദാഹരണത്തിൽ "use strict" ഇല്ല
 
-num = 5; // the variable "num" is created if it didn't exist
-
+num = 5; // "num" എന്ന വേരിയബിൾ അത് നിലവിലില്ലെങ്കിൽ സൃഷ്ടിക്കപ്പെടും
 alert(num); // 5
 ```
 
-This is a bad practice and would cause an error in strict mode:
+ഇതൊരു മോശം ശീലമാണ്, ഇത് 'strict' മോഡിൽ ഒരു ഇരർിന് കാരണമാകും
 
 ```js
 "use strict";
 
 *!*
-num = 5; // error: num is not defined
+num = 5; // error: num നിർവചിച്ചിട്ടില്ല
+
 */!*
 ```
 ````
 
-## Constants
+## കോൻസറ്റൻസ്
 
-To declare a constant (unchanging) variable, use `const` instead of `let`:
+സ്ഥിരമായ (മാറ്റമില്ലാത്ത) വേരിയബിൾ പ്രഖ്യാപിക്കാൻ, `let` എന്നതിന് പകരം `const` ഉപയോഗിക്കുക:
+
 
 ```js
 const myBirthday = '18.04.1982';
 ```
 
-Variables declared using `const` are called "constants". They cannot be reassigned. An attempt to do so would cause an error:
-
+`const` ഉപയോഗിച്ച് പ്രഖ്യാപിച്ച വേരിയബിളുകളെ "കോൺസ്റ്റന്റുകൾ" എന്ന് വിളിക്കുന്നു. അവരെ വീണ്ടും നിയമിക്കാനാവില്ല. അങ്ങനെ ചെയ്യാനുള്ള ശ്രമം ഒരു ഇരർിന്  കാരണമാകും:
 ```js run
 const myBirthday = '18.04.1982';
 
-myBirthday = '01.01.2001'; // error, can't reassign the constant!
+myBirthday = '01.01.2001'; // ഇരർ, വീണ്ടും അസൈൻ ചെയ്യാൻ കഴിയില്ല!
 ```
 
-When a programmer is sure that a variable will never change, they can declare it with `const` to guarantee and clearly communicate that fact to everyone.
+ഒരു വേരിയബിൾ ഒരിക്കലും മാറില്ലെന്ന് ഒരു പ്രോഗ്രാമർക്ക് ഉറപ്പുണ്ടെങ്കിൽ, ആ വസ്തുത എല്ലാവരോടും ഉറപ്പുനൽകാനും വ്യക്തമായി ആശയവിനിമയം നടത്താനും അവർക്ക് അത് `const` ഉപയോഗിച്ച് പ്രഖ്യാപിക്കാനാകും.
 
+### വലിയക്ഷര കോൻസറ്റൻസ്
 
-### Uppercase constants
+നിർവ്വഹിക്കുന്നതിന് മുമ്പ് അറിയാവുന്ന ഓർത്തിരിക്കാൻ ബുദ്ധിമുട്ടുള്ള വാല്യുകൾക്ക് കോൻസറ്റൻസിനെ അപരനാമങ്ങളായി ഉപയോഗിക്കുന്ന ഒരു വ്യാപകമായ സമ്പ്രദായമുണ്ട്.
 
-There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution.
-
-Such constants are named using capital letters and underscores.
+വലിയ അക്ഷരങ്ങളും അടിവരകളും ഉപയോഗിച്ചാണ് ഇത്തരം കോൻസറ്റൻസിന് പേരിടുന്നത്.
 
 For instance, let's make constants for colors in so-called "web" (hexadecimal) format:
+ഉദാഹരണത്തിന്, "web" (ഹെക്സാഡെസിമൽ) ഫോർമാറ്റിൽ വർണ്ണങ്ങൾക്ക് കോൻസറ്റൻസുകൾ ഉണ്ടാക്കാം
 
 ```js run
 const COLOR_RED = "#F00";
@@ -275,69 +288,74 @@ const COLOR_GREEN = "#0F0";
 const COLOR_BLUE = "#00F";
 const COLOR_ORANGE = "#FF7F00";
 
-// ...when we need to pick a color
+// ...നമുക്ക് ഒരു നിറം തിരഞ്ഞെടുക്കേണ്ടിവരുമ്പോൾ
 let color = COLOR_ORANGE;
 alert(color); // #FF7F00
 ```
 
-Benefits:
+പ്രയോജനങ്ങൾ:
 
-- `COLOR_ORANGE` is much easier to remember than `"#FF7F00"`.
-- It is much easier to mistype `"#FF7F00"` than `COLOR_ORANGE`.
-- When reading the code, `COLOR_ORANGE` is much more meaningful than `#FF7F00`.
+- `#FF7F00"` എന്നതിനേക്കാൾ `COLOR_ORANGE` എന്നത് ഓർത്തിരിക്കാൻ വളരെ എളുപ്പമാണ്.
+- `COLOR_ORANGE` എന്നതിനേക്കാൾ `"#FF7F00"` എന്ന് തെറ്റായി ടൈപ്പ് ചെയ്യുന്നത് വളരെ എളുപ്പമാണ്.
+-കോഡ് വായിക്കുമ്പോൾ, `COLOR_ORANGE` എന്നത് `#FF7F00` എന്നതിനേക്കാൾ വളരെ അർത്ഥവത്താണ്.
 
-When should we use capitals for a constant and when should we name it normally? Let's make that clear.
+ഒരു കോൻസറ്റൻിന് എപ്പോഴാണ് നമ്മൾ വലിയക്ഷരങ്ങൾ ഉപയോഗിക്കേണ്ടത്, എപ്പോഴാണ് അതിന് സാധാരണ പേരിടേണ്ടത്? അത് വ്യക്തമാക്കാം.
 
 Being a "constant" just means that a variable's value never changes. But there are constants that are known prior to execution (like a hexadecimal value for red) and there are constants that are *calculated* in run-time, during the execution, but do not change after their initial assignment.
+ഒരു "കോൻസറ്റൻ്" എന്നതിനർത്ഥം ഒരു വേരിയബിളിന്റെ വാല്യു ഒരിക്കലും മാറില്ല എന്നാണ്. എന്നാൽ നിർവ്വഹിക്കുന്നതിന് മുമ്പ് അറിയാവുന്ന കോൻസറ്റൻുകളുണ്ട്(ചുവപ്പിനുള്ള ഹെക്സാഡെസിമൽ വാല്യു പോലെ) കൂടാതെ എക്‌സിക്യൂഷൻ സമയത്ത് റൺ-ടൈമിൽ *കണക്കാക്കിയ* കോൻസറ്റൻുകളുണ്ട്, പക്ഷേ അവയുടെ വാല്യു അസൈൻമെന്റിന് ശേഷം മാറില്ല.
 
-For instance:
+ഉദാഹരണത്തിന്:
+
 ```js
-const pageLoadTime = /* time taken by a webpage to load */;
+const pageLoadTime = /* ഒരു വെബ്‌പേജ് ലോഡ് ചെയ്യാൻ എടുക്കുന്ന സമയം*/;
 ```
 
-The value of `pageLoadTime` is not known prior to the page load, so it's named normally. But it's still a constant because it doesn't change after assignment.
+പേജ് ലോഡുചെയ്യുന്നതിന് മുമ്പ് `pageLoadTime` ന്റെ വാല്യു അറിയില്ല, അതിനാൽ ഇതിന് സാധാരണ പേര് നൽകിയിരിക്കുന്നു. എന്നാൽ അസൈൻമെന്റിന് ശേഷം ഇത് മാറാത്തതിനാൽ ഇത് ഇപ്പോഴും സ്ഥിരമാണ്.
 
-In other words, capital-named constants are only used as aliases for "hard-coded" values.  
+In other words, capital-named constants are only used as aliases for "hard-coded" values.
+മറ്റൊരു വിധത്തിൽ പറഞ്ഞാൽ, വലിയക്ഷര കോൻസറ്റൻസ് "ഹാർഡ്-കോഡഡ്" വാല്യുകൾക്ക് അപരനാമങ്ങളായി മാത്രമേ ഉപയോഗിക്കൂ.  
 
-## Name things right
+##കാര്യങ്ങൾ ശരിയായി പേരിടുക
 
-Talking about variables, there's one more extremely important thing.
 
-A variable name should have a clean, obvious meaning, describing the data that it stores.
+വേരിയബിളുകളെക്കുറിച്ച് പറയുമ്പോൾ, വളരെ പ്രധാനപ്പെട്ട ഒരു കാര്യം കൂടിയുണ്ട്.
 
-Variable naming is one of the most important and complex skills in programming. A quick glance at variable names can reveal which code was written by a beginner versus an experienced developer.
+ഒരു വേരിയബിൾ നാമത്തിന് അത് സംഭരിക്കുന്ന ഡാറ്റ വിവരിക്കുന്ന ശുദ്ധവും വ്യക്തവുമായ അർത്ഥം ഉണ്ടായിരിക്കണം.
 
-In a real project, most of the time is spent modifying and extending an existing code base rather than writing something completely separate from scratch. When we return to some code after doing something else for a while, it's much easier to find information that is well-labeled. Or, in other words, when the variables have good names.
+പ്രോഗ്രാമിംഗിലെ ഏറ്റവും പ്രധാനപ്പെട്ടതും സങ്കീർണ്ണവുമായ കഴിവുകളിൽ ഒന്നാണ് വേരിയബിൾ നാമകരണം. ഒരു തുടക്കക്കാരനും പരിചയസമ്പന്നനായ ഒരു ഡെവലപ്പറും എഴുതിയ കോഡ് ഏതാണെന്ന് വേരിയബിൾ പേരുകളിലേക്കുള്ള ഒരു പെട്ടെന്നുള്ള നോട്ടം വെളിപ്പെടുത്തും.
 
-Please spend time thinking about the right name for a variable before declaring it. Doing so will repay you handsomely.
+ഒരു യഥാർത്ഥ പ്രോജക്‌റ്റിൽ, സ്‌ക്രാച്ചിൽ നിന്ന് വ്യത്യസ്‌തമായി എന്തെങ്കിലും എഴുതുന്നതിനുപകരം നിലവിലുള്ള കോഡ് ബേസ് പരിഷ്‌ക്കരിക്കുന്നതിനും വിപുലീകരിക്കുന്നതിനുമാണ് കൂടുതൽ സമയവും ചെലവഴിക്കുന്നത്. കുറച്ച് സമയത്തേക്ക് മറ്റെന്തെങ്കിലും ചെയ്തതിന് ശേഷം ഞങ്ങൾ ചില കോഡുകളിലേക്ക് മടങ്ങുമ്പോൾ, നന്നായി ലേബൽ ചെയ്തിരിക്കുന്ന വിവരങ്ങൾ കണ്ടെത്തുന്നത് വളരെ എളുപ്പമാണ്. അല്ലെങ്കിൽ, മറ്റൊരു രീതിയിൽ പറഞ്ഞാൽ, വേരിയബിളുകൾക്ക് നല്ല പേരുകൾ ഉള്ളപ്പോൾ.
 
-Some good-to-follow rules are:
+ഒരു വേരിയബിളിന്റെ ശരിയായ പേര് പ്രഖ്യാപിക്കുന്നതിന് മുമ്പ് അതിനെ കുറിച്ച് ചിന്തിക്കാൻ സമയം ചെലവഴിക്കുക. അങ്ങനെ ചെയ്യുന്നത് നിങ്ങൾക്ക് നല്ല പ്രതിഫലം നൽകും.
 
-- Use human-readable names like `userName` or `shoppingCart`.
-- Stay away from abbreviations or short names like `a`, `b`, `c`, unless you really know what you're doing.
-- Make names maximally descriptive and concise. Examples of bad names are `data` and `value`. Such names say nothing. It's only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
-- Agree on terms within your team and in your own mind. If a site visitor is called a "user" then we should name related variables `currentUser` or `newUser` instead of `currentVisitor` or `newManInTown`.
 
-Sounds simple? Indeed it is, but creating descriptive and concise variable names in practice is not. Go for it.
+പാലിക്കേണ്ട ചില നിയമങ്ങൾ ഇവയാണ്:
 
-```smart header="Reuse or create?"
-And the last note. There are some lazy programmers who, instead of declaring new variables, tend to reuse existing ones.
+- `userName` അല്ലെങ്കിൽ `shoppingCart` പോലുള്ള മനുഷ്യർക്ക് വായിക്കാനാകുന്ന പേരുകൾ ഉപയോഗിക്കുക.
+- നിങ്ങൾ എന്താണ് ചെയ്യുന്നതെന്ന് നിങ്ങൾക്ക് ശരിക്കും അറിയില്ലെങ്കിൽ, ചുരുക്കങ്ങളിൽ നിന്നോ `a`, `b`, `c` പോലുള്ള ഹ്രസ്വ നാമങ്ങളിൽ നിന്നോ വിട്ടുനിൽക്കുക.
+- പേരുകൾ പരമാവധി വിവരണാത്മകവും സംക്ഷിപ്തവുമാക്കുക. മോശം പേരുകളുടെ ഉദാഹരണങ്ങൾ `data`, `value` എന്നിവയാണ്. അത്തരം പേരുകൾ ഒന്നും പറയുന്നില്ല. കോഡിന്റെ സന്ദർഭം ഏത് ഡാറ്റയാണ് അല്ലെങ്കിൽ മൂല്യമാണ് വേരിയബിൾ റഫറൻസ് ചെയ്യുന്നതെന്ന് അസാധാരണമാംവിധം വ്യക്തമാക്കുന്നുവെങ്കിൽ മാത്രമേ അവ ഉപയോഗിക്കുന്നത് ശരിയാണ്.
+- നിങ്ങളുടെ ടീമിനുള്ളിലും നിങ്ങളുടെ സ്വന്തം മനസ്സിലും നിബന്ധനകൾ അംഗീകരിക്കുക. ഒരു സൈറ്റ് സന്ദർശകനെ "user" എന്ന് വിളിക്കുന്നുവെങ്കിൽ, ഞങ്ങൾ ബന്ധപ്പെട്ട വേരിയബിളുകൾക്ക് `currentVisitor` അല്ലെങ്കിൽ `newManInTown` എന്നതിന് പകരം `currentUser` അല്ലെങ്കിൽ `newUser` എന്ന് പേരിടണം.
 
-As a result, their variables are like boxes into which people throw different things without changing their stickers. What's inside the box now? Who knows? We need to come closer and check.
+ലളിതമായി തോന്നുന്നുണ്ടോ? തീർച്ചയായും അത്, എന്നാൽ പ്രായോഗികമായി വിവരണാത്മകവും സംക്ഷിപ്തവുമായ വേരിയബിൾ പേരുകൾ സൃഷ്ടിക്കുന്നത് അങ്ങനെയല്ല. അതിനായി ശ്രമിക്കൂ.
 
-Such programmers save a little bit on variable declaration but lose ten times more on debugging.
+```smart header="വീണ്ടും ഉപയോഗിക്കണോ അതോ സൃഷ്ടിക്കണോ?"
+ഒപ്പം അവസാനത്തെ കുറിപ്പും. ചില അലസരായ പ്രോഗ്രാമർമാരുണ്ട്, അവർ പുതിയ വേരിയബിളുകൾ പ്രഖ്യാപിക്കുന്നതിനുപകരം, നിലവിലുള്ളവ വീണ്ടും ഉപയോഗിക്കാൻ പ്രവണത കാണിക്കുന്നു.
 
-An extra variable is good, not evil.
+തൽഫലമായി, അവരുടെ വേരിയബിളുകൾ ബോക്സുകൾ പോലെയാണ്, അതിൽ ആളുകൾ അവരുടെ സ്റ്റിക്കറുകൾ മാറ്റാതെ വ്യത്യസ്ത കാര്യങ്ങൾ എറിയുന്നു. ബോക്സിനുള്ളിൽ ഇപ്പോൾ എന്താണ് ഉള്ളത്? ആർക്കറിയാം? അടുത്ത് വന്ന് പരിശോധിക്കണം.
 
-Modern JavaScript minifiers and browsers optimize code well enough, so it won't create performance issues. Using different variables for different values can even help the engine optimize your code.
+അത്തരം പ്രോഗ്രാമർമാർ വേരിയബിൾ ഡിക്ലറേഷനിൽ അൽപ്പം ലാഭിക്കുന്നു, പക്ഷേ ഡീബഗ്ഗിംഗിൽ പതിന്മടങ്ങ് കൂടുതൽ നഷ്ടപ്പെടും.
+
+ഒരു അധിക വേരിയബിൾ നല്ലതാണ്, തിന്മയല്ല.
+
+ആധുനിക ജാവാസ്ക്രിപ്റ്റ് മിനിഫയറുകളും ബ്രൗസറുകളും മതിയായ രീതിയിൽ കോഡ് ഒപ്റ്റിമൈസ് ചെയ്യുന്നു, അതിനാൽ ഇത് പ്രകടന പ്രശ്നങ്ങൾ സൃഷ്ടിക്കില്ല. വ്യത്യസ്ത മൂല്യങ്ങൾക്കായി വ്യത്യസ്ത വേരിയബിളുകൾ ഉപയോഗിക്കുന്നത് നിങ്ങളുടെ കോഡ് ഒപ്റ്റിമൈസ് ചെയ്യാൻ എഞ്ചിനെ സഹായിക്കും.
 ```
 
-## Summary
+## സംഗ്രഹം
 
-We can declare variables to store data by using the `var`, `let`, or `const` keywords.
+`var`, `let`, അല്ലെങ്കിൽ `const` കീവേഡുകൾ ഉപയോഗിച്ച് ഡാറ്റ സംഭരിക്കാൻ വേരിയബിളുകൾ പ്രഖ്യാപിക്കാം.
 
-- `let` -- is a modern variable declaration.
-- `var` -- is an old-school variable declaration. Normally we don't use it at all, but we'll cover subtle differences from `let` in the chapter <info:var>, just in case you need them.
-- `const` -- is like `let`, but the value of the variable can't be changed.
+- `let` -- ഒരു ആധുനിക വേരിയബിൾ ഡിക്ലറേഷൻ ആണ്.
+- `var` -- ഒരു പഴയ സ്കൂൾ വേരിയബിൾ പ്രഖ്യാപനമാണ്. സാധാരണയായി ഞങ്ങൾ ഇത് ഉപയോഗിക്കാറില്ല, എന്നാൽ നിങ്ങൾക്ക് ആവശ്യമുള്ള സാഹചര്യത്തിൽ <info:var> എന്ന അധ്യായത്തിലെ `let` എന്നതിൽ നിന്നുള്ള സൂക്ഷ്മമായ വ്യത്യാസങ്ങൾ ഞങ്ങൾ ഉൾപ്പെടുത്തും.
+- `const` -- `let` പോലെയാണ്, എന്നാൽ വേരിയബിളിന്റെ മൂല്യം മാറ്റാൻ കഴിയില്ല.
 
-Variables should be named in a way that allows us to easily understand what's inside them.
+വേരിയബിളുകൾക്ക് അവയുടെ ഉള്ളിൽ എന്താണെന്ന് എളുപ്പത്തിൽ മനസ്സിലാക്കാൻ കഴിയുന്ന വിധത്തിൽ പേരിടണം.
