@@ -2,9 +2,12 @@ importance: 2
 
 ---
 
-# Working with variables
+# വേരിയബിളുകൾക്കൊപ്പം പ്രവർത്തനം
 
-1. Declare two variables: `admin` and `name`.
-2. Assign the value `"John"` to `name`.
-3. Copy the value from `name` to `admin`.
-4. Show the value of `admin` using `alert` (must output "John").
+
+1. രണ്ട് വേരിയബിളുകൾ പ്രഖ്യാപിക്കുക: `admin` നും `name`.
+2. വാലൃു നിയോഗിക്കുക `"John"` to `name`.
+3. `name` ഇൽ നിന്ന്  `admin` ഇലേക്ക് വാലൃു പകർത്തുക.
+4. `alert` ഉപയോഗിച്ച് `അഡ്മിൻ` വാലൃു കാണിക്കുക ("John" ഔട്ട്‌പുട്ട് ചെയ്യണം).
+
+
