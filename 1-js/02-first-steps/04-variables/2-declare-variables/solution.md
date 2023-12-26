@@ -1,21 +1,21 @@
-## The variable for our planet
+## നമ്മുടെ ഗ്രഹത്തിനായുള്ള വേരിയബിൾ
 
-That's simple:
+അത് സിംപിളാണ്:
 
 ```js
 let ourPlanetName = "Earth";
 ```
 
-Note, we could use a shorter name `planet`, but it might not be obvious what planet it refers to. It's nice to be more verbose. At least until the variable isNotTooLong.
+കുറിപ്പ്, നമുക്ക് ഒരു ചെറിയ പേര് ഉപയോഗിക്കാം `planet`, എന്നാൽ അത് ഏത് ഗ്രഹത്തെയാണ് സൂചിപ്പിക്കുന്നത് എന്ന് വ്യക്തമല്ലായിരിക്കാം. കൂടുതൽ അർത്ഥം നൽകുന്നത് നല്ലതാണ്. കുറഞ്ഞത് വേരിയബിൾ വളരെ ദൈർഘ്യമേറിയതാവാതെ സൂക്ഷിക്കുക.
 
-## The name of the current visitor
+## നിലവിലെ സന്ദർശകന്റെ പേര്
 
 ```js
 let currentUserName = "John";
 ```
 
-Again, we could shorten that to `userName` if we know for sure that the user is current.
+വീണ്ടും, നമുക്ക് അത് ചുരുക്കാം `userName` ഉപയോക്താവ് നിലവിലുള്ളതാണെന്ന് ഞങ്ങൾക്ക് ഉറപ്പുണ്ടെങ്കിൽ മാത്രം.
+ആധുനിക എഡിറ്ററുകളും ഓട്ടോ-കബ്ളീട്ടും
+Modern editors and autocomplete നീളമുള്ള വേരിയബിൾ പേരുകൾ എഴുതാൻ സഹായിക്കും. 3 വാക്കുകളുള്ള ഒരു പേര് കുഴപ്പമില്ല.
 
-Modern editors and autocomplete make long variable names easy to write. Don't save on them. A name with 3 words in it is fine.
-
-And if your editor does not have proper autocompletion, get [a new one](/code-editors).
+നിങ്ങളുടെ എഡിറ്ററിന് ശരിയായ ഓട്ടോ-കബ്ളീട്ട് ഇല്ലെങ്കിൽ, പുതിയൊരെണ്ണം കണ്ടെത്തുക [a new one](/code-editors).
