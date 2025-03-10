@@ -66,7 +66,12 @@ let age = 25;
 let message = 'Hello';
 ```
 
+<<<<<<< HEAD
 ചില ആളുകൾ ഈ മൾട്ടിലൈൻ ശൈലിയിൽ ഒന്നിലധികം വേരിയബിളുകൾ നിർവ്വചിക്കുന്നു:
+=======
+Some people also define multiple variables in this multiline style:
+
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 ```js no-beautify
 let user = 'John',
   age = 25,
@@ -91,22 +96,37 @@ let user = 'John'
 *!*var*/!* message = 'Hello';
 ```
 
+<<<<<<< HEAD
 `var` കീവേഡ് *ഏതാണ്ട്* `let` എന്നതിന് സമാനമാണ്. ഇതും ഒരു വേരിയബിളിനെയാണ് പ്രഖ്യാപിക്കുന്നു, എന്നാൽ അല്പം വ്യത്യസ്തമായ, "ഓൾഡ്-സ്കൂൾ" രീതിയിൽ.
 
 `let` ഉം `var` ഉം തമ്മിൽ സൂക്ഷ്മമായ വ്യത്യാസങ്ങളുണ്ട്, പക്ഷേ അവ ഇതുവരെ നമ്മുക്ക് പ്രശ്നമല്ല. അവ നമ്മൾ ഈ അധ്യായത്തിൽ വിശദമായി പടിക്കും   <info:var>.
+=======
+The `var` keyword is *almost* the same as `let`. It also declares a variable but in a slightly different, "old-school" way.
+
+There are subtle differences between `let` and `var`, but they do not matter to us yet. We'll cover them in detail in the chapter <info:var>.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 ````
 
 ## ഒരു യഥാർത്ഥ ജീവിത സാമ്യം
 
 ഡാറ്റയ്‌ക്കായ്, യുനീക്കായി പേരിട്ട സ്റ്റിക്കർ ഉളള ഒരു "ബോക്‌സ്" ആയി സങ്കൽപ്പിച്ചാൽ "വേരിയബിൾ" എന്ന ആശയം നമുക്ക് എളുപ്പത്തിൽ മനസ്സിലാക്കാൻ കഴിയും.
 
+<<<<<<< HEAD
 ഉദാഹരണത്തിന്, `സന്ദേശം` എന്ന വേരിയബിളിനെ, "ഹലോ!" എന്ന വാല്യുള്ള, "സന്ദേശം" എന്ന് ലേബൽ ചെയ്തിരിക്കുന്ന ഒരു ബോക്സായി സങ്കൽപ്പിക്കാൻ കഴിയും:
+=======
+For instance, the variable `message` can be imagined as a box labelled `"message"` with the value `"Hello!"` in it:
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 ![](variable.svg)
 
 നമുക്ക് ഏത് വാല്യുവും ബോക്സിൽ ഇടാം.
 
+<<<<<<< HEAD
 നമുക്കിത് എത്ര തവണ വേണമെങ്കിലും മാറ്റാം:
+=======
+We can also change it as many times as we want:
+
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 ```js run
 let message;
 
@@ -153,14 +173,23 @@ let message = "That"; // SyntaxError: 'message' ഇതിനകം പ്രഖ�
 അതിനാൽ, നമ്മൾ ഒരു വേരിയബിൾ ഒരിക്കൽ പ്രഖ്യാപിക്കണം, എന്നിട്ട് അത് `let` ഇല്ലാതെ റഫർ ചെയ്യണം
 ````
 
+<<<<<<< HEAD
 ```smart header="പ്രവർത്തനപരമായ ഭാഷകൾ"
+=======
+```smart header="Functional languages"
+It's interesting to note that there exist so-called [pure functional](https://en.wikipedia.org/wiki/Purely_functional_programming) programming languages, such as [Haskell](https://en.wikipedia.org/wiki/Haskell), that forbid changing variable values.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 വേരിയബിൾ മൂല്യങ്ങൾ മാറ്റുന്നത് വിലക്കുന്ന Scala [Scala](http://www.scala-lang.org/) അല്ലെങ്കിൽ Erlang(http://www.erlang.org/) പോലുള്ള പ്രോഗ്രാമിംഗ് ഭാഷകൾ നിലവിലുണ്ട് എന്നത് ശ്രദ്ധേയമാണ്.
 
+<<<<<<< HEAD
 അത്തരം ഭാഷകളിൽ, വാല്യു  "ബോക്സിൽ" സംഭരിച്ചുകഴിഞ്ഞാൽ, അത് എന്നെന്നേക്കുമായി നിലനിൽക്കും. നമുക്ക് മറ്റെന്തെങ്കിലും സംഭരിക്കണമെങ്കിൽ, ഒരു പുതിയ ബോക്സ് സൃഷ്ടിക്കാൻ ഭാഷ നമ്മെ പ്രേരിപ്പിക്കുന്നു (ഒരു പുതിയ വേരിയബിൾ പ്രഖ്യാപിക്കുക). നമുക്ക് പഴയത് വീണ്ടും ഉപയോഗിക്കാൻ കഴിയില്ല.
 
 
 റ്റനോട്ടത്തിൽ അൽപ്പം വിചിത്രമായി തോന്നാമെങ്കിലും, ഈ ഭാഷകൾക്ക് ഗുരുതരമായ വികാസത്തിന് കഴിവുണ്ട്. അതിലുപരിയായി, ഈ പരിമിതി ചില ആനുകൂല്യങ്ങൾ നൽകുന്ന സമാന്തര കണക്കുകൂട്ടലുകൾ( Parallel Computing) പോലെയുള്ള മേഖലകളുണ്ട്. അത്തരം ഒരു ഭാഷ പഠിക്കുന്നത് (നിങ്ങൾ അത് ഉടൻ ഉപയോഗിക്കാൻ ഉദ്ദേശിക്കുന്നില്ലെങ്കിലും) മനസ്സിനെ വിശാലമാക്കാൻ ശുപാർശ ചെയ്യുന്നു.
+=======
+Though it may seem a little odd at first sight, these languages are quite capable of serious development. More than that, there are areas like parallel computations where this limitation confers certain benefits.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 ```
 
 ##വേരിയബിൾ നാമകരണം [#variable-naming]
@@ -202,18 +231,31 @@ let my-name; // ഹൈഫനുകൾ '-' പേരിൽ അനുവദനീ�
 ```
 
 ```smart header="Case matters"
+<<<<<<< HEAD
 
 `apple` `AppLE` എന്നിങ്ങനെ പേരുള്ള വേരിയബിളുകൾ രണ്ട് വ്യത്യസ്ത വേരിയബിളുകളാണ്.
 ```
 
 ````smart header="നോൺ-ലാറ്റിൻ അക്ഷരങ്ങൾ അനുവദനീയമാണ്, എന്നാൽ ശുപാർശ ചെയ്തിട്ടില്ല"
 ഇതുപോലുള്ള സിറിലിക് അക്ഷരങ്ങളോ ഹൈറോഗ്ലിഫുകളോ ഉൾപ്പെടെ ഏത് ഭാഷയും ഉപയോഗിക്കാൻ കഴിയും:
+=======
+Variables named `apple` and `APPLE` are two different variables.
+```
+
+````smart header="Non-Latin letters are allowed, but not recommended"
+It is possible to use any language, including Cyrillic letters, Chinese logograms and so on, like this:
+
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 ```js
 let имя = '...';
 let 我 = '...';
 ```
 
+<<<<<<< HEAD
 സാങ്കേതികമായി, ഇവിടെ ഒരു പിശകും ഇല്ല. അത്തരം പേരുകൾ അനുവദനീയമാണ്, എന്നാൽ വേരിയബിൾ നാമങ്ങളിൽ ഇംഗ്ലീഷ് ഉപയോഗിക്കുന്നതിന് ഒരു അന്താരാഷ്ട്ര കൺവെൻഷൻ ഉണ്ട്. നമ്മൾ ഒരു ചെറിയ സ്ക്രിപ്റ്റ് എഴുതുകയാണെങ്കിൽപ്പോലും, അതിന് ദീർഘായുസ്സ് ഉണ്ടായിരിക്കാം. മറ്റ് രാജ്യങ്ങളിൽ നിന്നുള്ള ആളുകൾക്ക് ഇത് കുറച്ച് സമയം വായിക്കേണ്ടി വന്നേക്കാം.
+=======
+Technically, there is no error here. Such names are allowed, but there is an international convention to use English in variable names. Even if we're writing a small script, it may have a long life ahead. People from other countries may need to read it sometime.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 ````
 
 ````warn header="സംവരണം ചെയ്ത പേരുകൾ"
@@ -272,13 +314,23 @@ const myBirthday = '18.04.1982';
 myBirthday = '01.01.2001'; // ഇരർ, വീണ്ടും അസൈൻ ചെയ്യാൻ കഴിയില്ല!
 ```
 
+<<<<<<< HEAD
 ഒരു വേരിയബിൾ ഒരിക്കലും മാറില്ലെന്ന് ഒരു പ്രോഗ്രാമർക്ക് ഉറപ്പുണ്ടെങ്കിൽ, ആ വസ്തുത എല്ലാവരോടും ഉറപ്പുനൽകാനും വ്യക്തമായി ആശയവിനിമയം നടത്താനും അവർക്ക് അത് `const` ഉപയോഗിച്ച് പ്രഖ്യാപിക്കാനാകും.
 
 ### വലിയക്ഷര കോൻസറ്റൻസ്
+=======
+When a programmer is sure that a variable will never change, they can declare it with `const` to guarantee and communicate that fact to everyone.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 നിർവ്വഹിക്കുന്നതിന് മുമ്പ് അറിയാവുന്ന ഓർത്തിരിക്കാൻ ബുദ്ധിമുട്ടുള്ള വാല്യുകൾക്ക് കോൻസറ്റൻസിനെ അപരനാമങ്ങളായി ഉപയോഗിക്കുന്ന ഒരു വ്യാപകമായ സമ്പ്രദായമുണ്ട്.
 
+<<<<<<< HEAD
 വലിയ അക്ഷരങ്ങളും അടിവരകളും ഉപയോഗിച്ചാണ് ഇത്തരം കോൻസറ്റൻസിന് പേരിടുന്നത്.
+=======
+There is a widespread practice to use constants as aliases for difficult-to-remember values that are known before execution.
+
+Such constants are named using capital letters and underscores.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 For instance, let's make constants for colors in so-called "web" (hexadecimal) format:
 ഉദാഹരണത്തിന്, "web" (ഹെക്സാഡെസിമൽ) ഫോർമാറ്റിൽ വർണ്ണങ്ങൾക്ക് കോൻസറ്റൻസുകൾ ഉണ്ടാക്കാം
@@ -302,33 +354,58 @@ alert(color); // #FF7F00
 
 ഒരു കോൻസറ്റൻിന് എപ്പോഴാണ് നമ്മൾ വലിയക്ഷരങ്ങൾ ഉപയോഗിക്കേണ്ടത്, എപ്പോഴാണ് അതിന് സാധാരണ പേരിടേണ്ടത്? അത് വ്യക്തമാക്കാം.
 
+<<<<<<< HEAD
 
 ഒരു "കോൻസറ്റൻ്" എന്നതിനർത്ഥം ഒരു വേരിയബിളിന്റെ വാല്യു ഒരിക്കലും മാറില്ല എന്നാണ്. എന്നാൽ നിർവ്വഹിക്കുന്നതിന് മുമ്പ് അറിയാവുന്ന കോൻസറ്റൻുകളുണ്ട്(ചുവപ്പിനുള്ള ഹെക്സാഡെസിമൽ വാല്യു പോലെ) കൂടാതെ എക്‌സിക്യൂഷൻ സമയത്ത് റൺ-ടൈമിൽ *കണക്കാക്കിയ* കോൻസറ്റൻുകളുണ്ട്, പക്ഷേ അവയുടെ വാല്യു അസൈൻമെന്റിന് ശേഷം മാറില്ല.
 
 ഉദാഹരണത്തിന്:
+=======
+Being a "constant" just means that a variable's value never changes. But some constants are known before execution (like a hexadecimal value for red) and some constants are *calculated* in run-time, during the execution, but do not change after their initial assignment.
+
+For instance:
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 ```js
 const pageLoadTime = /* ഒരു വെബ്‌പേജ് ലോഡ് ചെയ്യാൻ എടുക്കുന്ന സമയം*/;
 ```
 
+<<<<<<< HEAD
 പേജ് ലോഡുചെയ്യുന്നതിന് മുമ്പ് `pageLoadTime` ന്റെ വാല്യു അറിയില്ല, അതിനാൽ ഇതിന് സാധാരണ പേര് നൽകിയിരിക്കുന്നു. എന്നാൽ അസൈൻമെന്റിന് ശേഷം ഇത് മാറാത്തതിനാൽ ഇത് ഇപ്പോഴും സ്ഥിരമാണ്.
 
 In other words, capital-named constants are only used as aliases for "hard-coded" values.
 മറ്റൊരു വിധത്തിൽ പറഞ്ഞാൽ, വലിയക്ഷര കോൻസറ്റൻസ് "ഹാർഡ്-കോഡഡ്" വാല്യുകൾക്ക് അപരനാമങ്ങളായി മാത്രമേ ഉപയോഗിക്കൂ.  
+=======
+The value of `pageLoadTime` is not known before the page load, so it's named normally. But it's still a constant because it doesn't change after the assignment.
+
+In other words, capital-named constants are only used as aliases for "hard-coded" values.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 ##കാര്യങ്ങൾ ശരിയായി പേരിടുക
 
 
 വേരിയബിളുകളെക്കുറിച്ച് പറയുമ്പോൾ, വളരെ പ്രധാനപ്പെട്ട ഒരു കാര്യം കൂടിയുണ്ട്.
 
+<<<<<<< HEAD
 ഒരു വേരിയബിൾ നാമത്തിന് അത് സംഭരിക്കുന്ന ഡാറ്റ വിവരിക്കുന്ന ശുദ്ധവും വ്യക്തവുമായ അർത്ഥം ഉണ്ടായിരിക്കണം.
 
 പ്രോഗ്രാമിംഗിലെ ഏറ്റവും പ്രധാനപ്പെട്ടതും സങ്കീർണ്ണവുമായ കഴിവുകളിൽ ഒന്നാണ് വേരിയബിൾ നാമകരണം. ഒരു തുടക്കക്കാരനും പരിചയസമ്പന്നനായ ഒരു ഡെവലപ്പറും എഴുതിയ കോഡ് ഏതാണെന്ന് വേരിയബിൾ പേരുകളിലേക്കുള്ള ഒരു പെട്ടെന്നുള്ള നോട്ടം വെളിപ്പെടുത്തും.
+=======
+Variable naming is one of the most important and complex skills in programming. A glance at variable names can reveal which code was written by a beginner versus an experienced developer.
+
+In a real project, most of the time is spent modifying and extending an existing code base rather than writing something completely separate from scratch. When we return to some code after doing something else for a while, it's much easier to find information that is well-labelled. Or, in other words, when the variables have good names.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 ഒരു യഥാർത്ഥ പ്രോജക്‌റ്റിൽ, സ്‌ക്രാച്ചിൽ നിന്ന് വ്യത്യസ്‌തമായി എന്തെങ്കിലും എഴുതുന്നതിനുപകരം നിലവിലുള്ള കോഡ് ബേസ് പരിഷ്‌ക്കരിക്കുന്നതിനും വിപുലീകരിക്കുന്നതിനുമാണ് കൂടുതൽ സമയവും ചെലവഴിക്കുന്നത്. കുറച്ച് സമയത്തേക്ക് മറ്റെന്തെങ്കിലും ചെയ്തതിന് ശേഷം ഞങ്ങൾ ചില കോഡുകളിലേക്ക് മടങ്ങുമ്പോൾ, നന്നായി ലേബൽ ചെയ്തിരിക്കുന്ന വിവരങ്ങൾ കണ്ടെത്തുന്നത് വളരെ എളുപ്പമാണ്. അല്ലെങ്കിൽ, മറ്റൊരു രീതിയിൽ പറഞ്ഞാൽ, വേരിയബിളുകൾക്ക് നല്ല പേരുകൾ ഉള്ളപ്പോൾ.
 
 ഒരു വേരിയബിളിന്റെ ശരിയായ പേര് പ്രഖ്യാപിക്കുന്നതിന് മുമ്പ് അതിനെ കുറിച്ച് ചിന്തിക്കാൻ സമയം ചെലവഴിക്കുക. അങ്ങനെ ചെയ്യുന്നത് നിങ്ങൾക്ക് നല്ല പ്രതിഫലം നൽകും.
 
+<<<<<<< HEAD
+=======
+- Use human-readable names like `userName` or `shoppingCart`.
+- Stay away from abbreviations or short names like `a`, `b`, and `c`, unless you know what you're doing.
+- Make names maximally descriptive and concise. Examples of bad names are `data` and `value`. Such names say nothing. It's only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
+- Agree on terms within your team and in your mind. If a site visitor is called a "user" then we should name related variables `currentUser` or `newUser` instead of `currentVisitor` or `newManInTown`.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 പാലിക്കേണ്ട ചില നിയമങ്ങൾ ഇവയാണ്:
 
