@@ -12,8 +12,13 @@
 
 നിങ്ങൾ ഇത് വരെ ഒരു IDE സെലക്ട് ചെയ്തിട്ടില്ലെങ്കിൽ, താഴെ പറയുന്നവ ഒന്നു നോക്കുക:
 
+<<<<<<< HEAD
 - [Visual Studio Code](https://code.visualstudio.com/) (എല്ലാ പ്ലാറ്ഫോമിലും, ഫ്രീ).
 - [WebStorm](http://www.jetbrains.com/webstorm/) (എല്ലാ പ്ലാറ്ഫോമിലും, പെയ്ഡ്).
+=======
+- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
+- [WebStorm](https://www.jetbrains.com/webstorm/) (cross-platform, paid).
+>>>>>>> 3d7abb9cc8fa553963025547717f06f126c449b6
 
 വിൻഡോസിൽ, "Visual Studio"യും നമുക്ക് ഉപയോഗിക്കാവുന്നതാണ്, ഇതിനു "Visual Studio Code" മായി ഒരു ബന്ധവുമില്ല. "Visual Studio" പെയ്ഡ് സോഫ്ട് വയറും വിന്ഡോഡിൽ മാത്രവുമുള്ള ഒരു എഡിറ്ററുമാണ്, മാത്രവുമല്ല ഇതു .NET പ്ലാറ്ഫോമിനു പറ്റിയ ഒരു എഡിറ്ററുമാണ്. ജാവസ്ക്രിപ്റ്റിനും ഇതു നല്ലൊരു എഡിറ്ററാണ്. ഇതിനു ഒരു ഫ്രീ വേർഷൻ കൂടെയുണ്ട് [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
@@ -29,6 +34,7 @@
 
 സാധാരണയായി, lightweight എഡിറ്ററുകൾക്ക് directory-level syntax analyzers , autocompleters തുടങ്ങി ഒരുപാട് plugins ഉണ്ട്, അതുകൊണ്ടു തന്നെ lightweight എഡിറ്റർ ഉം IDE യും തമ്മിൽ വലിയ വ്യത്യാസങ്ങൾ ഒന്നും ഇല്ല.
 
+<<<<<<< HEAD
 ഇനി പറയുന്നവയും കൂടെ ഒന്നു നോക്കാം:
 
 - [Atom](https://atom.io/) (എല്ലാ platform ലും ഉണ്ട്, ഫ്രീ).
@@ -38,8 +44,13 @@
 - [Vim](http://www.vim.org/) ഉം [Emacs](https://www.gnu.org/software/emacs/) ഉം വേറിട്ട ഒരു അനുഭവം തന്നെ ഉപയോക്താവിനു കൊടുക്കും.
 - [Atom](https://atom.io/) (cross-platform, free).
 - [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
+=======
+There are many options, for instance:
+
+- [Sublime Text](https://www.sublimetext.com/) (cross-platform, shareware).
+>>>>>>> 3d7abb9cc8fa553963025547717f06f126c449b6
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+- [Vim](https://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
 
 ## നമ്മുടെയിടയിൽ ഒരു തർക്കം വേണ്ട
 
@@ -47,4 +58,13 @@
 
 നമ്മുടെ ഈ വലിയ ലോകത്ത് ഇതിലും മികച്ച എഡിറ്ററുകളുമുണ്ട്. അതിൽ നിങ്ങൾ ഏറ്റവും ഇഷ്ടപ്പെടുന്ന ഒന്ന് തിരഞ്ഞെടുത്തു ഉപയോഗിക്കാവുന്നതാണ്.
 
+<<<<<<< HEAD
 മറ്റേതൊരു ഉപകരണത്തെയും പോലെ ഒരു എഡിറ്റർ തിരഞ്ഞെടുക്കാൻ വ്യക്തിപരo, ശീലങ്ങൾ, വ്യക്തിഗത മുൻഗണനകൾ എന്നിവയെ പോലെ തന്നെ അത് നിങ്ങളുടെ പ്രോജക്റ്റുകളെ ആശ്രയിച്ചിരിക്കുന്നു.
+=======
+The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+
+The author's personal opinion:
+
+- I'd use [Visual Studio Code](https://code.visualstudio.com/) if I develop mostly frontend.
+- Otherwise, if it's mostly another language/platform and partially frontend, then consider other editors, such as XCode (Mac), Visual Studio (Windows) or Jetbrains family (Webstorm, PHPStorm, RubyMine etc, depending on the language).
+>>>>>>> 3d7abb9cc8fa553963025547717f06f126c449b6
