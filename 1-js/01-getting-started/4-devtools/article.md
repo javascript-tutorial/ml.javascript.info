@@ -22,7 +22,7 @@
 
 അത് ഏകദേശം ഇതുപോലെ ഇരിക്കും:
 
-![chrome](chrome.png)
+![chrome](chrome.webp)
 
 developer tools ന്റെ യാഥാർത്ഥ ലുക്ക് നിങ്ങളുടെ Chrome ന്റെ വേർഷൻ പോലെയായിരിക്കും. അതു പല സമയത്തുo മാറിക്കൊണ്ടിരിക്കുമെങ്കിലും ഏകദേശം ഒരുപോലെയിരിക്കും.
 
@@ -49,7 +49,11 @@ Error മെസ്സേജിന്റെ അടിയിലായി, ഒര�
 
 Safari (Mac ന്റെ browser ആണ്, Windows/Linux ഉം അത് സപ്പോർട് ചെയ്യത്തില്ല) യുടെ കാര്യത്തിലാണെങ്കിൽ കുറച്ചു കൂടി വ്യത്യാസം ഉണ്ട്. ഇതിൽ നമുക്ക് ആദ്യം "Develop menu" enable ചെയ്യണം.
 
+<<<<<<< HEAD
 Preferences ൽ കേറിയതിനു ശേഷo "Advanced" എന്ന ഭാഗത്തേക്ക് പോകുക. അവിടെ താഴെയായിട്ടു ഒരു ചെക്‌ബോകസ് കാണാം:
+=======
+Open Settings and go to the "Advanced" pane. There's a checkbox at the bottom:
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 
 ![safari](safari.png)
 
