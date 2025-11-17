@@ -36,7 +36,13 @@ The terms above are good to remember because they are used in developer articles
 
 ```smart header=" engine കൾ എങ്ങനെ പ്രവർത്തിക്കും ?"
 
+<<<<<<< HEAD
 Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വിഷയമാണ്. എന്നാലും അതിന്റെ അടിസ്ഥാനങ്ങൾ എളുപ്പമുള്ളതാണ്.
+=======
+1. The engine (embedded if it's a browser) reads ("parses") the script.
+2. Then it converts ("compiles") the script to machine code.
+3. And then the machine code runs, pretty fast.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
 1.engine(ബ്രൗസറിൽ ഉള്ള) കോഡ് വായിച്ചു ("parses") script പ്രോസസ് ചെയ്യും.
 2.പിന്നെ അത് ട്രാൻസ്ലേറ്റ ചെയ്തു മെഷീനിന്റെ ഭാഷയിലോട്ടാക്കും.
@@ -47,9 +53,13 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 ## ബ്രൗസറിൽ ജവസ്ക്രിപ്റ്റന് എന്തു ചെയ്യാൻ സാധിക്കും?
 ഇപ്പോഴത്തെ ജാവാസ്ക്രിപ്റ്റ് ഒരു "സുരക്ഷിത" പ്രോഗ്രാമിംഗ് ഭാഷയാണ്. ഇത് ഡിവൈസിന്റെ മെമ്മോറിയിലേക്കോ സിപിയുവിലേക്കോ ഒന്നും ആക്സസ് നൽകുന്നില്ല, കാരണം ഇത് ആദ്യകാലങ്ങളിൽ ഇതൊന്നും ഇല്ലാതിരുന്ന ബ്രൗസർകൾക്കായി ഉണ്ടാക്കിയതാണ്.
 
+<<<<<<< HEAD
 ജാവാസ്ക്രിപ്റ്റിന്റെ കഴിവുകൾ അത് പ്രവർത്തിക്കുന്ന ഡിവൈസിനെ വളരെയധികം ആശ്രയിച്ചിരിക്കുന്നു. ഉദാഹരണത്തിന്, [Node.js](https://wikipedia.org/wiki/Node.js) ജാവാസ്ക്രിപ്റ്റിന് നിയന്ത്രണമില്ലാത്ത ഫയലുകൾ വായിക്കാനും എഴുതാനും നെറ്റ്വർക്ക് അഭ്യർത്ഥനകൾ നടത്താനും അനുവദിക്കുന്ന പ്രവർത്തനങ്ങളെ പിന്തുണയ്ക്കുന്നു.
 ബ്രൗസറിൽ വെബ്‌പേജ് മാനേജ് ചെയ്യാനും യൂസർമായി ഇടപഴക്കാനും സെർവേറിലോട്ടു കണക്ട് ചെയ്യാനുമെല്ലാം ഉപയോഗിക്കാം.  
 അതായത് ബ്രൗസറിൽ ജവസ്ക്രിപ്റ്റന് താഴെ പറയുന്ന കാര്യങ്ങളെല്ലാം ചെയ്യാൻ കഴിയും:
+=======
+Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or the CPU, because it was initially created for browsers which do not require it.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
 -വെബ് പേജിലേക്ക് പുതിയ HTML ചേർക്കുക, നിലവിലുള്ള ഉള്ളടക്കം മാറ്റുക,സ്റ്റൈൽ മാറ്റുക.
 - ഉപയോക്താക്കളുടെ പ്രവർത്തനങ്ങളോട് പ്രതികരിക്കുക, മൗസ് ക്ലിക്കുകൾ, പോയിന്റർ ചലനങ്ങൾ, കീ പ്രസ്സുകൾ എന്നിവ അറിയുക.
@@ -58,7 +68,7 @@ Engines നല്ല ബുദ്ധിമുട്ടുള്ള ഒരു വ
 - ക്ലയന്റ് ഭാഗത്തുള്ള ഡാറ്റ ഓർക്കുക ("ലോക്കൽ സ്റ്റോറേജ്").
 ## ബ്രൗസറിൽ ജാവസ്ക്രിപ്റ്റന് എന്തു ചെയ്യാൻ കഴിയില്ല?
 
-JavaScript's abilities in the browser are limited for the sake of a user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+JavaScript's abilities in the browser are limited to protect the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
 
 യൂസറിന്റെ സുരക്ഷയ്ക്കായി ബ്രൗസറിലെ ജാവാസ്ക്രിപ്റ്റിന്റെ കഴിവുകൾ പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. ഒരു ഹാക്കർ വെബ്‌പേജ് സ്വകാര്യ വിവരങ്ങൾ‌ ആക്‌സസ് ചെയ്യുന്നതിൽ‌ നിന്നും അല്ലെങ്കിൽ‌ ഉപയോക്താവിൻറെ ഡാറ്റയെ ദോഷകരമായി ബാധിക്കുന്നതിൽ‌ നിന്നും തടയുക എന്നതാണ് ഇതിന്റെ പിറകിലുള്ള ലക്ഷ്യം.
 
@@ -66,6 +76,7 @@ JavaScript's abilities in the browser are limited for the sake of a user's safet
 
 - ഒരു വെബ്‌പേജിലെ ജാവസ്ക്രിപ്റ്റന് ഹാർഡ് ഡിസ്കിൽ നിയന്ത്രണമില്ലാത്ത ഫയലുകൾ വായിക്കാനോ എഴുതാനോ കഴിയില്ല, അവ പകർത്താനോ പ്രോഗ്രാമുകൾ പ്രവർത്തിപ്പിക്കാനോ പാടില്ല. ഇതിന് OS ഫംഗ്ഷനുകളിലേക്ക് നേരിട്ട് പ്രവേശനമില്ല.
 
+<<<<<<< HEAD
     പുതിയ ബ്രൗസറുകൾ ഫയലുകളുമായി പ്രവർ‌ത്തിക്കുവാൻ നമ്മളെ അനുവദിക്കുന്നുണ്ടെങ്കിലും, അതിനും ഒരു പരിധി ഉണ്ട് ,അതായത് യൂസർ ഒരു ബ്രൗസർ വിൻ‌ഡോയിലേക്ക് ഒരു ഫയൽ‌ ഡ്രോപ്പ് ചെയ്യുകയോ അല്ലെങ്കിൽ‌ `<input>` ടാഗ് വഴി തിരഞ്ഞെടുക്കുകയോ പോലുള്ള ചില കാര്യങ്ങൾ ചെയ്യുമ്പോൾ മാത്രം.
     ക്യാമറ / മൈക്രോഫോൺ, മറ്റ് ഉപകരണങ്ങൾ എന്നിവയുമായി സംവദിക്കാനുള്ള മാർഗങ്ങളുണ്ട്, പക്ഷേ അവയ്‌ക്ക് ഉപയോക്താവിന്റെ വ്യക്തമായ അനുമതി ആവശ്യമാണ്. അതിനാൽ ഒരു ജാവാസ്ക്രിപ്റ്റ്  പേജ് ഒരു വെബ് ക്യാമറയെ തന്ത്രപൂർവ്വം ഓപ്പൺ ചെയ്യാൻ ചുറ്റുപാടുകൾ നിരീക്ഷിക്കുകയും വിവരങ്ങൾ [NSA](https://en.wikipedia.org/wiki/National_Security_Agency) ലോട്ടു അയയ്ക്കുകയോ ചെയ്യരുത്.
 - വ്യത്യസ്ത ടാബുകൾ / വിൻഡോകൾ സാധാരണയായി പരസ്പരo ബന്ധം കാണില്ല. ചിലപ്പോൾ അവ അങ്ങനെ ചെയ്യാം, ഉദാഹരണത്തിന് ഒരു വിൻഡോ മറ്റൊരു വിൻഡോ തുറക്കാൻ ജാവാസ്ക്രിപ്റ്റ് ഉപയോഗിക്കുമ്പോൾ. ഈ സാഹചര്യത്തിൽ പോലും, വ്യത്യസ്ത സൈറ്റുകളിൽ നിന്ന് (മറ്റൊരു ഡൊമെയ്ൻ, പ്രോട്ടോക്കോൾ അല്ലെങ്കിൽ പോർട്ടിൽ നിന്ന്) വന്നാൽ ഒരു പേജിൽ നിന്നുള്ള ജാവാസ്ക്രിപ്റ്റ് മറ്റൊന്നിലേക്ക് പ്രവേശിക്കാനിടയില്ല.
@@ -74,11 +85,24 @@ JavaScript's abilities in the browser are limited for the sake of a user's safet
 
     ഈ പരിധി വീണ്ടും ഉപയോക്താവിന്റെ സുരക്ഷയ്ക്കായിരിക്കും. ഒരു ഉപയോക്താവ് തുറന്ന `http: // anysite.com` ൽ നിന്നുള്ള ഒരു പേജിന്` http: // gmail.com` URL ഉള്ള മറ്റൊരു ബ്രൗസർ ടാബ് ആക്സസ് ചെയ്യാനും അവിടെ നിന്ന് വിവരങ്ങൾ മോഷ്ടിക്കാനും കഴിയില്ല.
 - നിലവിലെ പേജ് വന്ന സെർവറിലേക്ക് ജാവാസ്ക്രിപ്റ്റിന് നെറ്റിലൂടെ എളുപ്പത്തിൽ ആശയവിനിമയം നടത്താൻ കഴിയും. എന്നാൽ മറ്റ് സൈറ്റുകളിൽ നിന്നും ഡൊമെയ്‌നുകളിൽ നിന്നും ഡാറ്റ സ്വീകരിക്കാനുള്ള അതിന്റെ കഴിവ് തകരാറിലാകുന്നു. സാധ്യമാണെങ്കിലും, വിദൂര ഭാഗത്ത് നിന്ന് വ്യക്തമായ കരാർ (http header) ആവശ്യമാണ്. ഒരിക്കൽ കൂടി, അതൊരു സുരക്ഷാ പരിമിതിയാണ്.
+=======
+    There are ways to interact with the camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
+- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
+
+    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and must contain special JavaScript code that handles it. We'll cover that in the tutorial.
+
+    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com`, for example, and steal information from there.
+- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
  ![](limitations.svg)
 
+<<<<<<< HEAD
 ജാവാസ്ക്രിപ്റ്റ് ബ്രൗസർ ന് പുറത്ത് ഉപയോഗിച്ചിട്ടുണ്ടെങ്കിൽ അത്തരം പരിധികൾ ഒരു പ്രശ്‌നമല്ല, ഉദാഹരണത്തിന് ഒരു സെർവറിൽ, വിപുലീകൃത അനുമതികൾ ആവശ്യപ്പെടുന്ന പ്ലഗിൻ / വിപുലീകരണങ്ങളും ആധുനിക ബ്രൗസർ അനുവദിക്കുന്നു.
 ## എന്താണ് ജാവസ്ക്രിപ്റ്റിനെ വ്യത്യസ്തമാക്കുന്നത്?
+=======
+Such limitations do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugins/extensions which may ask for extended permissions.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
 ജാവാസ്ക്രിപ്റ്റിനെക്കുറിച്ച് കുറഞ്ഞത് ഒരു *മൂന്ന്* പ്രധാനപ്പെട്ട കാര്യങ്ങളുണ്ട്.
 
@@ -90,7 +114,11 @@ JavaScript's abilities in the browser are limited for the sake of a user's safet
 ```
 ഈ മൂന്ന് കാര്യങ്ങളും ഒരുമിച്ചു വരുന്ന ഏക ബ്രൗസർ സാങ്കേതികവിദ്യയാണ് ജാവാസ്ക്രിപ്റ്റ്.
 
+<<<<<<< HEAD
 അതാണ് ജാവാസ്ക്രിപ്റ്റിനെ വ്യത്യസ്തമാക്കുന്നത്. അതുകൊണ്ടാണ് ബ്രൌസർ ഇന്റർഫേസുകൾ സൃഷ്ടിക്കുന്നതിനുള്ള ഏറ്റവും വ്യാപകമായി ഉപയോഗിക്കപ്പെടുന്നത്.
+=======
+That said, JavaScript can be used to create servers, mobile applications, etc.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
 സെർവറുകൾ, മൊബൈൽ ആപ്ലിക്കേഷനുകൾ തുടങ്ങിയവ ഉണ്ടാക്കാനും ജാവാസ്ക്രിപ്റ്റ് അനുവദിക്കുന്നു.
 
@@ -98,18 +126,33 @@ JavaScript's abilities in the browser are limited for the sake of a user's safet
 
 ജാവാസ്ക്രിപ്റ്റിന്റെ syntax എല്ലാവരുടെയും ആവശ്യങ്ങൾക്ക് അനുയോജ്യമല്ല. വ്യത്യസ്ത ആളുകൾക്ക് വ്യത്യസ്ത സവിശേഷതകൾ വേണം.
 
+<<<<<<< HEAD
 അത് പ്രതീക്ഷിക്കേണ്ടതാണ്, കാരണം പ്രോജക്റ്റുകളും ആവശ്യകതകളും എല്ലാവർക്കും വ്യത്യസ്തമാണ്.
+=======
+So, recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
 ബ്രൗസറിൽ പ്രവർത്തിക്കുന്നതിനുമുമ്പ് ജാവാസ്ക്രിപ്റ്റിലേക്ക് *കൈമാറ്റം ചെയ്യപ്പെട്ട* (പരിവർത്തനം ചെയ്ത) പുതിയ ഭാഷകളുടെ എണ്ണം അടുത്തിടെ കൂടിയിട്ടുണ്ട്.
 
 ആധുനിക ഉപകരണങ്ങൾ ട്രാൻസ്പ്ലൈസേഷനെ വളരെ വേഗതയുള്ളതും സുതാര്യവുമാക്കുന്നു, ഇത് യഥാർത്ഥത്തിൽ ഡവലപ്പർമാരെ മറ്റൊരു ഭാഷയിൽ കോഡ് ചെയ്യാൻ അനുവദിക്കുകയും അത് "വികസിതമായി" സ്വയം പരിവർത്തനം ചെയ്യുകയും ചെയ്യുന്നു.
 
+<<<<<<< HEAD
 അത്തരം ചില ഉദാഹരണങ്ങളാണ്:
 
 - [coffeescript](http://coffeescript.org/) ജാവാസ്ക്രിപ്റ്റിനായുള്ള ഒരു "സിന്റാക്‌സ്" ആണ്. ഇത് ഹ്രസ്വമായ സിന്റാക്‌സ് അവതരിപ്പിക്കുന്നു, വ്യക്തവും കൃത്യവുമായ കോഡ് എഴുതാൻ ഞങ്ങളെ അനുവദിക്കുന്നതും. സാധാരണയായി, റൂബി ഡെ ഡെവെലോപെർസ് ഇത് ഇഷ്ടപ്പെടുന്നു.
 - [Typescript](http://www.typescriptlang.org/) സങ്കീർണ്ണമായ സിസ്റ്റങ്ങളുടെ വികസനവും പിന്തുണയും ലളിതമാക്കുന്നതിന് "കർശനമായ ഡാറ്റ ടൈപ്പിംഗ്" ചേർക്കുന്നതിൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ചിരിക്കുന്നു. ഇത് വികസിപ്പിച്ചെടുത്തത് മൈക്രോസോഫ്റ്റ് ആണ്.
 - [Flow](http://flow.org/) ഡാറ്റ ടൈപ്പിംഗും ചേർക്കുന്നു, പക്ഷേ മറ്റൊരു രീതിയിൽ. ഫേസ്ബുക്ക് വികസിപ്പിച്ചെടുത്തത്.
 - [Flow](https://www.dartlang.org/) ബ്രൗസർ ഇതര പരിതസ്ഥിതികളിൽ (മൊബൈൽ അപ്ലിക്കേഷനുകൾ പോലെ) പ്രവർത്തിക്കുന്ന സ്വന്തം എഞ്ചിൻ ഉള്ള ഒരു ഒറ്റപ്പെട്ട ഭാഷയാണ്, മാത്രമല്ല ഇത് ജാവാസ്ക്രിപ്റ്റിലേക്ക് കൈമാറാനും കഴിയും. Google വികസിപ്പിച്ചെടുത്തത്.
+=======
+- [CoffeeScript](https://coffeescript.org/) is "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](https://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](https://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [Brython](https://brython.info/) is a Python transpiler to JavaScript that enables the writing of applications in pure Python without JavaScript.
+- [Kotlin](https://kotlinlang.org/docs/reference/js-overview.html) is a modern, concise and safe programming language that can target the browser or Node.
+
+There are more. Of course, even if we use one of these transpiled languages, we should also know JavaScript to really understand what we're doing.
+>>>>>>> 5e893cffce8e2346d4e50926d5148c70af172533
 
 
 തീർന്നില്ല ഇനിയുമുണ്ട്, നമ്മൾ ട്രാൻ‌സ്‌പൈൽ‌ ചെയ്‌ത ഭാഷകളിലൊന്ന്‌ ഉപയോഗിച്ചാലും, നമ്മൾ ചെയ്യുന്നതെന്താണെന്ന് ശരിക്കും മനസിലാക്കാൻ‌ നമ്മൾ JavaScript നെ അറിഞ്ഞിരിക്കണം.
