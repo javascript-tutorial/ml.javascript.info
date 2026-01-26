@@ -1,6 +1,10 @@
 
 
+<<<<<<< HEAD
 # ഈ മാനുവലും അതിന്റെ പ്രത്യേകതകളും
+=======
+This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other resources.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 ഈ ബുക് ഒരു *ടൂട്ടോറിയൽ* ആണ്. ഇതു നിങ്ങളെ പതിയെപ്പതിയെ language പഠിക്കാൻ സഹായിക്കും. ബേസിക് കാര്യങ്ങളൊക്കെ പഠിച്ചു കഴിഞ്ഞാൽ, പിന്നെ നിങ്ങൾക്ക് വേറൊരു source വേണ്ടി വരും.
 
@@ -8,6 +12,10 @@
 
 [The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) ജാവാസ്ക്രിപ്റ്റിനെ കുറിച്ചു ആഴത്തിലുള്ള വിശദമായ ഒരു വിശകലനം നമുക്ക് നേടിത്തരുo. അതാണ് പ്രോഗ്രാമിന് രൂപം കൊടുക്കുന്നത്.
 
+<<<<<<< HEAD
+=======
+A new specification version is released every year. Between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 പക്ഷെ വളരെ ഫോർമലായത് കൊണ്ടു, തുടക്കമിത് മനസ്സിലാക്കാൻ നല്ല ബുദ്ധിമുട്ടായിരിക്കും. അതിനാൽ, വിശദാംശങ്ങളെക്കുറിച്ചുള്ള ഏറ്റവും വിശ്വാസ്യതയുള്ള ഡാറ്റ സ്രോതസ്സ് നിങ്ങൾക്ക് ആവശ്യമുണ്ടെങ്കിൽ, ഇതൊരു ശരിയായ സ്ഥലമാണ്. എന്നാൽ ഇത് സാധാരണ ഉപയോഗത്തിന് വേണ്ടിയല്ല.
 
@@ -15,18 +23,31 @@
 ഓരോ വർഷവും പുതിയൊരു വേർഷൻ അവർ പുറത്തിറക്കും. ഏറ്റവും പുതിയ വേർഷൻ റിലീസ് <https://tc39.es/ecma262/> ൽ ലഭിക്കുന്നതാണ്.
 
 
+<<<<<<< HEAD
 പുതിയ സ്റ്റാൻഡേർഡ് ആയിട്ടുള്ള ഫീച്ചേഴ്‌സ് വായിക്കാൻ("stage 3"), [ഇവിടെ നോക്കുക](https://github.com/tc39/proposals).
 
 കൂടാതെ,നിങ്ങളൊരു ബ്രൌസർ ഡെവലപ്‌ ചെയ്യുകയാണെങ്കിൽ, കുറച്ചു കൂടി ഡീറ്റൈലായിട്ടൊരു [രണ്ടാം ഭാഗം](info:browser-environment) കിട്ടുന്നതാണ്.
+=======
+    You can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+
+Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for the `parseInt` function.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 
 ## മാനുവൽസ്
 
 - **MDN (Mozilla) JavaScript Reference** ഇതു ഒരുപാട് ഉദാഹരണങ്ങളും മറ്റു കാര്യങ്ങളും അടങ്ങിയ ഒരു മാനുവലാണ് . ഇത് language functions,methods ഉം അതുപോലെ മറ്റു കാര്യങ്ങളെ കുറിച്ചുo ആഴത്തിൽ മനസ്സിലാക്കാൻ നമ്മളെ സഹായിക്കും.
 
+<<<<<<< HEAD
     കൂടുതൽ അറിയാൻ നോക്കൂ <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
 
     അല്ലങ്കിൽ ഇന്റർനെറ്റിൽ സെർച്ച് ചെയ്താലും മതി. സെർച്ച് ചെയ്യുമ്പോൾ "MDN [term]" അടിക്കാൻ മറക്കരുത്, e.g.`parseInt` സെർച്ച് ചെയ്യുന്നത് <https://google.com/search?q=MDN+parseInt>.
+=======
+- <https://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <https://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+
+All these resources are useful in real-life development, as they contain valuable information about language details, their support, etc.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 
 ## അനുയോജിത ടേബിൾ
