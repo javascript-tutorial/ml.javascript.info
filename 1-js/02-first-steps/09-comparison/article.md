@@ -203,8 +203,21 @@ alert( undefined == 0 ); // false (3)
 - `null/undefined` വാല്ല്യു ലഭിക്കാൻ സാധ്യതയുള്ള വേരിയബ്ൾസുമായി `>= > < <=` ഓപറേറ്ററുകൾ ഉപയോഗിച്ച് ഒരിക്കലും താരതമ്യം ചെയ്യരുത്, ചെയ്യുന്നതെന്താണെന്ന് അത്രയ്ക്കും ഉറപ്പുണ്ടെങ്കിലൊഴിച്ച്. വേരിയബ്ൾസിന് ഈ വാല്ല്യുകൾ ഉണ്ടാവാൻ സാധ്യതയുണ്ടെങ്കിൽ അത് ആദ്യം വെവ്വേറെയായി ചെക്ക് ചെയ്യുക. 
 ## സംഗ്രഹം
 
+<<<<<<< HEAD
 - താരതമ്യ ഓപറേറ്ററുകൾ ഒരു ബൂലിയൻ വാല്യു (`true` or `false`) റിട്ടേൺ ചെയ്യുന്നു.
 - സ്ട്രിങ്ങുകൾ ഓരോ അക്ഷരം വീതമാണ് താരതമ്യം ചെയ്യപ്പെടുന്നത്. ഒരു ഡിക്ഷ്ണറിയിൽ വാക്കുകൾ ക്രമീകരിച്ചിരിക്കുന്നത് പോലെ.
 - വ്യത്യസ്ത വിഭാഗങ്ങളിൽപ്പെട്ട(different data types) വാല്യൂകൾ തമ്മിൽ താരതമ്യം ചെയ്യുമ്പോൾ, അവ ആദ്യം ഒരു നമ്പറിലേക്ക് മാറ്റപ്പെടുന്നു.( സ്ട്രിക്റ്റ് ഇക്വാലിറ്റി ഓപറേറ്ററുകൾ(`===` and `!==`) ഉപയോഗിക്കുമ്പേൾ ഇത് ബാധകമാവുന്നില്ല ).
 - `null`,`undefined` വാല്യുകൾ അവയെ പരസ്പരം പൂർണമാക്കുന്നു(`==`). അവ മറ്റൊരു വാല്യുവുമായും തുല്ല്യമാകുന്നില്ല.
 - `null/undefined` വാല്ല്യു ലഭിക്കാൻ സാധ്യതയുള്ള വേരിയബ്ൾസുമായി `>` അല്ലെങ്കിൽ `<` പോലെയുള്ള താരതമ്യ ഓപറേറ്ററുകൾ ഉപയോഗിച്ച് താരതമ്യം ചെയ്യുമ്പോൾ ശ്രദ്ധിക്കുക. `null/undefined` വാല്ല്യുകളെ വെവ്വേറെ താരതമ്യം ചെയ്യുന്നതാവും ഉത്തമം.
+=======
+- Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
+- Don't use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you're really sure of what you're doing. If a variable can have these values, check for them separately.
+
+## Summary
+
+- Comparison operators return a boolean value.
+- Strings are compared letter-by-letter in the "dictionary" order.
+- When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+- The values `null` and `undefined` are equal `==` to themselves and each other, but do not equal any other value.
+- Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
